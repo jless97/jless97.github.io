@@ -80,7 +80,7 @@ figure {
 	font-size: 20px;
 }
 
-.space-invaders-video {
+.space-invaders-video, .space-inflators-video {
 	text-align: center;
 	height: auto;
 	width: auto;
