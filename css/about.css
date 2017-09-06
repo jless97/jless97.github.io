@@ -59,7 +59,7 @@
 }
 
 .picture {
-	height: 300px;
+	height: auto;
 	width: 350px;
 	display: block;
 	margin: auto;
