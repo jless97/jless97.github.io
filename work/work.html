@@ -236,9 +236,9 @@
         <b> Period: </b> April 2017 - May 2017 <br>
         <b> Description: </b> 
         <br> <br>
-        ...
+        Created a multi-process program (consisting of a client, server, and shell) that operates similar to the Telnet protocol by allowing the client to communicate with the server process. This is achieved via the TCP protocol, in which the client is able to send a byte stream of data to the server, which execs and transfers the data to the shell process, in which the shell process outputs the data back to the client process via pipe redirection.
         <br> <br>
-        ...
+        In addition, the program builds on the client/server connection by adding a layer of encryption to encrypt the communication between the two processes. This was achieved by utilizing the libmcrypt data encryption library. On the command-line, the encryption option can be invoked by adding the --encrypt option, and setting it equal to the my.key file (which was the encryption key that I created). Moreover, the program allows for a transcript of the client/server connection to be saved to a log file by adding the --log option. This log records the commands input by the client process, as well as the output provided by the shell process.
         <br> <br>
         <div id="back-to-top">
           <a href="#top">Back To Top </a>
