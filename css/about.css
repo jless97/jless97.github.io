@@ -2,6 +2,7 @@
 	background-image: url("http://splashnology.com/uploads/images/00/05/63/2011/03/03/34e41d.jpg");
 /* http://blog.hostbaby.com/wp-content/uploads/2014/03/Trees_1920x1234.png */
 }
+
 /*
 //////////////////////////////////// 
 ////////////// Header //////////////
@@ -60,7 +61,7 @@
 
 .picture {
 	height: auto;
-	width: 250px;
+	width: 300px;
 	display: block;
 	margin: auto;
 }
