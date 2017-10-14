@@ -74,7 +74,7 @@ figure {
 	color: blue;
 }
 
-#title, .video, .elfin-video, .frackman-video {
+#title, .video, .elfin-video, .frackman-video, .telnet-video {
 	text-align: center;
 	margin: auto;
 	font-size: 20px;
