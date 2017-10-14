@@ -193,37 +193,20 @@
 			</div>
 			<div id="space-invaders-text">
 				<div id="title">
-				<b>
-				<a 
-				href="https://github.com/jless97/CSM152A/tree/master/Lab_4"
-				target="blank"
-				>
-				Space Invaders (FPGA)
-				</a>
-				</b> 
+				  <b><a href="https://github.com/jless97/CSM152A/tree/master/Lab_4" target="blank">Space Invaders (FPGA)</a></b> 
 				</div>
 				<div class="space-invaders-video">
-					<iframe 
-					src="https://www.youtube.com/embed/lbOyKXYbLiI"
-   					width="560" 
-   					height="315" 
-   					frameborder="0" 
-   					allowfullscreen
-   					>
-   					</iframe>
-   				</div>
+					<iframe src="https://www.youtube.com/embed/lbOyKXYbLiI" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+   			</div>
 				<br> 
 				<b> Platform: </b> Xilinx ISE <br> 
 				<b> FPGA Board: </b> Nexys-3 Spartan-6 <br>
 				<b> Languages: </b> Verilog <br>
 				<b> Period: </b> June 2017 <br>
-				<b> Description: </b> <br> <br>
+				<b> Description: </b> 
+        <br> <br>
 				For this project, I decided to recreate the classic arcade game, Space Invaders. For those not familiar with the game, the goal is for the player spaceship to destroy 55 alien spaceships by shooting them with lasers before they reach the bottom of the screen, while trying to avoid the alien lasers. 
-				<a 
-				href="http://www.pacxon4u.com/space-invaders/"
-				target="blank"
-				>Here is a link to play the original game. 
-				</a>
+				<a href="http://www.pacxon4u.com/space-invaders/"target="blank">Here is a link to play the original game.</a>
 				<br> <br>
 				This version is a simplified version of the game due to on-board memory constraint issues, and only having two weeks to work on the project. I noticed that as more objects were added to the game (i.e. more objects on the VGA display), the game began to act in an undefined manner (i.e. some alien objects stopped moving, or moved out of sync of the other alien objects, or the lasers began to glitch). I figured that this was due to FPGA board memory constraints (which is what the TA told me as well). I intend to complete the game using off-board memory and utilizing the MCB and MIG.
 				<br> <br>
@@ -234,42 +217,22 @@
 			</div>
 			<div id="iot-security-text">
 				<div id="title">
-				<b>
-				<a 
-				href="https://github.com/jless97/ENGR96A/tree/master/secure_implementation_final"
-				target="blank"
-				>
-				Internet of Things (IoT) Security System
-				</a>
-				</b> 
+				  <b><a href="https://github.com/jless97/ENGR96A/tree/master/secure_implementation_final" target="blank">Internet of Things (IoT) Security System</a></b> 
 				</div>
 				<div class="iot-video-container">
-				<div class="iot-video">
-					<iframe 
-					src="https://www.youtube.com/embed/JN9ojomng_o"
-   					width="560" 
-   					height="315" 
-   					frameborder="0" 
-   					allowfullscreen
-   					>
-   					</iframe>
+				  <div class="iot-video">
+					  <iframe src="https://www.youtube.com/embed/JN9ojomng_o" width="560" height="315" frameborder="0" allowfullscreen></iframe>
    				</div>
    				<div class="iot-video">
-					<iframe 
-					src="https://www.youtube.com/embed/ErEtNlNEZDc"
-   					width="560" 
-   					height="315" 
-   					frameborder="0" 
-   					allowfullscreen
-   					>
-   					</iframe>
+					  <iframe src="https://www.youtube.com/embed/ErEtNlNEZDc" width="560" height="315" frameborder="0" allowfullscreen></iframe>
    				</div>
-   				</div>
+   			</div>
 				<br> 
 				<b> Platform: </b> Intel Edison using the Grove Sensor Kit <br> 
 				<b> Languages: </b> C <br>
 				<b> Period: </b> May 2017 <br>
-				<b> Description: </b> <br> <br>
+				<b> Description: </b> 
+        <br> <br>
 				The goal of this project was to implement a simple IoT system using the Intel Edison (and various Grove Kit sensors) to unlock a door by sending a username/password string to a server, and receiving back authentication. Initially, the program was achieved using a single light sensor, which was used to encode a binary value to generate a 4-digit password. Moreover, the username was hardcoded into the program. This password was sent as plaintext to the server, and a plaintext response from the server (i.e. a YES or NO) was received by the Edison. Obviously, this simple implementation had serious security flaws such as the short password, and the unencrypted transmission of data to and from the server. This would make the client/server connection susceptible to a number of enemy attacks such as brute-force, dictionary, and rainbow attacks (for the weak password), and man-in-the-middle and replay attacks (due to the lack of encrypted data).
 				<br> <br>
 				A more secure implementation was developed to combat these security flaws. First of all, the password was increased to 8-digits, and instead of just having a binary value for each of the digits, each digit could have 8 possible values (ranging from 0-7). While still not as strong as it could be, this password length and characteristics served its purpose for this assignment. In addition, instead of a hard-coded username, a user of this IoT system could provide their own ID string. The strengthened password helped to protect against several of the attacks mentioned above, but other security measures were taken in the form of a timeout after a certain number of incorrect password attempts took place. After three failed attempts, the server would stop accepting messages from the Edison for a five minute period. This timeout would help to deter brute-force and dictionary attacks as an attacker couldn't just enter in an unlimited amount of attempts to crack the password. While the timeout helps in this regard, it is of importance to note that the actual method to input the password (i.e. the use of light sensors and a push button) would already serve to prevent the use of bots to perform the dictionary attacks for an attacker. Lastly, to prevent against man-in-the-middle and replay attacks, the program encrypted the data on the client (and server side) using the Open SSL APIs. In this way, the data would be encrypted going to the server and upon receiving the reply from the server, further strengthening the IoT system.
@@ -278,9 +241,6 @@
 					<a href="#top">Back To Top </a>
 				</div>
 				<p> </p>
-			</div>
-			</div>
-			</div>
 		</section><!-- end page content -->
 		<footer>
 			<div class="footer-links">
