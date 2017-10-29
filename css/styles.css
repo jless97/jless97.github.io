@@ -31,7 +31,7 @@ figcaption {
 /* Work Page Begin */
 
 
-#title, .video, .elfin-video, .frackman-video, .telnet-video {
+.video, .elfin-video, .frackman-video, .telnet-video {
   text-align: center;
   margin: auto;
   font-size: 20px;
