@@ -6,6 +6,7 @@
 
 /* http://blog.hostbaby.com/wp-content/uploads/2014/03/Trees_1920x1234.png */
 
+/*
 //////////////////////////////////// 
 ////////////// Header //////////////
 //////////////////////////////////// 
@@ -58,6 +59,13 @@
 ////////////// Content /////////////
 //////////////////////////////////// 
 */
+
+/* Carousel Begin */
+.carousel .item {
+  height: 350px;
+}
+/* Carousel End */
+
 .page-content {
 	width: 100%;
 	height: 70%;
