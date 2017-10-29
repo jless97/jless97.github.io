@@ -48,26 +48,24 @@
   <!-- Page Content -->
   <div class="wrapper">
 		<div class="container">
-      <h3>Contact Details</h3><hr>
+      <h3>Contact Me</h3><hr>
 			<p> If you would like to get in touch with me, or have any questions regarding my coursework at UCLA, work experience, or other projects please feel free to send me a message using the form below. In addition, at the bottom of every page you can find other places to find me. </p><hr>
-			<div class="form-div">
-				<form id="form-info" action="https://formspree.io/jaless1997@gmail.com" method="POST">
-					<fieldset>
-						<legend> Contact Details </legend>
-						<p>
-						<label class="title" for="name"> Enter your name: </label>
-						<input id="name" type="text" name="name" placeholder="Name"> 
-            <br />
-						<label class="title" for="email"> Enter your email: </label>
-						<input type="text" name="email" id="email" placeholder="Email">
-						</p>
-						<textarea name="message" placeholder="Enter message:"></textarea>
-					</fieldset>
-					<div class="button">
-						<input id="submit" type="submit" value="Submit">
-					</div>
-				</form>
-			</div>
+			<form action="<?php echo htmlspecialchars(https://formspree.io/jaless1997@gmail.com);?>" method="POST">
+        <legend> Contact Details </legend>
+        <div class="form-group"><!-- Name -->
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" placeholder="Enter your name" name="name">
+        </div>
+        <div class="form-group"><!-- Email -->
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" placeholder="Enter your email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="comment">Comments:</label>
+          <textarea class="form-control" placeholder="Enter comment" rows="5" name="comment"></textarea>
+        </div>
+        <button type="submit" class="btn btn-info" name="submitForm">Submit</button>
+      </form>
 		</div><!-- End Container -->
   </div><!-- End Wrapper -->
 
