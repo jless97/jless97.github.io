@@ -29,58 +29,7 @@ figcaption {
 /* About Page End */
 
 /* Work Page Begin */
-.affix {
-  top: 20px;
-  z-index: 9999 !important;
-}
 
-div.col-sm-9 div {
-  height: 250px;
-  font-size: 28px;
-}
-
-#elfin-text {
-  color: #fff; 
-  background-color: #1E88E5;
-}
-
-#space-invaders-clone-text {
-  color: #fff; 
-  background-color: #673ab7;
-}
-
-#space-inflators-text {
-  color: #fff; 
-  background-color: #ff9800;
-}
-
-#frackman-text {
-  color: #fff; 
-  background-color: #00bcd4;
-}
-
-#space-invaders-text {
-  color: #fff;
-  background-color: #009688;
-}
-
-#telnet-program-text {
-  color: #fff; 
-  background-color: #1E88E5;
-}
-
-#iot-security-text {
-  color: #fff; 
-  background-color: #673ab7;
-}
-
-@media screen and (max-width: 810px) {
-  #elfin-text, #space-invaders-clone-text, #space-inflators-text, 
-  #frackman-text, #space-invaders-text, #telnet-program-text, 
-  #iot-security-text {
-    margin-left: 150px;
-  }
-}
 
 #title, .video, .elfin-video, .frackman-video, .telnet-video {
   text-align: center;
