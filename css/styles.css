@@ -1,24 +1,4 @@
-/*
-* {
-	background-image: url("http://splashnology.com/uploads/images/00/05/63/2011/03/03/34e41d.jpg");
-}
-/*
-
-/* http://blog.hostbaby.com/wp-content/uploads/2014/03/Trees_1920x1234.png */
-
-/*
-//////////////////////////////////// 
-////////////// Header //////////////
-//////////////////////////////////// 
-*/
-
-
-/*
-//////////////////////////////////// 
-////////////// Content /////////////
-//////////////////////////////////// 
-*/
-
+/* Page Content Overview */
 html, body {
   height: 100%;
 }
@@ -34,12 +14,11 @@ html, body {
   width: 100%;
 }
 
-.page-content {
-	width: 100%;
-	height: 70%;
-	border-left: 3px solid #1C6BA0;
-	border-right: 3px solid #1C6BA0;
+/* About Page Begin */
+#spin-test {
+  max-height: 300px;
 }
+/* About Page End */
 
 .picture {
 	height: auto;
