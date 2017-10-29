@@ -11,54 +11,24 @@
 ////////////// Header //////////////
 //////////////////////////////////// 
 */
-.header {
-	font-family: serif;
-	font-weight: normal;
-	width: 100%;
-	height: 15%;
-	border-left: 3px solid #1C6BA0;
-	border-right: 3px solid #1C6BA0;
-	border-top: 3px solid #1C6BA0;
-	/*background-image: url("https://wallpaperbrowse.com/media/images/cool-background.jpg");*/
-}
 
-.elfin-logo {
-	height: auto;
-	float: left;
-	padding: 10px 10px 10px 10px;
-}
-
-.nav-bar {
-	height: auto;
-	font-size: 16px;
-	padding: 20px 10px 20px 10px;
-	text-align: center;
-	vertical-align: middle;
-	word-spacing: 50px;
-}
-
-.header-text {
-	text-align: center;
-	text-shadow: 2px 2px 3px #666666;
-	color: blue;
-	line-height: 80%;
-}
-
-#my-name {
-	height: auto;
-	font-size: 36px;
-}
-
-#my-description {
-	height: auto;
-	font-size: 30px;
-}
 
 /*
 //////////////////////////////////// 
 ////////////// Content /////////////
 //////////////////////////////////// 
 */
+
+html, body {
+  height: 100%;
+}
+
+#wrapper {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
 
 /* Carousel Begin */
 .carousel .item {
@@ -227,6 +197,12 @@ figure {
 ////////////// Footer //////////////
 //////////////////////////////////// 
 */
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
 footer {
 	width: 100%;
 	height: 15%;
