@@ -18,6 +18,11 @@ html, body {
 #spin-test {
   max-height: 300px;
 }
+
+figcaption {
+  text-align: center;
+  color: black;
+}
 /* About Page End */
 
 .picture {
