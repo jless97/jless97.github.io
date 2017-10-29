@@ -28,7 +28,9 @@ figcaption {
 /* About Page End */
 
 /* Work Page Begin */
-
+.title {
+  text-align: center;
+}
 
 .video, .elfin-video, .frackman-video, .telnet-video {
   text-align: center;
