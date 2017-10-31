@@ -3,6 +3,10 @@ html, body {
   height: 100%;
 }
 
+h3 {
+  text-align: center;
+}
+
 #wrapper {
   min-height: 100%;
   height: auto;
@@ -37,15 +41,7 @@ figcaption {
 }
 
 .project-text {
-  height: auto;
-  width: auto;
-  font-size: 18px;
-  line-height: 125%;
-  padding-left: 10px;
-  padding-right: 10px;
-  display: block;
-  text-align: left;
-  margin: auto;
+  
 }
 
 #back-to-top {
