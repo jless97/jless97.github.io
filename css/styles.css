@@ -37,6 +37,7 @@ figcaption {
   padding-bottom: 56.25%;
   padding-top: 35px;
   height: 0;
+  max-height: 315px;
   overflow: hidden;
 }
 
