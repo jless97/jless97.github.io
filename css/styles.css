@@ -33,7 +33,7 @@ figcaption {
 
 /* Work Page Begin */
 .video {
-  text-align: center;
+  max-height: 500px;
 }
 
 .project-text {
