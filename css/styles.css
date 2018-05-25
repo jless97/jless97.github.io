@@ -15,13 +15,9 @@ h2, h3 {
 }
 
 /* Home Page Begin */
-/* Makes images fully responsive */
-.img-responsive,
-.thumbnail > img,
-.thumbnail a > img {
-  display: block;
-  width: auto%;
-  height: auto;
+#home-pic {
+  height: 400px;
+  width: 400px;
 }
 /* Home Page End */
 
