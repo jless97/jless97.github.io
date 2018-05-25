@@ -7,26 +7,6 @@ h2, h3 {
   text-align: center;
 }
 
-#wrapper {
-  min-height: 100%;
-  height: auto;
-  margin: 0 auto -60px;
-  padding: 0 0 60px;
-}
-
-/* Home Page Begin */
-/* Home Page End */
-
-/* About Page Begin */
-#spin-test {
-}
-
-figcaption {
-  text-align: center;
-  color: black;
-}
-/* About Page End */
-
 /* Work Page Begin */
 .video {
   position: relative;
