@@ -1,71 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- Contains metadata and links to style -->
+<head>
   <title> Jason Less, Software Engineer </title>
+
+  <!-- Metadata -->
 	<meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- TODO: name, content -->
-	<link rel="shortcut icon" href="images/website-logo.png" type="image/png"/>
-	<link rel="stylesheet" type="text/css" href="css/index.css"/>
-  <link rel="stylesheet" href="css/project1b.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Styles -->
+	<link rel="shortcut icon" href="img/website-logo.png" type="image/png"/>
+    <!-- My Styles -->
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <!-- Bootstrap Styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Footer Styles -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!--
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+-->
 </head>
 <body>
-	<header>
-	<div class="header">
-		<div class="elfin-logo">
-			<a href="http://elfin.igpp.ucla.edu/" target="blank">
-				<img src="images/elfin-logo.png" width="28" height="40" alt="ELFIN Logo"/>
-			</a>
-		</div>
-		<div class="nav-bar">
-			<nav>
-				<a href="http://www.jasonless.com/">HOME</a>
-				<a href="http://www.jasonless.com/about/about.html">ABOUT</a>
-				<a href="http://www.jasonless.com/work/work.html">WORK/PROJECTS</a>
-				<a href="http://www.jasonless.com/contact/contact.html">CONTACT</a>
-			</nav>
-		</div><!-- navigation bar -->
-		<div class="header-text">
-			<h1 id="my-name"> Jason Less </h1>
-			<h2 id="my-description"> UCLA Student, Software Engineer </h2>
-		</div><!-- Name header -->
-	</div><!-- .page -->
-	</header>
-	<section id="content" class="page-content">
-		<div class="picture">
-			<span class="main-picture">
-				<img src="images/senior_picture.jpg" height="250" width="250" alt="Picture of me"/>
-			</span>
-		</div>
-		<div class="text"><!-- Brief description about me -->
-			<p> 
-			My name is Jason Less, and I am currently a third-year student at UCLA majoring in computer science.
-			This summer, I will be working as the lead software engineer for the UCLA Electron Losses and Field Investigation (ELFIN) Cubesat Project, which is being joint-funded by the National Aeronautics and Space Administration (NASA), the Aerospace Corporation, and the National Science Foundation (NSF). I will be working as a software engineer for the Command and Data Handling (CNDH) subsystem.
-			</p>
-		</div>
-	</section>
-	<footer>
-		<div class="footer-links"><!-- LinkedIn Link -->
-			<a id="linkedin" href="https://www.linkedin.com/in/jasonless/" id="linkedin" target="blank">
-				<img src="images/linkedin-logo.png" width="18" height="20" alt="LinkedIn Logo"/>
-			</a>
-			<a id="github" href="https://github.com/jless97" id="github" target="blank"><!-- GitHub Link -->
-				<img src="images/github-logo.png" width="18" height="20" alt="GitHub Logo"/>
-			</a>
-			<a id="facebook" href="https://www.facebook.com/profile.php?id=100013116524797" id="facebook" target="blank"><!-- Facebook Link -->
-				<img src="images/facebook-logo.png" width="18" height="20" alt="Facebook Logo"/>
-			</a>
-		</div>
-		<div class="copywrite">
-			<p> © Made by Jason Less (2017) </p>
-		</div>
-	</footer>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Jason Less</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="html/about.html">About Me</a></li>
+          <li><a href="html/work.html">Work/Projects</a></li>
+          <li><a href="html/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- ELFIN LOGO w/ link
+  <div class="elfin-logo">
+      <a href="http://elfin.igpp.ucla.edu/" target="blank">
+        <img src="img/elfin-logo.png" width="28" height="40" alt="ELFIN Logo"/>
+      </a>
+  </div>
+-->
+  
+  <!-- Carousel of Images -->
+  <div id="wrapper">
+    <div class="container">
+      <h2>Jason Less</h2>
+      <h3>UCLA Student, Software Engineer</h3><hr>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+        <!-- Warpper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/ucla_tailgate.jpg" alt="UCLA Tailgate">
+          </div>
+          <div class="item">
+            <img src="img/ucla_football.jpg" alt="UCLA Football">
+          </div>
+          <div class="item">
+            <img src="img/me_and_char.jpg" alt="Me and Charlie">
+          </div>
+          <div class="item">
+            <img src="img/me_and_justin.jpg" alt="Me and Justin">
+          </div>
+          <div class="item">
+            <img src="img/lolo_and_mom.jpg" alt="Eating icecream with mom and lolo">
+          </div>
+        </div>
+        <!-- Left and Right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div><!-- End carousel -->
+    </div><!-- End Container -->
+
+    <!-- Page Content -->
+  	<div class="container"><br>
+  		<p> <!-- Brief description about me -->
+  		My name is Jason Less, and I am currently a third-year student at UCLA majoring in computer science.
+  		This summer, I will be working as the lead software engineer for the UCLA Electron Losses and Field Investigation (ELFIN) Cubesat Project, which is being joint-funded by the National Aeronautics and Space Administration (NASA), the Aerospace Corporation, and the National Science Foundation (NSF). I will be working as a software engineer for the Command and Data Handling (CNDH) subsystem.
+  		</p><hr>
+  	</div><!-- End Page Content -->
+
+  </div><!-- End Wrapper -->
+
+  <!-- Footer -->
+  <div id="footer">
+    <div class="container">
+      <div class="text-center center-block">
+        <p class="txt-railway">- © Made by Jason Less (2017) -</p><br>
+        <a href="https://www.linkedin.com/in/jasonless/"><i id="social-ln" class="fa fa-linkedin-square fa-3x social"></i></a>
+        <a href="https://github.com/jless97/"><i id="social-gb" class="fa fa-github-square fa-3x social"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100013116524797"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+      </div>
+    </div><!-- End Container -->
+  </div><!-- End Footer -->
 
   <!-- Scripts placed at the end to boost performance-->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -74,5 +130,9 @@
   ga('create', 'UA-102078168-1', 'auto');
   ga('send', 'pageview');
   </script>
+<!--
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+-->
 </body>
 </html>
