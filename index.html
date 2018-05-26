@@ -27,7 +27,10 @@
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
   <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Jason Less</b></span> <span class="w3-hide-small w3-text-light-grey">SWE</span></h1>
+    <h1 class="w3-xxlarge w3-text-white">
+      <span class="w3-padding w3-black w3-opacity-min"><b>Jason</b><br><b>Less</b><br></span> 
+      <span class="w3-hide-small w3-text-light-grey">SWE</span>
+    </h1>
   </div>
 </header>
 
@@ -59,7 +62,29 @@
               <h4 class="modal-title">Modal Header</h4>
             </div>
             <div class="modal-body">
-              <p>Some text in the modal.</p>
+              <div class="project-text" id="elfin-text">
+                <h3><b><a href="http://elfin.igpp.ucla.edu/" target="blank">Electron Losses and Field Investigation (ELFIN) 3U+ CubeSat Mission</a></b></h3>
+                <div class="video">
+                  <img src="../img/elfin-logo.jpg" height="300" width="500"/>
+                </div>
+                <br> 
+                <b> Position: </b> Lead Software Engineer <br>
+                <b> Platform: </b> MPLAB <br> 
+                <b> PIC Microcontrollers: </b> PIC18, PIC24 <br>
+                <b> Languages: </b> Embedded-C, Python <br>
+                <b> Period: </b> Feb. 2017 - Oct. 2017 <br>
+                <b> Description: </b> 
+                <br> <br>
+                I am currently working with a team of UCLA faculty and students with the goal of building UCLA's first satellite. It is exciting to note that the ELFIN Project is being joint-funded by the National Aeronautics and Space Administration (NASA), the Aerospace Corporation, and the National Science Foundation (NSF). This is UCLA's first CubeSat Project, with the mission of studying the loss of relativistic electrons in Earth's radiation belt. ELFIN consists of several subsytems, and I am currently the lead of the Command and Data Handling (CNDH) subsystem. I am responsible for all of the flight software, and to develop specifically for ELFIN's Flight Computer (FC), Attitude Determination and Control Board (ACB), the ACB's Peripheral Controller Board (PCB), and the Ground Software Equipment (GSE), in addition to overseeing and providing guidance to the other members of the CNDH team. Moreover, I lead the CNDH meetings, and work closely with the other subsystems to design the software to meet the scientific needs of the mission.
+                <br> <br>
+                As a member of the CNDH team, I have established a full duplex Universal Aysnchronous Receiver/Trasmitter (UART) serial connection between the ACB and the PCB. In addition, I have implemented the majority of the PCB's functionality, which takes place in its execution handler, and consists of reading and writing data to and from the PC to its memory map and the ACB (among other functions). Moreover, I have developed spin control algorithms for the spin-stabilized satellite, which allows ELFIN to determine its attitude via the magnetometer (MRM) data received from the PCB and maintain it to control its spin vectors and orbital path.
+                <br> <br>
+                <div id="back-to-top">
+                  <a href="#top">Back To Top </a>
+                </div>
+                <p></p>
+              </div><hr>
+              <!-- End ELFIN Text -->
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
