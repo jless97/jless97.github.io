@@ -1,354 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-  <title>Jason Less, SWE</title>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Metadata -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Website Title -->
+    <title>Jason Less - SWE</title>
 
-  <!-- Styles -->
-  <link rel="shortcut icon" href="../img/website_icon.jpg" type="image/jpg"/>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Styles -->
+    <!-- Favicon -->
+    <link href="../img/website_icon.jpg" type="image/jpg" rel="shortcut icon"/>
+    <!-- Bootstrap Styles -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!-- My Styles -->
+    <link href="css/styles.css" rel="stylesheet">
 
-  <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<style>
-.row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-</style>
-<body>
+    <!-- JS -->
+  </head>
+  <body>
+    <!-- Header Info -->
+    <header>
+      <h1><b>Jason Less</b> - Software Engineer</h1>
+      <h2>University of California, Los Angeles (UCLA)</h2>
+      <h3>Majoring in <b>Computer Science</b></h3>
+    </header>
 
-<!-- Navbar (sit on top) --><!-- TODO: Add Bootstrap Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>Jason Less</b></a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-      <a href="#work" class="w3-bar-item w3-button">Work</a>
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    </div>
-  </div>
-</div>
-<!-- Navbar End -->
-
-<!-- Header Start -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="../img/background.jpg" alt="UCLA Campus" width="1500" height="800">
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white">
-      <span class="w3-padding w3-black w3-opacity-min"><b>Jason Less</b></span> 
-      <span class="w3-hide-small w3-text-light-grey">SWE</span>
-    </h1>
-  </div>
-</header>
-<!-- Header End -->
-
-<!-- Page content Start -->
-<div class="w3-content w3-padding" style="max-width:1564px">
-
-  <!-- Project Section Start -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
-  </div>
-
-  <table align="center" bgcolor="#5281C9" width="85%" cellpadding="20">
-    <!-- Projects - Row 1 Start -->
-    <tr align="center">
-      <td width="25%">
-      <!-- ELFIN Start -->
-        <button type="button" data-toggle="modal" data-target="#elfinModal">
-            <img src="../img/project_logos/elfin_logo.jpg" alt="ELFIN Logo" height="130" width="130"/>
-            <br>
-            <b>ELFIN</b>
+    <!-- Navbar -->
+    <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
-        <!-- ELFIN Modal Start -->
-        <div class="modal fade" id="elfinModal" role="dialog">
-          <div class="modal-dialog">
-            <!-- ELFIN Modal Content Start -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-              </div>
-              <div class="modal-body">
-                <p>Some text in the modal.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-            <!-- ELFIN Modal Content End -->
-          </div>
-        </div>
-        <!-- ELFIN Modal End -->
-      <!-- ELFIN End -->
-      </td> 
-      <td width="25%">
-      <!-- SpaceInvaders Start -->
-        <button type="button" data-toggle="modal" data-target="#spaceInvadersModal">
-            <img src="../img/project_logos/space-invaders_logo.jpg" alt="SpaceInvaders Logo" height="130" width="130"/>
-            <br>
-            <b>SpaceInvaders</b>
-        </button>
-        <!-- SpaceInvaders Modal Start -->
-        <div class="modal fade" id="spaceInvadersModal" role="dialog">
-          <div class="modal-dialog">
-            <!-- SpaceInvaders Modal Content Start -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-              </div>
-              <div class="modal-body">
-                <p>Some text in the modal.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-            <!-- SpaceInvaders Modal Content End -->
-          </div>
-        </div>
-        <!-- SpaceInvaders Modal End -->
-      <!-- SpaceInvaders End -->
-      </td>
-      <td width="25%">
-      <!-- SpaceInflators Start -->
-        <button type="button" data-toggle="modal" data-target="#spaceInflatorsModal">
-            <img src="../img/project_logos/space-inflators_logo.jpg" alt="SpaceInflators Logo" height="130" width="130"/>
-            <br>
-            <b>SpaceInflators</b>
-        </button>
-        <!-- SpaceInflators Modal Start -->
-        <div class="modal fade" id="spaceInflatorsModal" role="dialog">
-          <div class="modal-dialog">
-            <!-- SpaceInflators Modal Content Start -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-              </div>
-              <div class="modal-body">
-                <p>Some text in the modal.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-            <!-- SpaceInflators Modal Content End -->
-          </div>
-        </div>
-        <!-- SpaceInflators Modal End -->
-      <!-- SpaceInflators End -->
-      </td>
-      <td width="25%">
-      <!-- FrackMan Start -->
-        <button type="button" data-toggle="modal" data-target="#frackManModal">
-            <img src="../img/project_logos/frackman_logo.jpg" alt="FrackMan Logo" height="130" width="130"/>
-            <br>
-            <b>FrackMan</b>
-        </button>
-        <!-- FrackMan Modal Start -->
-        <div class="modal fade" id="frackManModal" role="dialog">
-          <div class="modal-dialog">
-            <!-- FrackMan Modal Content Start -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-              </div>
-              <div class="modal-body">
-                <p>Some text in the modal.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-            <!-- FrackMan Modal Content End -->
-          </div>
-        </div>
-        <!-- FrackMan Modal End -->
-      <!-- FrackMan End -->
-      </td>
-    <!-- Projects - Row 1 End -->
-    </tr>
-    <tr></tr>
-    <!-- Projects - Row 2 Start -->
-    <tr align="center">
-      <td width="25%">
-      <!-- SpaceInvaders (FPGA) Start -->
-        <button type="button" data-toggle="modal" data-target="#spaceInvadersFPGAModal">
-            <img src="../img/project_logos/space-invaders-fpga_logo.jpg" alt="SpaceInvaders (FPGA) Logo" height="130" width="130"/>
-            <br>
-            <b>SpaceInvaders</b>
-        </button>
-        <!-- SpaceInvaders (FPGA) Start Modal Start -->
-        <div class="modal fade" id="spaceInvadersFPGAModal" role="dialog">
-          <div class="modal-dialog">
-            <!-- SpaceInvaders (FPGA) Start Modal Content Start -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-              </div>
-              <div class="modal-body">
-                <p>Some text in the modal.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-            <!-- SpaceInvaders (FPGA) Start Modal Content End -->
-          </div>
-        </div>
-        <!-- SpaceInvaders (FPGA) Start Modal End -->
-      <!-- SpaceInvaders (FPGA) Start End -->
-      </td> 
-      <td width="25%">
-      <!-- SimTelnet Start -->
-        <button type="button" data-toggle="modal" data-target="#simTelnetModal">
-            <img src="../img/project_logos/telnet_logo.jpg" alt="SimTelnet Logo" height="130" width="130"/>
-            <br>
-            <b>SimTelnet</b>
-        </button>
-        <!-- SimTelnet Modal Start -->
-        <div class="modal fade" id="simTelnetModal" role="dialog">
-          <div class="modal-dialog">
-            <!-- SimTelnet Modal Content Start -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-              </div>
-              <div class="modal-body">
-                <p>Some text in the modal.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-            <!-- SimTelnet Modal Content End -->
-          </div>
-        </div>
-        <!-- SimTelnet Modal End -->
-      <!-- SimTelnet End -->
-      </td>
-      <td width="25%">
-      <!-- IoT Security Start -->
-        <button type="button" data-toggle="modal" data-target="#iotSecurityModal">
-            <img src="../img/project_logos/iot-security_logo.jpg" alt="SpaceInflators Logo" height="130" width="130"/>
-            <br>
-            <b>IoT Security</b>
-        </button>
-        <!-- IoT Security Modal Start -->
-        <div class="modal fade" id="iotSecurityModal" role="dialog">
-          <div class="modal-dialog">
-            <!-- IoT Security Modal Content Start -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-              </div>
-              <div class="modal-body">
-                <p>Some text in the modal.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-            <!-- IoT Security Modal Content End -->
-          </div>
-        </div>
-        <!-- IoT Security Modal End -->
-      <!-- IoT Security End -->
-      </td>
-      <td width="25%"></td>
-    <!-- Projects - Row 2 End -->
-    </tr>
-  </table>
-  <!-- Project Section End -->
-  
-  <!-- Work Section Start -->
-  <div class="w3-container w3-padding-32" id="work">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Work Experience</h3>
+        <a class="navbar-brand" href="#">Jason Less</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <div class="container" id="about">
+    <div class="row">
+      <!-- Description -->
+      <div class="col-md-6">
+        <h3>About Me</h3>
+        <p>My name is Jason Less, and I am currently a third-year Computer Science student at UCLA. I was born and raised in the Bay Area, and attended Armijo High School, where I graduated as Valedictorian of my class. I like to maintain balance in my life between academics, athletics, and through various hobbies. I have played sports my entire life such as competitive division 1 soccer, baseball, basketball, tennis, and karate. I still enjoy playing soccer here at UCLA, where I have played on competitive intramural futsal and outdoor soccer teams. In terms of hobbies, I enjoy playing video games, the piano, solving various sized Rubix cubes (3x3 to 7x7), and maintaining and expanding my Nintendo video games collection.</p>
+      </div>
+      <!-- Self-Portrait -->
+      <div class="col-md-6">
+        <img src="../img/TODO.jpg" class="img-responsive center-block">
+      </div>
+    </div>
   </div>
 
-  <div max-width="85%" class="row">
-    <div class="col-sm-6 col-md-4">
-      <img src="../img/work_logos/ngc_logo.jpg" style="max-height:220px max-width:250px">
-    </div>
-    <div class="col-sm-6 col-md-4">
-      <img src="../img/work_logos/elfin-lead_logo.jpg" style="max-height:220px max-width:250px">
-    </div>
-    <div class="col-sm-6 col-md-4">
-      <img src="../img/work_logos/elfin-cndh_logo.jpg" style="max-height:220px max-width:250px">
-    </div>
-  </div>
-  <!-- Work Section End -->
+  <!-- Work Experience Section -->
 
-  <!-- About Section Start -->
-  <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p> My name is Jason Less, and I am currently a third-year Computer Science student at UCLA. I was born and raised in the Bay Area, and attended Armijo High School, where I graduated as Valedictorian of my class. I like to maintain balance in my life between academics, athletics, and through various hobbies. I have played sports my entire life such as competitive division 1 soccer, baseball, basketball, tennis, and karate. I still enjoy playing soccer here at UCLA, where I have played on competitive intramural futsal and outdoor soccer teams. In terms of hobbies, I enjoy playing video games, the piano, solving various sized Rubix cubes (3x3 to 7x7), and maintaining and expanding my Nintendo video games collection. 
-  </p>
-  <p> I wasn't sure what I wanted to major in throughout high school, but knew that I wanted to pursue a career in the math or science-related fields. I decided to choose computer science, and couldn't be happier with my decision. Technology and computers are such powerful mediums for creating incredible ideas and products that can shape society for the better, and provide exciting means of entertainment and enjoyment to the masses. I am glad to be a part of this field, and hope to make my mark on technology in the future.
-  </p>
-  <p> There are so many facets of the computer science industry that I would like to explore. I have always had an interest and passion for video games, and would like to someday work on an exciting game for a respected company. I have played around with FPGAs, embedded systems, and virtual machines and have started to recreate some of the classic arcade games such as Space Invaders. Another interest of mine is in the aerospace industry, where I was fortunate to get to work with embedded system programming to write flight software for a satellite through the UCLA ELFIN project. I am interested in so much more, and hope to solidify what path I want to follow through my UCLA coursework, outside project, and future internships.
-  </p>
-  </div>
+  <!-- Projects Section -->
 
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-    </div>
-  </div>
-  <!-- About Section End -->
-
-  <!-- Contact Section Start -->
-  <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Lets get in touch and talk about your next project.</p>
-    <form action="/action_page.php" target="_blank">
-      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-      <button class="w3-button w3-black w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </form>
-  </div>
-  <!-- Contact Section End -->
-
-<!-- Page Content End -->
-</div>
-
-<!-- Footer Start -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p>- © Made by Jason Less (2018) -</p>
-</footer>
-<!-- Footer End -->
+  <!-- Contact Section -->
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
