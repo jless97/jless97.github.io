@@ -17,6 +17,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<style>
+  .row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row.display-flex > [class*='col-'] {
+    display: flex;
+    flex-direciton: column;
+  }
+</style>
 <body>
 
 <!-- Navbar (sit on top) --><!-- TODO: Add Bootstrap Navbar -->
@@ -272,24 +282,13 @@
   <!-- Project Section End -->
   
   <!-- Work Section Start -->
-  <div class="w3-container w3-padding-32" id="work">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Work Experience</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-md-4">NGC</div>
+      <div class="col-xs-6 col-md-4">Lead</div>
+      <div class="col-xs-6 col-md-4">CNDH</div>
+    </div>
   </div>
-
-  <!-- Work - Row 1 Start -->
-  <table cellpadding="20" style="max-height:15%; width:100%;">
-    <tr>
-      <td class="text-center">
-        <img class="img-responsive" src="../img/work_logos/ngc_logo.jpg" style="width:100%;">
-      </td>
-      <td class="text-center">
-        <img class="img-responsive" src="../img/work_logos/elfin-lead_logo.jpg" style="width:100%;">
-      </td>
-      <td class="text-center">
-        <img class="img-responsive" src="../img/work_logos/elfin-cndh_logo.jpg" style="width:100%;">
-      </td>
-    </tr>
-  </table>
   <!-- Work Section End -->
 
   <!-- About Section Start -->
