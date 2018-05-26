@@ -1,87 +1,310 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title> Jason Less, Software Engineer </title>
-
-  <!-- Metadata -->
-	<meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Styles -->
-	<link rel="shortcut icon" href="img/website-logo.png" type="image/png"/>
-    <!-- My Styles -->
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <!-- Bootstrap Styles -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Footer Styles -->
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-</head>
-<style>
-  .wrapper {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-</style>
+<html>
+<title>Jason Less, SWE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Jason Less</a>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Jason Less</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+      <a href="#work" class="w3-bar-item w3-button">Work</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Jason Less</b></span> <span class="w3-hide-small w3-text-light-grey">SWE</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <!-- ELFIN -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <button type="button" data-toggle="modal" data-target="#elfinModal">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">ELFIN</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="html/about.html">About Me</a></li>
-          <li><a href="html/work.html">Work</a></li>
-          <li><a href="html/projects.html">Projects</a></li>
-          <li><a href="html/contact.html">Contact</a></li>
-        </ul>
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="elfinModal" role="dialog">
+        <div class="modal-dialog">
+    
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
       </div>
     </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="wrapper">
-    <img src="../img/home_pics/home_pg.jpg" alt="Me at a beach in Lake Tahoe" width="450px"/>
-	  <p> <!-- Brief description about me -->
-    My name is Jason Less and I am studying computer science at the University of California, Los Angeles (UCLA). I will be a fourth year in the Fall of 2018. This summer, I will be interning as a software engineer at Northrop Grumman Corporation's Aerospace Systems HQ in Redondo Beach, CA. I previously worked as a Lead Software Engineer for a NASA-funded CubeSat Satellite Mission at UCLA. I am very passionate about comp. sci and have always been fascinated about technology and all of the amazing opportunities that come with it.
-		</p>
-    <hr>
-  </div>
-  <!-- End Page Content -->
-
-  <!-- Footer -->
-  <div id="footer">
-    <div class="container">
-      <div class="text-center center-block">
-        <p class="txt-railway">- © Made by Jason Less (2017) -</p><br>
-        <a href="https://www.linkedin.com/in/jasonless/"><i id="social-ln" class="fa fa-linkedin-square fa-3x social"></i></a>
-        <a href="https://github.com/jless97/"><i id="social-gb" class="fa fa-github-square fa-3x social"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100013116524797"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+    
+    <!-- SpaceInvaders -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <button type="button" data-toggle="modal" data-target="#elfinModal">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">ELFIN</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
       </div>
-    </div><!-- End Container -->
-  </div><!-- End Footer -->
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="elfinModal" role="dialog">
+        <div class="modal-dialog">
+    
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+    
+    <!-- FrackMan -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <button type="button" data-toggle="modal" data-target="#elfinModal">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">ELFIN</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+      </div>
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="elfinModal" role="dialog">
+        <div class="modal-dialog">
+    
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+    
+    <!-- SpaceInflators --> 
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <button type="button" data-toggle="modal" data-target="#elfinModal">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">ELFIN</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+      </div>
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="elfinModal" role="dialog">
+        <div class="modal-dialog">
+    
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+    
+  </div>
 
-  <!-- Scripts placed at the end to boost performance-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-102078168-1', 'auto');
-  ga('send', 'pageview');
-  </script>
+  <!-- Work Section -->
+  <div class="w3-container w3-padding-32" id="work">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Work Experience</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <!-- NGC -->
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <button type="button" data-toggle="modal" data-target="#elfinModal">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">ELFIN</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+      </div>
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="elfinModal" role="dialog">
+        <div class="modal-dialog">
+    
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+    <!-- ELFIN, Lead SWE -->
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <button type="button" data-toggle="modal" data-target="#elfinModal">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">ELFIN</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+      </div>
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="elfinModal" role="dialog">
+        <div class="modal-dialog">
+    
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+    <!-- ELFIN, CNDH SWE -->
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <button type="button" data-toggle="modal" data-target="#elfinModal">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">ELFIN</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+      </div>
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="elfinModal" role="dialog">
+        <div class="modal-dialog">
+    
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p> My name is Jason Less, and I am currently a third-year Computer Science student at UCLA. I was born and raised in the Bay Area, and attended Armijo High School, where I graduated as Valedictorian of my class. I like to maintain balance in my life between academics, athletics, and through various hobbies. I have played sports my entire life such as competitive division 1 soccer, baseball, basketball, tennis, and karate. I still enjoy playing soccer here at UCLA, where I have played on competitive intramural futsal and outdoor soccer teams. In terms of hobbies, I enjoy playing video games, the piano, solving various sized Rubix cubes (3x3 to 7x7), and maintaining and expanding my Nintendo video games collection. 
+  </p>
+  <p> I wasn't sure what I wanted to major in throughout high school, but knew that I wanted to pursue a career in the math or science-related fields. I decided to choose computer science, and couldn't be happier with my decision. Technology and computers are such powerful mediums for creating incredible ideas and products that can shape society for the better, and provide exciting means of entertainment and enjoyment to the masses. I am glad to be a part of this field, and hope to make my mark on technology in the future.
+  </p>
+  <p> There are so many facets of the computer science industry that I would like to explore. I have always had an interest and passion for video games, and would like to someday work on an exciting game for a respected company. I have played around with FPGAs, embedded systems, and virtual machines and have started to recreate some of the classic arcade games such as Space Invaders. Another interest of mine is in the aerospace industry, where I was fortunate to get to work with embedded system programming to write flight software for a satellite through the UCLA ELFIN project. I am interested in so much more, and hope to solidify what path I want to follow through my UCLA coursework, outside project, and future internships.
+  </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>- © Made by Jason Less (2018) -</p>
+</footer>
+
 </body>
 </html>
