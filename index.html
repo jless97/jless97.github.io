@@ -25,6 +25,10 @@
   .row.display-flex > [class*='col-'] {
     flex-grow: 1;
   }
+  .box {
+    border: 1px #666 solid;
+    height: 100%;
+  }
 </style>
 <body>
 
@@ -287,9 +291,24 @@
 
   <div class="container">
     <div class="row display-flex">
-      <div class="col-xs-6 col-md-4">NGC</div>
-      <div class="col-xs-6 col-md-4">Lead</div>
-      <div class="col-xs-6 col-md-4">CNDH</div>
+      <div class="col-xs-6 col-md-4">
+        <div class="box">
+          <img src="../img/work_logos/ngc_logo.jpg" class="center-block">
+          <b>NGC</b>
+        </div>
+      </div>
+      <div class="col-xs-6 col-md-4">
+        <div class="box">
+          <img src="../img/work_logos/elfin-lead.jpg" class="center-block">
+          <b>Lead</b>
+        </div>
+      </div>
+      <div class="col-xs-6 col-md-4">
+        <div class="box">
+          <img src="../img/work_logos/elfin-cndh.jpg" class="center-block">
+          <b>CNDH</b>
+        </div>
+      </div>
     </div>
   </div>
   <!-- Work Section End -->
