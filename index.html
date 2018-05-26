@@ -32,8 +32,9 @@
     </div>
   </div>
 </div>
+<!-- Navbar End -->
 
-<!-- Header -->
+<!-- Header Start -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
   <img class="w3-image" src="../img/background.jpg" alt="UCLA Campus" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
@@ -43,11 +44,12 @@
     </h1>
   </div>
 </header>
+<!-- Header End -->
 
-<!-- Page content -->
+<!-- Page content Start -->
 <div class="w3-content w3-padding" style="max-width:1564px">
 
-  <!-- Project Section -->
+  <!-- Project Section Start -->
   <div class="w3-container w3-padding-32" id="projects">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
   </div>
@@ -280,103 +282,115 @@
     <!-- Projects - Row 2 End -->
     </tr>
   </table>
-
-  <!-- Work Section -->
+  <!-- Project Section End -->
+  
+  <!-- Work Section Start -->
   <div class="w3-container w3-padding-32" id="work">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Work Experience</h3>
   </div>
 
-  <div class="w3-row-padding">
-    <!-- NGC -->
-    <div class="w3-col l4 m6 w3-margin-bottom">
-      <button type="button" data-toggle="modal" data-target="#elfinModal">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">ELFIN</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
-      </div>
-      </button>
-      <!-- Modal -->
-      <div class="modal fade" id="elfinModal" role="dialog">
-        <div class="modal-dialog">
-    
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Modal Header</h4>
-            </div>
-            <div class="modal-body">
-              <p>Some text in the modal.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+  <!-- Work - Row 1 Start -->
+  <table align="center" width="600" cellpadding="20">
+    <tr align="center">
+      <td width="33%">
+      <!-- NGC Start -->
+        <button type="button" data-toggle="modal" data-target="#ngcModal">
+          <div class="w3-display-container">
+            <img src="../img/work_logos/ngc_logo.jpg" alt="NGC Logo" height="130" width="130"/>
+            <br>
+            <b>Northrop Grumman Co.</b>
           </div>
-      
-        </div>
-      </div>
-    </div>
-    <!-- ELFIN, Lead SWE -->
-    <div class="w3-col l4 m6 w3-margin-bottom">
-      <button type="button" data-toggle="modal" data-target="#elfinModal">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">ELFIN</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
-      </div>
-      </button>
-      <!-- Modal -->
-      <div class="modal fade" id="elfinModal" role="dialog">
-        <div class="modal-dialog">
-    
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Modal Header</h4>
+        </button>
+        <!-- NGC Start Modal Start -->
+        <div class="modal fade" id="ngcModal" role="dialog">
+          <div class="modal-dialog">
+            <!-- NGC Start Modal Content Start -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
             </div>
-            <div class="modal-body">
-              <p>Some text in the modal.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+            <!-- NGC Start Modal Content End -->
           </div>
-      
         </div>
-      </div>
-    </div>
-    <!-- ELFIN, CNDH SWE -->
-    <div class="w3-col l4 m6 w3-margin-bottom">
-      <button type="button" data-toggle="modal" data-target="#elfinModal">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">ELFIN</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
-      </div>
-      </button>
-      <!-- Modal -->
-      <div class="modal fade" id="elfinModal" role="dialog">
-        <div class="modal-dialog">
-    
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Modal Header</h4>
-            </div>
-            <div class="modal-body">
-              <p>Some text in the modal.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+        <!-- NGC Start Modal End -->
+      <!-- NGC Start End -->
+      </td> 
+      <td width="33%">
+      <!-- ELFIN, Lead SWE Start -->
+        <button type="button" data-toggle="modal" data-target="#elfinLeadSWEModal">
+          <div class="w3-display-container">
+            <img src="../img/work_logos/elfin_logo.jpg" alt="ELFIN - Lead SWE" height="130" width="130"/>
+            <br>
+            <b>ELFIN - Lead SWE</b>
           </div>
-      
+        </button>
+        <!-- ELFIN, Lead SWE Modal Start -->
+        <div class="modal fade" id="elfinLeadSWEModal" role="dialog">
+          <div class="modal-dialog">
+            <!-- ELFIN, Lead SWE Modal Content Start -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- ELFIN, Lead SWE Modal Content End -->
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
+        <!-- ELFIN, Lead SWE Modal End -->
+      <!-- ELFIN, Lead SWE End -->
+      </td>
+      <td width="33%">
+      <!-- ELFIN, CNDH SWE Start -->
+        <button type="button" data-toggle="modal" data-target="#iotSecurityModal">
+          <div class="w3-display-container">
+            <img src="../img/work_logos/elfin_logo.jpg" alt="ELFIN - CNDH SWE" height="130" width="130"/>
+            <br>
+            <b>ELFIN - CNDH SWE</b>
+          </div>
+        </button>
+        <!-- ELFIN, CNDH SWE Modal Start -->
+        <div class="modal fade" id="iotSecurityModal" role="dialog">
+          <div class="modal-dialog">
+            <!-- ELFIN, CNDH SWE Modal Content Start -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- ELFIN, CNDH SWE Modal Content End -->
+          </div>
+        </div>
+        <!-- ELFIN, CNDH SWE Modal End -->
+      <!-- ELFIN, CNDH SWE End -->
+      </td>
+    <!-- Work - Row 1 End -->
+    </tr>
+  </table>
+  <!-- Work Section End -->
 
-  <!-- About Section -->
+  <!-- About Section Start -->
   <div class="w3-container w3-padding-32" id="about">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
     <p> My name is Jason Less, and I am currently a third-year Computer Science student at UCLA. I was born and raised in the Bay Area, and attended Armijo High School, where I graduated as Valedictorian of my class. I like to maintain balance in my life between academics, athletics, and through various hobbies. I have played sports my entire life such as competitive division 1 soccer, baseball, basketball, tennis, and karate. I still enjoy playing soccer here at UCLA, where I have played on competitive intramural futsal and outdoor soccer teams. In terms of hobbies, I enjoy playing video games, the piano, solving various sized Rubix cubes (3x3 to 7x7), and maintaining and expanding my Nintendo video games collection. 
@@ -401,8 +415,9 @@
       <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
     </div>
   </div>
+  <!-- About Section End -->
 
-  <!-- Contact Section -->
+  <!-- Contact Section Start -->
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
     <p>Lets get in touch and talk about your next project.</p>
@@ -416,14 +431,16 @@
       </button>
     </form>
   </div>
-  
-<!-- End page content -->
+  <!-- Contact Section End -->
+
+<!-- Page Content End -->
 </div>
 
-<!-- Footer -->
+<!-- Footer Start -->
 <footer class="w3-center w3-black w3-padding-16">
   <p>- © Made by Jason Less (2018) -</p>
 </footer>
+<!-- Footer End -->
 
 </body>
 </html>
