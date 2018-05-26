@@ -18,17 +18,20 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <style>
-  .row.display-flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .row.display-flex > [class*='col-'] {
-    flex-grow: 1;
-  }
-  .box {
-    border: 1px #666 solid;
-    height: 100%;
-  }
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
 </style>
 <body>
 
@@ -289,27 +292,10 @@
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Work Experience</h3>
   </div>
 
-  <div class="container">
-    <div class="row display-flex">
-      <div class="col-xs-6 col-md-4">
-        <div class="box">
-          <img src="../img/work_logos/ngc_logo.jpg" class="center-block">
-          <b>NGC</b>
-        </div>
-      </div>
-      <div class="col-xs-6 col-md-4">
-        <div class="box">
-          <img src="../img/work_logos/elfin-lead.jpg" class="center-block">
-          <b>Lead</b>
-        </div>
-      </div>
-      <div class="col-xs-6 col-md-4">
-        <div class="box">
-          <img src="../img/work_logos/elfin-cndh.jpg" class="center-block">
-          <b>CNDH</b>
-        </div>
-      </div>
-    </div>
+  <div class="flex-container">
+    <div><img src="../img/work_logos/ngc_logo.jpg"></div>
+    <div><img src="../img/work_logos/ngc_logo.jpg"></div>
+    <div><img src="../img/work_logos/ngc_logo.jpg"></div>
   </div>
   <!-- Work Section End -->
 
