@@ -23,8 +23,7 @@
     flex-wrap: wrap;
   }
   .row.display-flex > [class*='col-'] {
-    display: flex;
-    flex-direciton: column;
+    flex-grow: 1;
   }
 </style>
 <body>
@@ -283,7 +282,7 @@
   
   <!-- Work Section Start -->
   <div class="container">
-    <div class="row">
+    <div class="row display-flex">
       <div class="col-xs-6 col-md-4">NGC</div>
       <div class="col-xs-6 col-md-4">Lead</div>
       <div class="col-xs-6 col-md-4">CNDH</div>
