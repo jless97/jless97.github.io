@@ -18,19 +18,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <style>
-.flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: DodgerBlue;
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 </style>
 <body>
@@ -292,11 +285,17 @@
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Work Experience</h3>
   </div>
 
-  <table max-width="85%" class="flex-container">
-    <td><img src="../img/work_logos/ngc_logo.jpg"></td>
-    <td><img src="../img/work_logos/ngc_logo.jpg"></td>
-    <td><img src="../img/work_logos/ngc_logo.jpg"></td>
-  </table>
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <img src="../img/work_logos/ngc_logo.jpg" style="max-height:300px">
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <img src="../img/work_logos/ngc_logo.jpg" style="max-height:300px">
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <img src="../img/work_logos/ngc_logo.jpg" style="max-height:300px">
+    </div>
+  </div>
   <!-- Work Section End -->
 
   <!-- About Section Start -->
