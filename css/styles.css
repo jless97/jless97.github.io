@@ -1,10 +1,18 @@
 /* Formatting */
+.container {
+  padding: 50px 50px;
+}
+
 .bg-blue {
   background-color: #A1DAF7;
 }
 
 .bg-gray {
   background-color: #EEF0F1;
+}
+
+h2 {
+  text-align: center;
 }
 
 /* About Section */
