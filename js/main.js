@@ -128,16 +128,16 @@ function switchExperienceContent(event) {
   var target = event.target;
   select(target, true);
   console.log(target.hash);
-  if(target.hash === sub_items[0].hash){
+  if(target.hash === sub_items[2].hash){
     $('.projects').hide();
     $('.work').fadeIn();
-    select(sub_items[0], true);
-    select(sub_items[1], false);  
+    select(sub_items[2], true);
+    select(sub_items[3], false);  
   } else {
     $('.work').hide();
     $('.projects').fadeIn();
-    select(sub_items[1], true);
-    select(sub_items[0], false);  
+    select(sub_items[3], true);
+    select(sub_items[2], false);  
   }
 };
 
@@ -146,16 +146,16 @@ function switchOtherContent(event) {
   var target = event.target;
   select(target, true);
   console.log(target.hash);
-  if(target.hash === sub_items[0].hash){
+  if(target.hash === sub_items[4].hash){
     $('.piano').hide();
     $('.books').fadeIn();
-    select(sub_items[0], true);
-    select(sub_items[1], false);  
+    select(sub_items[4], true);
+    select(sub_items[5], false);  
   } else {
     $('.books').hide();
     $('.piano').fadeIn();
-    select(sub_items[1], true);
-    select(sub_items[0], false);  
+    select(sub_items[5], true);
+    select(sub_items[4], false);  
   }
 };
 
