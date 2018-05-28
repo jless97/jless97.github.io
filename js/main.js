@@ -66,15 +66,25 @@ function changeContent(event){
       determineContent(content_list[i], false);
     }
 
-    if(target.hash === "#experience"){
+    if(target.hash === "#education"){
       select($(nav_elem_list[1]), true);
+      $('.education-contains').fadeIn();
+      $('.school').show();
+      $('.coursework').hide();
+    } else if (target.hash === "#experience"){ 
+      select($(nav_elem_list[2]), true);
       $('.experience-contains').fadeIn();
       $('.work').show();
       $('.projects').hide();
+    } else if (target.hash === "#other"){ 
+      select($(nav_elem_list[3]), true);
+      $('.other-contains').fadeIn();
+      $('.books').show();
+      $('.piano').hide();
     } else {
       // $('.project-info').hide();
       // $('.projects').show();
-      $('.experience-contains').hide();
+      // $('.experience-contains').hide();
     }
   }
 
