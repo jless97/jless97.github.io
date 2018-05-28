@@ -23,6 +23,7 @@ function select(elem, sel){
   }
 };
 
+
 function hideNav(){
   var nav_elem_list = $('.items').children();
   for(var i = 0; i < nav_elem_list.length; i++){
@@ -74,7 +75,6 @@ function changeContent(event){
       $('.education-contains').hide();
     }
   }
-
   if($(window).width() <= 500){
     $('.active').removeClass("active");
     $(target).addClass("active");
@@ -107,61 +107,25 @@ function switchEducationContent(event) {
   }
 };
 
-// function switchExperienceContent(event) {
-//   sub_items = $('.sub-items').children();
-//   var target = event.target;
-//   select(target, true);
-//   console.log(target.hash);
-//   if(target.hash === sub_items[0].hash){
-//     $('.projects').hide();
-//     $('.work').fadeIn();
-//     select(sub_items[0], true);
-//     select(sub_items[1], false);  
-//   } else {
-//     $('.work').hide();
-//     $('.projects').fadeIn();
-//     select(sub_items[1], true);
-//     select(sub_items[0], false);  
-//   }
-// };
+function cancel(event) {
+  $('.project-info').hide();
+  $('.projects').fadeIn();
+};
 
-// function switchOtherContent(event) {
-//   sub_items = $('.sub-items').children();
-//   var target = event.target;
-//   select(target, true);
-//   console.log(target.hash);
-//   if(target.hash === sub_items[0].hash){
-//     $('.piano').hide();
-//     $('.books').fadeIn();
-//     select(sub_items[0], true);
-//     select(sub_items[1], false);  
-//   } else {
-//     $('.books').hide();
-//     $('.piano').fadeIn();
-//     select(sub_items[1], true);
-//     select(sub_items[0], false);  
-//   }
-// };
-
-// function cancel(event) {
-//   $('.project-info').hide();
-//   $('.projects').fadeIn();
-// };
-
-// function showDetail(event){
-//   var detailsList = $('.project-info').children().slice(1);
-//   var target = event.target;
-//   $('.projects').hide();
-//   $('.project-info').fadeIn();
-//   for(var i = 0; i < detailsList.length; i++){
-//     var title_text = $(detailsList[i]).children().find('h3').text();
-//     if(target.alt === title_text) {
-//       $(detailsList[i]).children().show();
-//     } else {
-//       $(detailsList[i]).children().hide();
-//     }
-//   }
-// };
+function showDetail(event){
+  var detailsList = $('.project-info').children().slice(1);
+  var target = event.target;
+  $('.projects').hide();
+  $('.project-info').fadeIn();
+  for(var i = 0; i < detailsList.length; i++){
+    var title_text = $(detailsList[i]).children().find('h3').text();
+    if(target.alt === title_text) {
+      $(detailsList[i]).children().show();
+    } else {
+      $(detailsList[i]).children().hide();
+    }
+  }
+};
 
 function showAll(event){
   var showNav = $('.items').children().slice(0, -2);
