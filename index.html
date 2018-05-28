@@ -23,7 +23,7 @@
 
   <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
   <div class="container">
@@ -75,13 +75,13 @@
           </div>
           <!-- Navbar: Work Subsection -->
           <div class="experience-contains">
-            <div onclick="switchWorkContent(event)" id="work-nav" class="items sub-items">
+            <div onclick="switchExperienceContent(event)" id="work-nav" class="items sub-items">
               <a href="#work" onclick="return false">
                 <img class="off" src="img/work_off.png">
                 <img class="on" src="img/work_on.png">
               </a>
             </div>
-            <div onclick="switchWorkContent(event)" id="projects-nav" class="items sub-items">
+            <div onclick="switchExperienceContent(event)" id="projects-nav" class="items sub-items">
               <a href="#projects" onclick="return false">
                 <img class="off" src="img/projects_off.png">
                 <img class="on" src="img/projects_on.png">
@@ -90,13 +90,13 @@
           </div>
           <!-- Navbar: Other Subsection -->
           <div class="other-contains">
-            <div onclick="switchWorkContent(event)" id="books-nav" class="items sub-items">
+            <div onclick="switchOtherContent(event)" id="books-nav" class="items sub-items">
               <a href="#books" onclick="return false">
                 <img class="off" src="img/books_off.png">
                 <img class="on" src="img/books_on.png">
               </a>
             </div>
-            <div onclick="switchWorkContent(event)" id="piano-nav" class="items sub-items">
+            <div onclick="switchOtherContent(event)" id="piano-nav" class="items sub-items">
               <a href="#piano" onclick="return false">
                 <img class="off" src="img/piano_off.png">
                 <img class="on" src="img/piano_on.png">
@@ -113,17 +113,8 @@
     <div class="main-content">
       <!-- About Section -->
       <div id="about" class="about">
-        <div class="row">
-          <!-- Self-Portrait -->
-          <div class="col-md-6">
-            <img src="../img/about_pics/w-char.jpg" alt="Picture of Me" class="img-responsive img-rounded center-block">
-          </div>
-          <!-- Description -->
-          <div class="col-md-5">
-            <h2>About Me</h2>
-            <p>TODO</p>
-          </div>
-        </div>
+        <h2>About Me</h2>
+        <p>TODO</p>
       </div>
 <!---------------------------------------------------------------------->
       <!-- Education Section -->
@@ -140,7 +131,7 @@
         </div>
       </div>
 <!---------------------------------------------------------------------->
-      <!-- Work Experience Section -->
+      <!-- Experience Section -->
       <div id="experience" class="experience">
         <!-- Work Section -->
         <div id="work" class="work">
@@ -155,15 +146,24 @@
       </div>
 <!---------------------------------------------------------------------->
       <!-- Other Section -->
-
+      <div id="other" class="other">
+        <!-- Books Section -->
+        <div id="books" class="books">
+          <h2>Books</h2>
+          <p>TODO</p>
+        </div>
+        <!-- Piano Section -->
+        <div id="piano" class="piano">
+          <h2>Piano</h2>
+          <p>TODO</p>
+        </div>
+      </div>
 <!---------------------------------------------------------------------->
       <!-- Contact Section -->
-      <div class="container" id="contact">
-        <h2>Contact Info</h2>
-      </div>
+
 
     </div>
-
+<!---------------------------------------------------------------------->
  </div>
 </body>
 </html>
