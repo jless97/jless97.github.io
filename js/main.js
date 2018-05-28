@@ -133,7 +133,7 @@ function showAll(event){
     for(var i = 0; i < showNav.length; i++){
       $(showNav).show();
     }
-    $('#nav')[0].src = "images/x.png";
+    $('#nav')[0].src = "img/x.png";
     $('#nav')[0].alt = "Cross";
   } else {
     for(var i = 0; i < showNav.length; i++){
