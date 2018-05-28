@@ -26,134 +26,145 @@
   <script src="js/index.js"></script>
 </head>
 <body>
-  <!-- Header Info -->
-  <header>
-    <h1><b>Jason Less</b> - Software Engineer</h1>
-    <h2>University of California, Los Angeles (UCLA)</h2>
-    <h3>Majoring in <b>Computer Science</b></h3>
-  </header>
-
-  <!-- Navbar -->
-
-  <!-- About Section -->
-  <div class="bg-white">
-    <div class="container" id="about">
-      <div class="row">
-        <!-- Self-Portrait -->
-        <div class="col-md-6">
-          <img src="../img/about_pics/w-char.jpg" alt="Picture of Me" class="img-responsive center-block">
-        </div>
-        <!-- Description -->
-        <div class="col-md-6">
-          <h2>About Me</h2>
-          <p>My name is Jason Less, and I am currently a third-year Computer Science student at UCLA. I was born and raised in the Bay Area, and attended Armijo High School, where I graduated as Valedictorian of my class. I like to maintain balance in my life between academics, athletics, and through various hobbies. I have played sports my entire life such as competitive division 1 soccer, baseball, basketball, tennis, and karate. I still enjoy playing soccer here at UCLA, where I have played on competitive intramural futsal and outdoor soccer teams. In terms of hobbies, I enjoy playing video games, the piano, solving various sized Rubix cubes (3x3 to 7x7), and maintaining and expanding my Nintendo video games collection. 
-          </p>
-          <p>I wasn't sure what I wanted to major in throughout high school, but knew that I wanted to pursue a career in the math or science-related fields. I decided to choose computer science, and couldn't be happier with my decision. Technology and computers are such powerful mediums for creating incredible ideas and products that can shape society for the better, and provide exciting means of entertainment and enjoyment to the masses. I am glad to be a part of this field, and hope to make my mark on technology in the future.
-          </p>
-          <p>There are so many facets of the computer science industry that I would like to explore. I have always had an interest and passion for video games, and would like to someday work on an exciting game for a respected company. I have played around with FPGAs, embedded systems, and virtual machines and have started to recreate some of the classic arcade games such as Space Invaders. Another interest of mine is in the aerospace industry, where I was fortunate to get to work with embedded system programming to write flight software for a satellite through the UCLA ELFIN project. I am interested in so much more, and hope to solidify what path I want to follow through my UCLA coursework, outside project, and future internships.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Education Section -->
-  <div class="bg-gray">
-    <div class="container" id="education">
-      <h2>Education</h2>
-      <!-- Undergrad Section -->
-      <div class="row">
-        <div class="col-md-4">
-          <h3>Undergraduate</h3>
-          <p>Location: Los Angeles, CA</p>
-          <p>Duration: Sept 2015 - June 2019</p>
-        </div>
-        <div class="col-md-8">
-          <h3>University of California, Los Angeles (UCLA)</h3>
-          <h4>Bachelor's Degree in Computer Science</h4>
-          <p>Description</p>
-        </div>
-      </div>
-      <!-- High School Section -->
-      <div class="row">
-        <div class="col-md-4">
-          <h3>High School</h3>
-          <p>Location: Fairfield, CA</p>
-          <p>Duration: Aug 2011 - June 2015</p>
-        </div>
-        <div class="col-md-8">
-          <h3>Armijo High School</h3>
-          <p>Description</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CS Coursework Section -->
-  <div class="bg-white">
-    <div class="container" id="coursework">
-      <h2>Comp. Sci Coursework</h2>
-    </div>
-  </div>
-
-  <!-- Work Experience Section -->
-  <div class="bg-gray">
-    <div class="container" id="work">
-      <h2>Work Experience</h2>
-      <!-- NGC Section -->
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Background</h4>
-          <p>Company: Northrop Grumman Corporation</p>
-          <p>Location: Redondo Beach, CA</p>
-          <p>Duration: June 2018 - Aug 2018</p>
-        </div>
-        <div class="col-md-8">
-          <h4>Software Engineering Intern, Northrop Grumman Corporation</h4>
-          <p>Description of job duties</p>
-        </div>
-      </div>
-      <!-- ELFIN, Lead SWE Section -->
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Background</h4>
-          <p>Company: Electron Losses and Fields Investigation (ELFIN), UCLA</p>
-          <p>Location: Los Angeles, CA</p>
-          <p>Duration: July 2017 - Oct 2017</p>
-        </div>
-        <div class="col-md-8">
-          <h4>Lead Software Engineer, ELFIN, UCLA</h4>
-          <p>Description</p>
-        </div>
-      </div>
-      <!-- ELFIN, CNDH SWE Section -->
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Background</h4>
-          <p>Company: Electron Losses and Fields Investigation (ELFIN), UCLA</p>
-          <p>Location: Los Angeles, CA</p>
-          <p>Duration: Feb 2017 - July 2017</p>
-        </div>
-        <div class="col-md-8">
-          <h4>CNDH Software Engineer, ELFIN, UCLA</h4>
-          <p>Description</p>
+  <div class="container">
+    <!-- Navbar -->
+    <div class="upper-nav">
+      <!-- TODO -->
+      <div class="nav-container">
+        <div class="nav-bar">
+          <div class="contains">
+            <div onclick="changeContent(event)" class="items">
+              <a href="#about" onclick="return false">
+                <img class="off" src="img/about_off.png">
+                <img class="on" src="img/about_on.png">
+              </a>
+            </div>
+            <div onclick="changeContent(event)" class="items">
+              <a href="#education" onclick="return false">
+                <img class="off" src="img/education_off.png">
+                <img class="on" src="img/education_on.png">
+              </a>
+            </div>
+            <div onclick="changeContent(event)" class="items">
+              <a href="#experience" onclick="return false">
+                <img class="off" src="img/experience_off.png">
+                <img class="on" src="img/experience_on.png">
+              </a>
+            </div>
+            <div onclick="changeContent(event)" class="items">
+              <a href="#other" onclick="return false">
+                <img class="off" src="img/other_off.png">
+                <img class="on" src="img/other_on.png">
+              </a>
+            </div>
+          </div>
+          <!-- Navbar: Education Subsection -->
+          <div class="education-contains">
+            <div onclick="switchEducationContent(event)" id="school-nav" class="items sub-items">
+              <a href="#school" onclick="return false">
+                <img class="off" src="img/school_off.png">
+                <img class="on" src="img/school_on.png">
+              </a>
+            </div>
+            <div onclick="switchEducationContent(event)" id="coursework-nav" class="items sub-items">
+              <a href="#coursework" onclick="return false">
+                <img class="off" src="img/coursework_off.png">
+                <img class="on" src="img/coursework_on.png">
+              </a>
+            </div>
+          </div>
+          <!-- Navbar: Work Subsection -->
+          <div class="experience-contains">
+            <div onclick="switchWorkContent(event)" id="work-nav" class="items sub-items">
+              <a href="#work" onclick="return false">
+                <img class="off" src="img/work_off.png">
+                <img class="on" src="img/work_on.png">
+              </a>
+            </div>
+            <div onclick="switchWorkContent(event)" id="projects-nav" class="items sub-items">
+              <a href="#projects" onclick="return false">
+                <img class="off" src="img/projects_off.png">
+                <img class="on" src="img/projects_on.png">
+              </a>
+            </div>
+          </div>
+          <!-- Navbar: Other Subsection -->
+          <div class="other-contains">
+            <div onclick="switchWorkContent(event)" id="books-nav" class="items sub-items">
+              <a href="#books" onclick="return false">
+                <img class="off" src="img/books_off.png">
+                <img class="on" src="img/books_on.png">
+              </a>
+            </div>
+            <div onclick="switchWorkContent(event)" id="piano-nav" class="items sub-items">
+              <a href="#piano" onclick="return false">
+                <img class="off" src="img/piano_off.png">
+                <img class="on" src="img/piano_on.png">
+              </a>
+            </div>
+          </div>
+          <div class="toggle" onclick="showAll(event)" style="display:none">
+            <img id="nav" src="img/hamburger.png" alt="Hamburger" style="width:20px">
+          </div>
         </div>
       </div>
     </div>
-  </div>
+<!---------------------------------------------------------------------->
+    <div class="main-content">
+      <!-- About Section -->
+      <div id="about" class="about">
+        <div class="row">
+          <!-- Self-Portrait -->
+          <div class="col-md-6">
+            <img src="../img/about_pics/w-char.jpg" alt="Picture of Me" class="img-responsive img-rounded center-block">
+          </div>
+          <!-- Description -->
+          <div class="col-md-5">
+            <h2>About Me</h2>
+            <p>TODO</p>
+          </div>
+        </div>
+      </div>
+<!---------------------------------------------------------------------->
+      <!-- Education Section -->
+      <div id="education" class="education">
+        <!-- School Section -->
+        <div id="school" class="school">
+          <h2>Education</h2>
+          <p>TODO</p>
+        </div>
+        <!-- Coursework Section -->
+        <div id="coursework" class="coursework">
+          <h2>Coursework</h2>
+          <p>TODO</p>
+        </div>
+      </div>
+<!---------------------------------------------------------------------->
+      <!-- Work Experience Section -->
+      <div id="experience" class="experience">
+        <!-- Work Section -->
+        <div id="work" class="work">
+          <h2>Work Experience</h2>
+          <p>TODO</p>
+        </div>
+        <!-- Projects Section -->
+        <div id="projects" class="projects">
+          <h2>Projects</h2>
+          <p>TODO</p>
+        </div>
+      </div>
+<!---------------------------------------------------------------------->
+      <!-- Other Section -->
 
-  <!-- Projects Section -->
-  <div class="bg-white">
-    <div class="container" id="projects">
-      <h2>Projects</h2>
+<!---------------------------------------------------------------------->
+      <!-- Contact Section -->
+      <div class="container" id="contact">
+        <h2>Contact Info</h2>
+      </div>
+
     </div>
-  </div>
 
-  <!-- Contact Section -->
-  <div class="container" id="contact">
-    <h2>Contact Info</h2>
-  </div>
-
+ </div>
 </body>
 </html>
 
