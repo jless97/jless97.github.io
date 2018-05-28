@@ -1,45 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-  <!-- Metadata -->
   <meta charset="UTF-8">
   <meta property="title" content="Jason Less - Software Engineer">
-  <meta property="description" content="Jason Less' Personal Website">
+  <meta property="description" content="Jason Less' Website">
   <meta property="url" content="www.jasonless.com">
   <meta property="type" content="blog">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Website Title -->
-  <title>Jason Less - Software Engineer</title>
+  <title> Jason Less - Software Engineer </title>
 
-  <!-- Styles -->
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="../img/website_icon.png" type="image/png"/>
-  <!-- Bootstrap Styles -->
+  <link rel="shortcut icon" href="img/website_icon.png" type="image/png"/>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- My Styles -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
-
-  <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/index.js"></script>
+  <script src="javascript/main.js"></script>
 </head>
+<!---------------------------------------------------------------------->
 <body>
   <div class="container">
-    <!-- Navbar -->
     <div class="upper-nav">
       <div class="my-logo">
         <span class="main-logo">
           <a href="#about" onclick="goHome(event)">
-            <img src="img/website_icon.png" >
+            <img src="img/website_logo.png" >
           </a>
         </span>
       </div>
       <div class="nav-container">
-        <div class="nav-bar">
-          <div class="contains">
-            <div onclick="changeContent(event)" class="items">
+        <div class="nav-bar"> 
+          <div class="contains"> 
+            <div onclick="changeContent(event)" class="items"> 
               <a href="#about" onclick="return false">
                 <img class="off" src="img/about_off.png">
                 <img class="on" src="img/about_on.png">
@@ -59,12 +50,11 @@
             </div>
             <div onclick="changeContent(event)" class="items">
               <a href="#other" onclick="return false">
-                <img class="off" src="img/other_off.png">
-                <img class="on" src="img/other_on.png">
+                <img class="off" src="img/other_on.png">
+                <img class="on" src="img/other_off.png">
               </a>
             </div>
           </div>
-          <!-- Navbar: Education Subsection -->
           <div class="education-contains">
             <div onclick="switchEducationContent(event)" id="school-nav" class="items sub-items">
               <a href="#school" onclick="return false">
@@ -78,38 +68,7 @@
                 <img class="on" src="img/coursework_on.png">
               </a>
             </div>
-          </div>
-          <!-- Navbar: Work Subsection -->
-<!--           <div class="experience-contains">
-            <div onclick="switchExperienceContent(event)" id="work-nav" class="items sub-items">
-              <a href="#work" onclick="return false">
-                <img class="off" src="img/work_off.png">
-                <img class="on" src="img/work_on.png">
-              </a>
-            </div>
-            <div onclick="switchExperienceContent(event)" id="projects-nav" class="items sub-items">
-              <a href="#projects" onclick="return false">
-                <img class="off" src="img/projects_off.png">
-                <img class="on" src="img/projects_on.png">
-              </a>
-            </div>
-          </div>
-          Navbar: Other Subsection
-          <div class="other-contains">
-            <div onclick="switchOtherContent(event)" id="books-nav" class="items sub-items">
-              <a href="#books" onclick="return false">
-                <img class="off" src="img/books_off.png">
-                <img class="on" src="img/books_on.png">
-              </a>
-            </div>
-            <div onclick="switchOtherContent(event)" id="piano-nav" class="items sub-items">
-              <a href="#piano" onclick="return false">
-                <img class="off" src="img/piano_off.png">
-                <img class="on" src="img/piano_on.png">
-              </a>
-            </div>
-          </div> 
--->
+          </div>  
           <div class="toggle" onclick="showAll(event)" style="display:none">
             <img id="nav" src="img/hamburger.png" alt="Hamburger" style="width:20px">
           </div>
@@ -118,78 +77,50 @@
     </div>
 <!---------------------------------------------------------------------->
     <div class="main-content">
-      <!-- About Section -->
+<!---------------------------------------------------------------------->
       <div id="about" class="about">
-        <h2>About</h2>
         <p>TODO</p>
       </div>
 <!---------------------------------------------------------------------->
-      <!-- Education Section -->
       <div id="education" class="education">
-        <!-- School Section -->
         <div id="school" class="school">
-          <h2>Education</h2>
-          <p>TODO</p>
+          <div class="education-text">
+            <p>TODO</p>
+          </div>
+          <div class="projects row">
+            <div class="project-container">
+
+            </div>
+          </div>
+          <div class="project-info">
+
+          </div>
         </div>
-        <!-- Coursework Section -->
         <div id="coursework" class="coursework">
-          <h2>Coursework</h2>
-          <p>TODO</p>
+          <div class="coursework-text">
+            <p>TODO</p>
+          </div>
+          <div class="projects row">
+
+          </div>
         </div>
       </div>
 <!---------------------------------------------------------------------->
-      <!-- Work Experience Section -->
       <div id="experience" class="experience">
-        <!-- Work Section -->
-        <div id="work" class="work">
-          <h2>Work Experience</h2>
+        <div class="experience-text">
           <p>TODO</p>
         </div>
-        <!-- Projects Section -->
-        <div id="projects" class="projects">
-          <h2>Projects</h2>
-          <p>TODO</p>
+        <div class="projects row">
+
         </div>
       </div>
 <!---------------------------------------------------------------------->
-      <!-- Other Section -->
       <div id="other" class="other">
-        <!-- Books Section -->
-        <div id="books" class="books">
-          <h2>Books</h2>
-          <p>TODO</p>
-        </div>
-        <!-- Piano Section -->
-        <div id="piano" class="piano">
-          <h2>Piano</h2>
-          <p>TODO</p>
-        </div>
+        
       </div>
-<!---------------------------------------------------------------------->
-      <!-- Contact Section -->
-
+      
     </div>
-
- </div>
+<!---------------------------------------------------------------------->
+  </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -23,7 +23,6 @@ function select(elem, sel){
   }
 };
 
-
 function hideNav(){
   var nav_elem_list = $('.items').children();
   for(var i = 0; i < nav_elem_list.length; i++){
@@ -49,8 +48,8 @@ function goHome(event){
       $(nav[i]).hide();
     }
   }
-};
 
+};
 function changeContent(event){
   hideNav();
   var nav_elem_list = $('.items').children();
@@ -70,8 +69,8 @@ function changeContent(event){
       $('.school').show();
       $('.coursework').hide();
     } else {
-      // $('.project-info').hide();
-      // $('.projects').show();
+      $('.project-info').hide();
+      $('.projects').show();
       $('.education-contains').hide();
     }
   }
@@ -143,7 +142,6 @@ function showAll(event){
     $('#nav')[0].src = "img/hamburger.png";
     $('#nav')[0].alt = "Hamburger";
   }
-
 };
 
 $(document).ready(function () {
@@ -154,8 +152,9 @@ $(document).ready(function () {
       $(nav_elem_list[i]).hide();
     }
   }
+
   $('.on').hide();
-  // $('.project-info').hide();
+  $('.project-info').hide();
   hideAllContent();
   $('.about').show();
   $('.coursework').hide();
