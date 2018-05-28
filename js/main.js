@@ -34,8 +34,6 @@ function hideNav(){
 function goHome(event){
   hideNav();
   $('.education-contains').hide();
-  $('.work-contains').hide();
-  $('.other-contains').hide();
   hideAllContent();
   select($('.items').children().first(), true);
   $('.about').fadeIn();
@@ -50,7 +48,6 @@ function goHome(event){
       $(nav[i]).hide();
     }
   }
-
 };
 
 function changeContent(event){
@@ -71,20 +68,10 @@ function changeContent(event){
       $('.education-contains').fadeIn();
       $('.school').show();
       $('.coursework').hide();
-    } else if (target.hash === "#experience"){ 
-      select($(nav_elem_list[2]), true);
-      $('.experience-contains').fadeIn();
-      $('.work').show();
-      $('.projects').hide();
-    } else if (target.hash === "#other"){ 
-      select($(nav_elem_list[3]), true);
-      $('.other-contains').fadeIn();
-      $('.books').show();
-      $('.piano').hide();
     } else {
       // $('.project-info').hide();
       // $('.projects').show();
-      // $('.experience-contains').hide();
+      $('.education-contains').hide();
     }
   }
 
@@ -98,11 +85,8 @@ function changeContent(event){
     }
     $('#nav')[0].src = "images/hamburger.png";
     $('#nav')[0].alt = "Hamburger";
-    if(target.hash === "#education") { $('.education-contains').show(); }
-    else if (target.hash === "#experience") { $('.experience-contains').show(); }
-    else if (target.hash === "#other") { $('.other-contains').show(); }
+    if(target.hash === "#education"){ $('.education-contains').show();}
   }
-
 };
 
 function switchEducationContent(event) {
@@ -123,41 +107,41 @@ function switchEducationContent(event) {
   }
 };
 
-function switchExperienceContent(event) {
-  sub_items = $('.sub-items').children();
-  var target = event.target;
-  select(target, true);
-  console.log(target.hash);
-  if(target.hash === sub_items[0].hash){
-    $('.projects').hide();
-    $('.work').fadeIn();
-    select(sub_items[0], true);
-    select(sub_items[1], false);  
-  } else {
-    $('.work').hide();
-    $('.projects').fadeIn();
-    select(sub_items[1], true);
-    select(sub_items[0], false);  
-  }
-};
+// function switchExperienceContent(event) {
+//   sub_items = $('.sub-items').children();
+//   var target = event.target;
+//   select(target, true);
+//   console.log(target.hash);
+//   if(target.hash === sub_items[0].hash){
+//     $('.projects').hide();
+//     $('.work').fadeIn();
+//     select(sub_items[0], true);
+//     select(sub_items[1], false);  
+//   } else {
+//     $('.work').hide();
+//     $('.projects').fadeIn();
+//     select(sub_items[1], true);
+//     select(sub_items[0], false);  
+//   }
+// };
 
-function switchOtherContent(event) {
-  sub_items = $('.sub-items').children();
-  var target = event.target;
-  select(target, true);
-  console.log(target.hash);
-  if(target.hash === sub_items[0].hash){
-    $('.piano').hide();
-    $('.books').fadeIn();
-    select(sub_items[0], true);
-    select(sub_items[1], false);  
-  } else {
-    $('.books').hide();
-    $('.piano').fadeIn();
-    select(sub_items[1], true);
-    select(sub_items[0], false);  
-  }
-};
+// function switchOtherContent(event) {
+//   sub_items = $('.sub-items').children();
+//   var target = event.target;
+//   select(target, true);
+//   console.log(target.hash);
+//   if(target.hash === sub_items[0].hash){
+//     $('.piano').hide();
+//     $('.books').fadeIn();
+//     select(sub_items[0], true);
+//     select(sub_items[1], false);  
+//   } else {
+//     $('.books').hide();
+//     $('.piano').fadeIn();
+//     select(sub_items[1], true);
+//     select(sub_items[0], false);  
+//   }
+// };
 
 // function cancel(event) {
 //   $('.project-info').hide();
@@ -211,12 +195,8 @@ $(document).ready(function () {
   hideAllContent();
   $('.about').show();
   $('.coursework').hide();
-  $('.projects').hide();
-  $('.piano').hide();
   select($('.sub-items').children().first(), true);
   $('.education-contains').hide();
-  $('.experience-contains').hide();
-  $('.other-contains').hide();
   var active = $('.items').children().first();
   select(active, true);
 
