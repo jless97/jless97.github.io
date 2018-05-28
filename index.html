@@ -1,124 +1,124 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta property="og:site_name" content="Jason Less>
-    <meta property="og:title" content="About Jason Less">
-    <meta property="og:description" content="Learn more about Jason Less">
-    <meta property="og:image" content="img/website_icon.png">
-    <meta property="og:url" content="www.jasonless.com">
-    <meta property="og:type" content="blog">
-    <title> Jason Less - Software Engineer </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="img/website_icon.png" type="image/png"/>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta property="og:site_name" content="Jason Less>
+  <meta property="og:title" content="About Jason Less">
+  <meta property="og:description" content="Learn more about Jason Less">
+  <meta property="og:image" content="img/website_icon.png">
+  <meta property="og:url" content="www.jasonless.com">
+  <meta property="og:type" content="blog">
+  <title> Jason Less - Software Engineer </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/website_icon.png" type="image/png"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
 <!---------------------------------------------------------------------->
-  <body>
-    <div class="container">
-      <div class="upper-nav">
-        <div class="my-logo">
-          <span class="main-logo">
-            <a href="#about" onclick="goHome(event)">
-              <img src="img/website_icon.png" >
-            </a>
-          </span>
-        </div>
-        <div class="nav-container">
-          <div class="nav-bar"> 
-            <div class="contains"> 
-              <div onclick="changeContent(event)" class="items"> 
-                <a href="#about" onclick="return false">
-                  <img class="off" src="img/about_off.png">
-                  <img class="on" src="img/about_on.png">
-                </a>
-              </div>
-              <div onclick="changeContent(event)" class="items">
-                <a href="#education" onclick="return false">
-                  <img class="off" src="img/education_off.png">
-                  <img class="on" src="img/education_on.png">
-                </a>
-              </div>
-              <div onclick="changeContent(event)" class="items">
-                <a href="#experience" onclick="return false">
-                  <img class="off" src="img/experience_off.png">
-                  <img class="on" src="img/experience_on.png">
-                </a>
-              </div>
-              <div onclick="changeContent(event)" class="items">
-                <a href="#other" onclick="return false">
-                  <img class="off" src="img/other_off.png">
-                  <img class="on" src="img/other_on.png">
-                </a>
-              </div>
+<body>
+  <div class="container">
+    <div class="upper-nav">
+      <div class="my-logo">
+        <span class="main-logo">
+          <a href="#about" onclick="goHome(event)">
+            <img src="img/background.jpg" >
+          </a>
+        </span>
+      </div>
+      <div class="nav-container">
+        <div class="nav-bar"> 
+          <div class="contains"> 
+            <div onclick="changeContent(event)" class="items"> 
+              <a href="#about" onclick="return false">
+                <img class="off" src="img/about_off.png">
+                <img class="on" src="img/about_on.png">
+              </a>
             </div>
-            <div class="education-contains">
-              <div onclick="switchEducationContent(event)" id="school-nav" class="items sub-items">
-                <a href="#school" onclick="return false">
-                  <img class="off" src="img/school_off.png">
-                  <img class="on" src="img/school_on.png">
-                </a>
-              </div>
-              <div onclick="switchEducationContent(event)" id="coursework-nav" class="items sub-items">
-                <a href="#coursework" onclick="return false">
-                  <img class="off" src="img/coursework_off.png">
-                  <img class="on" src="img/coursework_on.png">
-                </a>
-              </div>
-            </div>  
-            <div class="toggle" onclick="showAll(event)" style="display:none">
-              <img id="nav" src="img/hamburger.png" alt="Hamburger" style="width:20px">
+            <div onclick="changeContent(event)" class="items">
+              <a href="#education" onclick="return false">
+                <img class="off" src="img/education_off.png">
+                <img class="on" src="img/education_on.png">
+              </a>
             </div>
+            <div onclick="changeContent(event)" class="items">
+              <a href="#experience" onclick="return false">
+                <img class="off" src="img/experience_off.png">
+                <img class="on" src="img/experience_on.png">
+              </a>
+            </div>
+            <div onclick="changeContent(event)" class="items">
+              <a href="#other" onclick="return false">
+                <img class="off" src="img/other_off.png">
+                <img class="on" src="img/other_on.png">
+              </a>
+            </div>
+          </div>
+          <div class="education-contains">
+            <div onclick="switchEducationContent(event)" id="school-nav" class="items sub-items">
+              <a href="#school" onclick="return false">
+                <img class="off" src="img/school_off.png">
+                <img class="on" src="img/school_on.png">
+              </a>
+            </div>
+            <div onclick="switchEducationContent(event)" id="coursework-nav" class="items sub-items">
+              <a href="#coursework" onclick="return false">
+                <img class="off" src="img/coursework_off.png">
+                <img class="on" src="img/coursework_on.png">
+              </a>
+            </div>
+          </div>  
+          <div class="toggle" onclick="showAll(event)" style="display:none">
+            <img id="nav" src="img/hamburger.png" alt="Hamburger" style="width:20px">
           </div>
         </div>
       </div>
+    </div>
 <!---------------------------------------------------------------------->
-      <div class="main-content">
-        <div id="about" class="about" >
-          <p>TODO</p>
-        </div>
-        <div id="education" class="education">
-          <div id="school" class="school">
-            <div class="school-text">
-              <p>TODO</p>
-            </div>
-            <div class="projects row">
-              
-            </div>
-            <div class="project-info">
-              
-            </div>
+    <div class="main-content">
+      <div id="about" class="about" >
+        <p>TODO</p>
+      </div>
+      <div id="education" class="education">
+        <div id="school" class="school">
+          <div class="school-text">
+            <p>TODO</p>
           </div>
-          <div id="coursework" class="coursework">
-            <div class="coursework-text">
-              <p>TODO</p>
-            </div>
-            <div class="projects row">
-              
-            </div>
+          <div class="projects row">
+            
+          </div>
+          <div class="project-info">
+            
           </div>
         </div>
-<!---------------------------------------------------------------------->
-        <div id="experience" class="experience">
-          <div class="experience-text">
+        <div id="coursework" class="coursework">
+          <div class="coursework-text">
             <p>TODO</p>
           </div>
           <div class="projects row">
             
           </div>
         </div>
+      </div>
 <!---------------------------------------------------------------------->
-        <div id="other" class="other">
-          <div class="other-text">
-            <p>TODO</p>
-          </div>
+      <div id="experience" class="experience">
+        <div class="experience-text">
+          <p>TODO</p>
+        </div>
+        <div class="projects row">
+          
         </div>
       </div>
 <!---------------------------------------------------------------------->
-      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <div id="other" class="other">
+        <div class="other-text">
+          <p>TODO</p>
+        </div>
+      </div>
     </div>
-  </body>
+<!---------------------------------------------------------------------->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </div>
+</body>
 </html>
