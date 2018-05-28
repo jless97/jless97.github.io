@@ -48,8 +48,8 @@ function goHome(event){
       $(nav[i]).hide();
     }
   }
-
 };
+
 function changeContent(event){
   hideNav();
   var nav_elem_list = $('.items').children();
@@ -69,11 +69,12 @@ function changeContent(event){
       $('.school').show();
       $('.coursework').hide();
     } else {
-      $('.project-info').hide();
-      $('.projects').show();
+      // $('.project-info').hide();
+      // $('.projects').show();
       $('.education-contains').hide();
     }
   }
+
   if($(window).width() <= 500){
     $('.active').removeClass("active");
     $(target).addClass("active");
@@ -106,25 +107,25 @@ function switchEducationContent(event) {
   }
 };
 
-function cancel(event) {
-  $('.project-info').hide();
-  $('.projects').fadeIn();
-};
+// function cancel(event) {
+//   $('.project-info').hide();
+//   $('.projects').fadeIn();
+// };
 
-function showDetail(event){
-  var detailsList = $('.project-info').children().slice(1);
-  var target = event.target;
-  $('.projects').hide();
-  $('.project-info').fadeIn();
-  for(var i = 0; i < detailsList.length; i++){
-    var title_text = $(detailsList[i]).children().find('h3').text();
-    if(target.alt === title_text) {
-      $(detailsList[i]).children().show();
-    } else {
-      $(detailsList[i]).children().hide();
-    }
-  }
-};
+// function showDetail(event){
+//   var detailsList = $('.project-info').children().slice(1);
+//   var target = event.target;
+//   $('.projects').hide();
+//   $('.project-info').fadeIn();
+//   for(var i = 0; i < detailsList.length; i++){
+//     var title_text = $(detailsList[i]).children().find('h3').text();
+//     if(target.alt === title_text) {
+//       $(detailsList[i]).children().show();
+//     } else {
+//       $(detailsList[i]).children().hide();
+//     }
+//   }
+// };
 
 function showAll(event){
   var showNav = $('.items').children().slice(0, -2);
@@ -152,9 +153,8 @@ $(document).ready(function () {
       $(nav_elem_list[i]).hide();
     }
   }
-
   $('.on').hide();
-  $('.project-info').hide();
+  // $('.project-info').hide();
   hideAllContent();
   $('.about').show();
   $('.coursework').hide();
@@ -162,5 +162,4 @@ $(document).ready(function () {
   $('.education-contains').hide();
   var active = $('.items').children().first();
   select(active, true);
-
 });

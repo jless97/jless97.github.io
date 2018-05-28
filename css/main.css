@@ -120,14 +120,14 @@ html, body {
     display: block !important;
   }
   /* line 107, ../scss/main.scss */
-  .container .upper-nav .nav-container .nav-bar .work-contains {
+  .container .upper-nav .nav-container .nav-bar .education-contains {
     flex-flow: column;
     margin-right: 9vw;
     justify-content: space-between;
     align-items: center;
   }
   /* line 112, ../scss/main.scss */
-  .container .upper-nav .nav-container .nav-bar .work-contains img {
+  .container .upper-nav .nav-container .nav-bar .education-contains img {
     width: 50px !important;
   }
 }
@@ -137,4 +137,58 @@ html, body {
   position: relative;
   justify-content: center;
   line-height: 2.1em;
+}
+/* line 125, ../scss/main.scss */
+.container .main-content .about {
+  height: 100%;
+  width: 80%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 131, ../scss/main.scss */
+.container .main-content .education {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* line 142, ../scss/main.scss */
+.container .main-content .education .school .school-text {
+  text-align: start;
+}
+/* line 152, ../scss/main.scss */
+.container .main-content .education .coursework {
+  width: 100%;
+}
+/* line 154, ../scss/main.scss */
+.container .main-content .education .coursework .coursework-text {
+  text-align: start;
+}
+/* line 162, ../scss/main.scss */
+.container .main-content .experienece {
+  height: 100%;
+  width: 80%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+}
+/* line 170, ../scss/main.scss */
+.container .main-content .experienece .notes-text {
+  text-align: start;
+}
+/* line 175, ../scss/main.scss */
+.container .main-content .other {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 80%;
+  display: flex;
+  flex-flow: row;
 }
