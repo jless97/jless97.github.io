@@ -42,7 +42,7 @@ function goHome(event){
     $('.active').removeClass("active");
     var nav = $('.items').children().slice(0,-2);
     $(nav[0]).first().addClass("active");
-    $('#nav')[0].src = "images/hamburger.png";
+    $('#nav')[0].src = "img/hamburger.png";
     $('#nav')[0].alt = "Hamburger";
     $(nav[0]).show();
     for(var i = 1; i < nav.length; i++){
@@ -83,7 +83,7 @@ function changeContent(event){
         $(nav_elem_list[i]).hide();
       }
     }
-    $('#nav')[0].src = "images/hamburger.png";
+    $('#nav')[0].src = "img/hamburger.png";
     $('#nav')[0].alt = "Hamburger";
     if(target.hash === "#education"){ $('.education-contains').show();}
   }
@@ -133,14 +133,14 @@ function showAll(event){
     for(var i = 0; i < showNav.length; i++){
       $(showNav).show();
     }
-    $('#nav')[0].src = "images/x.png";
+    $('#nav')[0].src = "img/x.png";
     $('#nav')[0].alt = "Cross";
   } else {
     for(var i = 0; i < showNav.length; i++){
       $(showNav[i]).hide();
     }
     $(".active").show();
-    $('#nav')[0].src = "images/hamburger.png";
+    $('#nav')[0].src = "img/hamburger.png";
     $('#nav')[0].alt = "Hamburger";
   }
 
