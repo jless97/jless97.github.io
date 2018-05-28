@@ -1,13 +1,4 @@
-@font-face {
-  font-family: default-font;
-  src: url(../AvenirLTStd-Light.otf);
-}
-@font-face {
-  font-family: default-font;
-  src: url(../AvenirLTStd-Roman.otf);
-  font-weight: bold;
-}
-/* line 15, ../scss/main.scss */
+/* line 5, ../scss/main.scss */
 html, body {
   width: 100%;
   height: 100%;
@@ -15,126 +6,172 @@ html, body {
   padding: 0;
 }
 
-/* line 22, ../scss/main.scss */
+/* line 12, ../scss/main.scss */
 .container {
+  width: 100%;
   padding: 0;
   margin: 0;
-  width: 100%;
   font-family: default-font;
   display: flex;
   flex-flow: column;
 }
-/* line 29, ../scss/main.scss */
+/* line 19, ../scss/main.scss */
 .container .upper-nav {
   width: 100%;
   background: white;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #e6e9eb;
+  border-bottom: 1px solid #e6e93b;
 }
-/* line 35, ../scss/main.scss */
-.container .upper-nav .my-logo {
-  display: flex;
-  justify-content: center;
-}
-/* line 38, ../scss/main.scss */
-.container .upper-nav .my-logo a {
-  display: flex;
-  justify-content: center;
-}
-/* line 42, ../scss/main.scss */
-.container .upper-nav .my-logo a img {
-  max-width: 270px;
-  max-height: 329px;
-  width: 70vw;
-  height: 85vw;
-}
-/* line 51, ../scss/main.scss */
+/* line 25, ../scss/main.scss */
 .container .upper-nav .nav-container {
   width: 100%;
   display: flex;
   flex-flow: column;
 }
-/* line 55, ../scss/main.scss */
+/* line 29, ../scss/main.scss */
 .container .upper-nav .nav-container .nav-bar {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
 }
-/* line 60, ../scss/main.scss */
+/* line 34, ../scss/main.scss */
 .container .upper-nav .nav-container .nav-bar .contains {
   display: flex;
   width: 50%;
   justify-content: center;
   flex-flow: row;
 }
-/* line 65, ../scss/main.scss */
+/* line 39, ../scss/main.scss */
 .container .upper-nav .nav-container .nav-bar .contains .items {
   display: flex;
   justify-content: center;
 }
-/* line 68, ../scss/main.scss */
+/* line 42, ../scss/main.scss */
 .container .upper-nav .nav-container .nav-bar .contains .items img {
   pointer-events: none;
   display: block;
   margin: auto;
   width: 45%;
 }
-/* line 76, ../scss/main.scss */
-.container .upper-nav .nav-container .nav-bar .education-contains {
+/* line 50, ../scss/main.scss */
+.container .upper-nav .nav-container .nav-bar .education-contains .experience-contains .other-contains {
   margin-right: 21%;
   width: 20%;
   display: flex;
   justify-content: center;
   flex-flow: row;
 }
-/* line 82, ../scss/main.scss */
-.container .upper-nav .nav-container .nav-bar .education-contains .items {
+/* line 56, ../scss/main.scss */
+.container .upper-nav .nav-container .nav-bar .education-contains .experience-contains .other-contains .items {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
-/* line 86, ../scss/main.scss */
-.container .upper-nav .nav-container .nav-bar .education-contains .items img {
+/* line 60, ../scss/main.scss */
+.container .upper-nav .nav-container .nav-bar .education-contains .experience-contains .other-contains .items img {
   pointer-events: none;
   display: block;
   margin: auto;
   width: 45%;
 }
 @media all and (max-width: 500px) {
-  /* line 96, ../scss/main.scss */
+  /* line 70, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar {
     flex-direction: row;
   }
-  /* line 98, ../scss/main.scss */
+  /* line 72, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .contains {
     flex-direction: column;
   }
-  /* line 100, ../scss/main.scss */
+  /* line 74, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .contains img {
     width: 50px !important;
   }
-  /* line 104, ../scss/main.scss */
+  /* line 78, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .toggle {
     display: block !important;
   }
-  /* line 107, ../scss/main.scss */
-  .container .upper-nav .nav-container .nav-bar .work-contains {
+  /* line 81, ../scss/main.scss */
+  .container .upper-nav .nav-container .nav-bar .education-contains .experience-contains .other-contains {
     flex-flow: column;
     margin-right: 9vw;
     justify-content: space-between;
     align-items: center;
   }
-  /* line 112, ../scss/main.scss */
-  .container .upper-nav .nav-container .nav-bar .work-contains img {
+  /* line 86, ../scss/main.scss */
+  .container .upper-nav .nav-container .nav-bar .education-contains .experience-contains .other-contains img {
     width: 50px !important;
   }
 }
-/* line 120, ../scss/main.scss */
+/* line 94, ../scss/main.scss */
 .container .main-content {
   display: flex;
   position: relative;
   justify-content: center;
   line-height: 2.1em;
+}
+/* line 99, ../scss/main.scss */
+.container .main-content .about {
+  height: 100%;
+  width: 80%;
+  padding: 30px 30px;
+}
+/* line 104, ../scss/main.scss */
+.container .main-content .education {
+  height: 100%;
+  width: 80%;
+  padding: 30px 30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* line 113, ../scss/main.scss */
+.container .main-content .education .school {
+  text-align: start;
+}
+/* line 116, ../scss/main.scss */
+.container .main-content .education .coursework {
+  text-align: start;
+}
+/* line 120, ../scss/main.scss */
+.container .main-content .experience {
+  height: 100%;
+  width: 80%;
+  padding: 30px 30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* line 129, ../scss/main.scss */
+.container .main-content .experience .work {
+  text-align: start;
+}
+/* line 132, ../scss/main.scss */
+.container .main-content .experience .projects {
+  text-align: start;
+}
+/* line 136, ../scss/main.scss */
+.container .main-content .other {
+  height: 100%;
+  width: 80%;
+  padding: 30px 30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* line 145, ../scss/main.scss */
+.container .main-content .other .books {
+  text-align: start;
+}
+/* line 148, ../scss/main.scss */
+.container .main-content .other .piano {
+  text-align: start;
 }
