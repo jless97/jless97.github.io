@@ -100,8 +100,8 @@ function changeContent(event){
     $('#nav')[0].src = "img/hamburger.png";
     $('#nav')[0].alt = "Hamburger";
     if(target.hash === "#education"){ $('.education-contains').show(); }
-    if(target.hash === "#experience"){ $('.experience-contains').show(); }
-    if(target.hash === "#other"){ $('.other-contains').show(); }
+    else if(target.hash === "#experience"){ $('.experience-contains').show(); }
+    else if(target.hash === "#other"){ $('.other-contains').show(); }
   }
 };
 
