@@ -70,15 +70,21 @@ function changeContent(event){
       $('.education-contains').fadeIn();
       $('.school').show();
       $('.coursework').hide();
+      $('.projects').hide();
+      $('.piano').hide();
     } else if (target.hash === "#experience"){
       select($(nav_elem_list[2]), true);
       $('.experience-contains').fadeIn();
       $('.work').show();
+      $('.coursework').hide();
       $('.projects').hide();
+      $('.piano').hide();
     } else if (target.hash === "#other"){
       select($(nav_elem_list[3]), true);
       $('.other-contains').fadeIn();
       $('.books').show();
+      $('.coursework').hide();
+      $('.projects').hide();
       $('.piano').hide();
     } else {
       // $('.project-info').hide();
