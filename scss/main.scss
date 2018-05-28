@@ -32,22 +32,6 @@ html, body {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #e6e9eb;
-    .my-logo {
-      display: flex;
-      justify-content: center;
-      a{
-        display:flex;
-        justify-content: center;
-
-        img {
-          max-width: 270px;
-          max-height: 329px;
-          width:70vw;
-          height:85vw;
-        }
-      }
-
-    }
     .nav-container {
       width: 100%;
       display: flex;
