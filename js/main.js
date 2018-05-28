@@ -34,8 +34,8 @@ function hideNav(){
 function goHome(event){
   hideNav();
   $('.education-contains').hide();
-  $('.experience-contains').hide();
-  $('.other-contains').hide();
+  // $('.experience-contains').hide();
+  // $('.other-contains').hide();
   hideAllContent();
   select($('.items').children().first(), true);
   $('.about').fadeIn();
@@ -70,28 +70,30 @@ function changeContent(event){
       $('.education-contains').fadeIn();
       $('.school').show();
       $('.coursework').hide();
-      $('.projects').hide();
-      $('.piano').hide();
-    } else if (target.hash === "#experience"){
-      select($(nav_elem_list[2]), true);
-      $('.experience-contains').fadeIn();
-      $('.work').show();
-      $('.coursework').hide();
-      $('.projects').hide();
-      $('.piano').hide();
-    } else if (target.hash === "#other"){
-      select($(nav_elem_list[3]), true);
-      $('.other-contains').fadeIn();
-      $('.books').show();
-      $('.coursework').hide();
-      $('.projects').hide();
-      $('.piano').hide();
-    } else {
+      // $('.projects').hide();
+      // $('.piano').hide();
+    } 
+    // else if (target.hash === "#experience"){
+    //   select($(nav_elem_list[2]), true);
+    //   $('.experience-contains').fadeIn();
+    //   $('.work').show();
+    //   $('.coursework').hide();
+    //   $('.projects').hide();
+    //   $('.piano').hide();
+    // } else if (target.hash === "#other"){
+    //   select($(nav_elem_list[3]), true);
+    //   $('.other-contains').fadeIn();
+    //   $('.books').show();
+    //   $('.coursework').hide();
+    //   $('.projects').hide();
+    //   $('.piano').hide();
+    // }
+    else {
       // $('.project-info').hide();
       // $('.projects').show();
       $('.education-contains').hide();
-      $('.experience-contains').hide();
-      $('.other-contains').hide();
+      // $('.experience-contains').hide();
+      // $('.other-contains').hide();
     }
   }
 
@@ -106,8 +108,8 @@ function changeContent(event){
     $('#nav')[0].src = "img/hamburger.png";
     $('#nav')[0].alt = "Hamburger";
     if(target.hash === "#education"){ $('.education-contains').show(); }
-    else if(target.hash === "#experience"){ $('.experience-contains').show(); }
-    else if(target.hash === "#other"){ $('.other-contains').show(); }
+    // else if(target.hash === "#experience"){ $('.experience-contains').show(); }
+    // else if(target.hash === "#other"){ $('.other-contains').show(); }
   }
 };
 
@@ -129,41 +131,41 @@ function switchEducationContent(event) {
   }
 };
 
-function switchExperienceContent(event) {
-  sub_items = $('.sub-items').children();
-  var target = event.target;
-  select(target, true);
-  console.log(target.hash);
-  if(target.hash === sub_items[2].hash){
-    $('.projects').hide();
-    $('.work').fadeIn();
-    select(sub_items[2], true);
-    select(sub_items[3], false);  
-  } else {
-    $('.work').hide();
-    $('.projects').fadeIn();
-    select(sub_items[3], true);
-    select(sub_items[2], false);  
-  }
-};
+// function switchExperienceContent(event) {
+//   sub_items = $('.sub-items').children();
+//   var target = event.target;
+//   select(target, true);
+//   console.log(target.hash);
+//   if(target.hash === sub_items[2].hash){
+//     $('.projects').hide();
+//     $('.work').fadeIn();
+//     select(sub_items[2], true);
+//     select(sub_items[3], false);  
+//   } else {
+//     $('.work').hide();
+//     $('.projects').fadeIn();
+//     select(sub_items[3], true);
+//     select(sub_items[2], false);  
+//   }
+// };
 
-function switchOtherContent(event) {
-  sub_items = $('.sub-items').children();
-  var target = event.target;
-  select(target, true);
-  console.log(target.hash);
-  if(target.hash === sub_items[4].hash){
-    $('.piano').hide();
-    $('.books').fadeIn();
-    select(sub_items[4], true);
-    select(sub_items[5], false);  
-  } else {
-    $('.books').hide();
-    $('.piano').fadeIn();
-    select(sub_items[5], true);
-    select(sub_items[4], false);  
-  }
-};
+// function switchOtherContent(event) {
+//   sub_items = $('.sub-items').children();
+//   var target = event.target;
+//   select(target, true);
+//   console.log(target.hash);
+//   if(target.hash === sub_items[4].hash){
+//     $('.piano').hide();
+//     $('.books').fadeIn();
+//     select(sub_items[4], true);
+//     select(sub_items[5], false);  
+//   } else {
+//     $('.books').hide();
+//     $('.piano').fadeIn();
+//     select(sub_items[5], true);
+//     select(sub_items[4], false);  
+//   }
+// };
 
 function cancel(event) {
   $('.project-info').hide();
@@ -216,12 +218,12 @@ $(document).ready(function () {
   hideAllContent();
   $('.about').show();
   $('.coursework').hide();
-  $('.projects').hide();
-  $('.piano').hide();
+  // $('.projects').hide();
+  // $('.piano').hide();
   select($('.sub-items').children().first(), true);
   $('.education-contains').hide();
-  $('.experience-contains').hide();
-  $('.other-contains').hide();
+  // $('.experience-contains').hide();
+  // $('.other-contains').hide();
   var active = $('.items').children().first();
   select(active, true);
 });
