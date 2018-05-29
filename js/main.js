@@ -100,9 +100,6 @@ function changeContent(event){
     } else if (target.hash === "#experience") {
       $('.experience-contains').show();
       $('.education-contains').hide();
-    } else {
-      $('.experience-contains').hide();
-      $('.education-contains').hide();
     }
   }
 };
