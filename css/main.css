@@ -25,17 +25,6 @@ html, body {
   flex-flow: column;
 }
 /* line 29, ../scss/main.scss */
-.container .header {
-  background-image: url("../img/background.jpg");
-  background-size: cover;
-  height: 100vh;
-  color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-/* line 39, ../scss/main.scss */
 .container .upper-nav {
   width: 100%;
   background: white;
@@ -43,75 +32,39 @@ html, body {
   align-items: center;
   border-bottom: 1px solid #e6e9eb;
 }
-/* line 45, ../scss/main.scss */
+/* line 35, ../scss/main.scss */
 .container .upper-nav .nav-container {
   width: 100%;
   display: flex;
   flex-flow: column;
 }
-/* line 49, ../scss/main.scss */
+/* line 39, ../scss/main.scss */
 .container .upper-nav .nav-container .nav-bar {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  /*        .education-contains {
-            margin-right: 21%;
-            width: 20%;
-            display: flex;
-            justify-content: center;
-            flex-flow: row;
-            .items {
-              display: flex;
-              justify-content: flex-start;
-              align-items: flex-start;
-              img {
-                pointer-events: none;
-                display: block;
-                margin: auto;
-                width: 45%;
-              }
-            }
-          }*/
-  /*        .other-contains {
-            margin-right: 21%;
-            width: 20%;
-            display: flex;
-            justify-content: center;
-            flex-flow: row;
-            .items {
-              display: flex;
-              justify-content: flex-start;
-              align-items: flex-start;
-              img {
-                pointer-events: none;
-                display: block;
-                margin: auto;
-                width: 45%;
-              }
-            }
-          }*/
 }
-/* line 54, ../scss/main.scss */
+/* line 44, ../scss/main.scss */
 .container .upper-nav .nav-container .nav-bar .contains {
   display: flex;
   width: 50%;
   justify-content: center;
   flex-flow: row;
 }
-/* line 59, ../scss/main.scss */
+/* line 49, ../scss/main.scss */
 .container .upper-nav .nav-container .nav-bar .contains .items {
   display: flex;
   justify-content: center;
 }
-/* line 62, ../scss/main.scss */
+/* line 52, ../scss/main.scss */
 .container .upper-nav .nav-container .nav-bar .contains .items img {
   pointer-events: none;
   display: block;
   margin: auto;
   width: 45%;
 }
-/* line 88, ../scss/main.scss */
+/* line 60, ../scss/main.scss */
 .container .upper-nav .nav-container .nav-bar .work-contains {
   margin-right: 21%;
   width: 20%;
@@ -119,13 +72,13 @@ html, body {
   justify-content: center;
   flex-flow: row;
 }
-/* line 94, ../scss/main.scss */
+/* line 66, ../scss/main.scss */
 .container .upper-nav .nav-container .nav-bar .work-contains .items {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
-/* line 98, ../scss/main.scss */
+/* line 70, ../scss/main.scss */
 .container .upper-nav .nav-container .nav-bar .work-contains .items img {
   pointer-events: none;
   display: block;
@@ -133,78 +86,49 @@ html, body {
   width: 45%;
 }
 @media all and (max-width: 500px) {
-  /* line 126, ../scss/main.scss */
+  /* line 80, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar {
     flex-direction: row;
-    /*          .education-contains{
-                flex-flow: column;
-                margin-right: 9vw;
-                justify-content: space-between;
-                align-items: center;
-                img{
-                  width: 50px !important;
-                }
-              }*/
-    /*          .other-contains{
-                flex-flow: column;
-                margin-right: 9vw;
-                justify-content: space-between;
-                align-items: center;
-                img{
-                  width: 50px !important;
-                }
-              }*/
   }
-  /* line 128, ../scss/main.scss */
+  /* line 82, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .contains {
     flex-direction: column;
   }
-  /* line 130, ../scss/main.scss */
+  /* line 84, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .contains img {
     width: 50px !important;
   }
-  /* line 134, ../scss/main.scss */
+  /* line 88, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .toggle {
     display: block !important;
   }
-  /* line 146, ../scss/main.scss */
+  /* line 91, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .work-contains {
     flex-flow: column;
     margin-right: 9vw;
     justify-content: space-between;
     align-items: center;
   }
-  /* line 151, ../scss/main.scss */
+  /* line 96, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .work-contains img {
     width: 50px !important;
   }
 }
-/* line 168, ../scss/main.scss */
+/* line 104, ../scss/main.scss */
 .container .main-content {
   display: flex;
   position: relative;
   justify-content: center;
   line-height: 2.1em;
 }
-/* line 173, ../scss/main.scss */
+/* line 109, ../scss/main.scss */
 .container .main-content .about {
   height: 100%;
   width: 80%;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 179, ../scss/main.scss */
-.container .main-content .education {
-  padding: 30px 30px;
-  height: 100%;
-  width: 80%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-/* line 195, ../scss/main.scss */
+/* line 115, ../scss/main.scss */
 .container .main-content .work {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -216,21 +140,21 @@ html, body {
   align-items: center;
   text-align: center;
 }
-/* line 206, ../scss/main.scss */
+/* line 126, ../scss/main.scss */
 .container .main-content .work .code .work-text {
   text-align: start;
 }
-/* line 209, ../scss/main.scss */
+/* line 129, ../scss/main.scss */
 .container .main-content .work .code .projects {
   display: block;
   align-self: flex-start;
 }
-/* line 212, ../scss/main.scss */
+/* line 132, ../scss/main.scss */
 .container .main-content .work .code .projects .project-container {
   display: table;
   content: " ";
 }
-/* line 215, ../scss/main.scss */
+/* line 135, ../scss/main.scss */
 .container .main-content .work .code .projects .project-container .projectCell {
   cursor: pointer;
   font-weight: bold;
@@ -238,11 +162,11 @@ html, body {
   padding: 10px;
   transition: .2s ease-in-out;
 }
-/* line 221, ../scss/main.scss */
+/* line 141, ../scss/main.scss */
 .container .main-content .work .code .projects .project-container .projectCell .projectContent:hover {
   transform: scale(1.1);
 }
-/* line 225, ../scss/main.scss */
+/* line 145, ../scss/main.scss */
 .container .main-content .work .code .projects .project-container .description {
   width: 80%;
   text-align: center;
@@ -254,27 +178,27 @@ html, body {
   font-size: 14px;
   line-height: 1.8;
 }
-/* line 238, ../scss/main.scss */
+/* line 158, ../scss/main.scss */
 .container .main-content .work .code .project-info {
   display: flex;
   flex-flow: column;
   align-items: center;
 }
-/* line 242, ../scss/main.scss */
+/* line 162, ../scss/main.scss */
 .container .main-content .work .code .project-info .cancel {
   cursor: pointer;
   align-self: flex-end;
 }
-/* line 245, ../scss/main.scss */
+/* line 165, ../scss/main.scss */
 .container .main-content .work .code .project-info .cancel img {
   width: 30px;
 }
-/* line 251, ../scss/main.scss */
+/* line 171, ../scss/main.scss */
 .container .main-content .work .code .project-info .project-info-container .project-media img {
   width: 70%;
   height: 90%;
 }
-/* line 256, ../scss/main.scss */
+/* line 176, ../scss/main.scss */
 .container .main-content .work .code .project-info .project-info-container .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -282,7 +206,7 @@ html, body {
   padding-top: 25px;
   height: 0;
 }
-/* line 261, ../scss/main.scss */
+/* line 181, ../scss/main.scss */
 .container .main-content .work .code .project-info .project-info-container .videoWrapper iframe {
   position: absolute;
   top: 0;
@@ -290,47 +214,47 @@ html, body {
   width: 100%;
   height: 100%;
 }
-/* line 269, ../scss/main.scss */
+/* line 189, ../scss/main.scss */
 .container .main-content .work .code .project-info .project-info-container .project-title {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
 }
-/* line 274, ../scss/main.scss */
+/* line 194, ../scss/main.scss */
 .container .main-content .work .code .project-info .project-info-container .project-details {
   align-self: flex-start;
   text-align: start;
 }
-/* line 281, ../scss/main.scss */
+/* line 201, ../scss/main.scss */
 .container .main-content .work .design {
   width: 100%;
 }
-/* line 283, ../scss/main.scss */
+/* line 203, ../scss/main.scss */
 .container .main-content .work .design .design-text {
   text-align: start;
 }
-/* line 286, ../scss/main.scss */
+/* line 206, ../scss/main.scss */
 .container .main-content .work .design .projects {
   display: block;
   align-self: flex-start;
 }
-/* line 289, ../scss/main.scss */
+/* line 209, ../scss/main.scss */
 .container .main-content .work .design .projects .project-container {
   display: table;
   content: " ";
 }
-/* line 292, ../scss/main.scss */
+/* line 212, ../scss/main.scss */
 .container .main-content .work .design .projects .project-container .projectCell {
   font-weight: bold;
   font-size: large;
   padding: 10px;
 }
-/* line 297, ../scss/main.scss */
+/* line 217, ../scss/main.scss */
 .container .main-content .work .design .projects .project-container .projectCell .projectContent img {
   max-width: 400px;
   max-height: 500px;
 }
-/* line 303, ../scss/main.scss */
+/* line 223, ../scss/main.scss */
 .container .main-content .work .design .projects .project-container .description {
   text-align: start;
   margin: auto;
@@ -340,12 +264,4 @@ html, body {
   font-weight: lighter;
   font-size: 14px;
   line-height: 1.8;
-}
-/* line 317, ../scss/main.scss */
-.container .main-content .other {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 80%;
-  display: flex;
-  flex-flow: row;
 }
