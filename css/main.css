@@ -293,72 +293,7 @@ html, body {
 .container .main-content .experienece .project .project-text {
   text-align: start;
 }
-/* line 274, ../scss/main.scss */
-.container .main-content .experienece .project .projects {
-  display: block;
-  align-self: flex-start;
-}
-/* line 277, ../scss/main.scss */
-.container .main-content .experienece .project .projects .project-container {
-  display: table;
-  content: " ";
-}
-/* line 280, ../scss/main.scss */
-.container .main-content .experienece .project .projects .project-container .projectCell {
-  cursor: pointer;
-  font-weight: bold;
-  font-size: large;
-  padding: 10px;
-  transition: .2s ease-in-out;
-}
-/* line 286, ../scss/main.scss */
-.container .main-content .experienece .project .projects .project-container .projectCell .projectContent:hover {
-  transform: scale(1.1);
-}
-/* line 290, ../scss/main.scss */
-.container .main-content .experienece .project .projects .project-container .description {
-  width: 80%;
-  text-align: center;
-  margin: auto;
-  padding-bottom: 10px;
-  color: #444;
-  margin-top: 10px;
-  font-weight: lighter;
-  font-size: 14px;
-  line-height: 1.8;
-}
-/* line 303, ../scss/main.scss */
-.container .main-content .experienece .project .project-info {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-/* line 307, ../scss/main.scss */
-.container .main-content .experienece .project .project-info .cancel {
-  cursor: pointer;
-  align-self: flex-end;
-}
-/* line 310, ../scss/main.scss */
-.container .main-content .experienece .project .project-info .cancel img {
-  width: 30px;
-}
-/* line 316, ../scss/main.scss */
-.container .main-content .experienece .project .project-info .project-info-container .project-media img {
-  width: 70%;
-  height: 90%;
-}
-/* line 324, ../scss/main.scss */
-.container .main-content .experienece .project .project-info .project-info-container .project-title {
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-}
-/* line 329, ../scss/main.scss */
-.container .main-content .experienece .project .project-info .project-info-container .project-details {
-  align-self: flex-start;
-  text-align: start;
-}
-/* line 337, ../scss/main.scss */
+/* line 276, ../scss/main.scss */
 .container .main-content .other {
   padding-top: 30px;
   padding-bottom: 30px;
