@@ -48,15 +48,15 @@
               </a>
             </div>
             <div onclick="changeContent(event)" class="items">
-              <a href="#education" onclick="return false">
-                <img class="off" src="img/education_off.png">
-                <img class="on" src="img/education_on.png">
+              <a href="#work" onclick="return false">
+                <img class="off" src="img/experience_off.png">
+                <img class="on" src="img/experience_on.png">
               </a>
             </div>
             <div onclick="changeContent(event)" class="items">
-              <a href="#experience" onclick="return false">
-                <img class="off" src="img/experience_off.png">
-                <img class="on" src="img/experience_on.png">
+              <a href="#education" onclick="return false">
+                <img class="off" src="img/education_off.png">
+                <img class="on" src="img/education_on.png">
               </a>
             </div>
             <div onclick="changeContent(event)" class="items">
@@ -80,15 +80,15 @@
               </a>
             </div>
           </div>  --> 
-          <div class="experience-contains">
-            <div onclick="switchExperienceContent(event)" id="work-nav" class="items sub-items">
-              <a href="#work" onclick="return false">
+          <div class="work-contains">
+            <div onclick="switchExperienceContent(event)" id="code-nav" class="items sub-items">
+              <a href="#code" onclick="return false">
                 <img class="off" src="img/work_off.png">
                 <img class="on" src="img/work_on.png">
               </a>
             </div>
-            <div onclick="switchExperienceContent(event)" id="code-nav" class="items sub-items">
-              <a href="#code" onclick="return false">
+            <div onclick="switchWorkContent(event)" id="design-nav" class="items sub-items">
+              <a href="#design" onclick="return false">
                 <img class="off" src="img/project_off.png">
                 <img class="on" src="img/project_on.png">
               </a>
@@ -228,9 +228,8 @@
         </div> -->
       </div>
 <!---------------------------------------------------------------------->
-      <div id="experience" class="experience">
-        <!-- Work Section -->
-        <div id="work" class="work">
+      <div id="work" class="work">
+        <div id="code" class="code">
           <div class="work-text">
             <p>Through my time at UCLA, I have been incredibly fortunate to have received some amazing opportunites to get hands-on experience applying the knowledge and skills I learned in the classroom to real-world applications. This last year at UCLA, I was able to work closely on a real-time space mission through a NASA-funded CubeSat satellite mission known as the Electron Losses and Fields Investigation (ELFIN) Satellite. Working full-time in a lab, I got to work directly with the satellite, communicate with upper-management and industry professionals, and participate in the various stages of satellite development and testing. This summer, I will be interning as a software engineer at Northrop Grumman Corporation's Aerospace HQ in Redondo Beach, CA, which I am very much looking forward to.</p>
           </div>
@@ -239,23 +238,23 @@
               <div class="col-xs-12 col-sm-6 col-md-4 projectCell">
                 <h5 class="projectCell"> NGC </h5>
                 <div class="projectContent">
-                  <img onclick="showDetail(event)" src="img/ngc_logo.png" alt="NGC">
+                  <img onclick="showDetail(event)" src="img/todo.png" alt="NGC">
                 </div>
-                <p class="description"> Mission Systems - SWE Intern </p>
+                <p class="description"> NGC </p>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4 projectCell">
                 <h5 class="projectCell"> ELFIN </h5>
                 <div class="projectContent">
-                  <img onclick="showDetail(event)" src="img/elfin-lead_logo.png" alt="ELFIN">
+                  <img onclick="showDetail(event)" src="img/todo.png" alt="ELFIN">
                 </div>
-                <p class="description"> Lead Software Engineer </p>
+                <p class="description"> Lead </p>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4 projectCell">
                 <h5 class="projectCell"> ELFIN </h5>
                 <div class="projectContent">
-                  <img onclick="showDetail(event)" src="img/elfin-cndh_logo.png" alt="ELFIN">
+                  <img onclick="showDetail(event)" src="img/todo.png" alt="ELFIN">
                 </div>
-                <p class="description"> Command & Data Handling Software Engineer </p>
+                <p class="description"> CNDH </p>
               </div>
             </div>
           </div>
@@ -265,10 +264,10 @@
             </div>
             <div class="project-info-container">
               <div class="project-title">
-                <h3>Northrop Grumman Corporation</h3>
+                <h3>NGC</h3>
               </div>
               <div class="project-media">
-                <img src="img/ngc_full.jpg" alt="NGC">
+                <img src="img/todo.jpg" alt="NGC">
               </div>
               <div class="project-details">
                 <p> <b>Platform:</b> ___ <br>
@@ -281,10 +280,10 @@
             </div>
             <div class="project-info-container">
               <div class="project-title">
-                <h3>Electron Losses and Fields Investigation (ELFIN)</h3>
+                <h3>ELFIN</h3>
               </div>
               <div class="project-media">
-                <img src="img/elfin-lead_full.jpg" alt="ELFIN - Spin Test">
+                <img src="img/todo.png" alt="ELFIN">
               </div>
               <div class="project-details">
                 <p> <b>Position:</b> Lead Software Engineer <br>
@@ -300,10 +299,10 @@
             </div>
             <div class="project-info-container">
               <div class="project-title">
-                <h3>Electron Losses and Fields Investigation (ELFIN)</h3>
+                <h3>ELFIN</h3>
               </div>
               <div class="project-media">
-                <img src="img/elfin-cndh_full.png" alt="ELFIN - Background">
+                <img src="img/todo.png" alt="ELFIN">
               </div>
               <div class="project-details">
                 <p> <b>Position:</b> Command & Data Handling (CNDH) - Software Engineer <br>
@@ -319,11 +318,14 @@
             </div>
           </div>
         </div>
-        <!-- Projects Section -->
-        <div id="code" class="code">
-          <div class="code-text">
-            <h2>Project Section</h2>
-            <p>TODO</p>
+        <div id="design" class="design">
+          <div class="design-text">
+            <p>Projects</p>
+          </div>
+          <div class="projects row">
+            <div class="project-container">
+              
+            </div>
           </div>
         </div>
       </div>

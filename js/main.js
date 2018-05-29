@@ -33,7 +33,7 @@ function hideNav(){
 
 function goHome(event){
   hideNav();
-  $('.experience-contains').hide();
+  $('.work-contains').hide();
   hideAllContent();
   select($('.items').children().first(), true);
   $('.about').fadeIn();
@@ -48,8 +48,8 @@ function goHome(event){
       $(nav[i]).hide();
     }
   }
-
 };
+
 function changeContent(event){
   hideNav();
   var nav_elem_list = $('.items').children();
@@ -63,17 +63,18 @@ function changeContent(event){
       determineContent(content_list[i], false);
     }
 
-    if(target.hash === "#experience"){
-      select($(nav_elem_list[2]), true);
-      $('.experience-contains').fadeIn();
-      $('.work').show();
-      $('.code').hide();
+    if(target.hash === "#work"){
+      select($(nav_elem_list[1]), true);
+      $('.work-contains').fadeIn();
+      $('.code').show();
+      $('.design').hide();
     } else {
       $('.project-info').hide();
       $('.projects').show();
-      $('.experience-contains').hide();
+      $('.work-contains').hide();
     }
   }
+
   if($(window).width() <= 500){
     $('.active').removeClass("active");
     $(target).addClass("active");
@@ -84,31 +85,33 @@ function changeContent(event){
     }
     $('#nav')[0].src = "img/hamburger.png";
     $('#nav')[0].alt = "Hamburger";
-    if(target.hash === "#experience"){ $('.experience-contains').show();}
+    if(target.hash === "#work"){ $('.work-contains').show();}
   }
-
 };
-function switchExperienceContent(event) {
+
+function switchWorkContent(event) {
   sub_items = $('.sub-items').children();
   var target = event.target;
   select(target, true);
   console.log(target.hash);
   if(target.hash === sub_items[0].hash){
-    $('.code').hide();
-    $('.work').fadeIn();
+    $('.design').hide();
+    $('.code').fadeIn();
     select(sub_items[0], true);
     select(sub_items[1], false);  
   } else {
-    $('.work').hide();
-    $('.code').fadeIn();
+    $('.code').hide();
+    $('.design').fadeIn();
     select(sub_items[1], true);
     select(sub_items[0], false);  
   }
 };
+
 function cancel(event) {
   $('.project-info').hide();
   $('.projects').fadeIn();
 };
+
 function showDetail(event){
   var detailsList = $('.project-info').children().slice(1);
   var target = event.target;
@@ -123,6 +126,7 @@ function showDetail(event){
     }
   }
 };
+
 function showAll(event){
   var showNav = $('.items').children().slice(0, -2);
   if($('#nav')[0].alt === "Hamburger"){
@@ -139,8 +143,8 @@ function showAll(event){
     $('#nav')[0].src = "img/hamburger.png";
     $('#nav')[0].alt = "Hamburger";
   }
-
 };
+
 $(document).ready(function () {
   if($(window).width() <=500){
     var nav_elem_list = $('.items').children();
@@ -153,10 +157,9 @@ $(document).ready(function () {
   $('.project-info').hide();
   hideAllContent();
   $('.about').show();
-  $('.code').hide();
+  $('.design').hide();
   select($('.sub-items').children().first(), true);
-  $('.experience-contains').hide();
+  $('.work-contains').hide();
   var active = $('.items').children().first();
   select(active, true);
-
 });
