@@ -33,7 +33,7 @@ function hideNav(){
 
 function goHome(event){
   hideNav();
-  $('.education-contains').hide();
+  // $('.education-contains').hide();
   $('.experience-contains').hide();
   hideAllContent();
   select($('.items').children().first(), true);
