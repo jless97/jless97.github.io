@@ -76,7 +76,7 @@ html, body {
   width: 45%;
 }
 /* line 70, ../scss/main.scss */
-.container .upper-nav .nav-container .nav-bar .education-contains {
+.container .upper-nav .nav-container .nav-bar .education-contains .experience_contains {
   margin-right: 21%;
   width: 20%;
   display: flex;
@@ -84,13 +84,13 @@ html, body {
   flex-flow: row;
 }
 /* line 76, ../scss/main.scss */
-.container .upper-nav .nav-container .nav-bar .education-contains .items {
+.container .upper-nav .nav-container .nav-bar .education-contains .experience_contains .items {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
 /* line 80, ../scss/main.scss */
-.container .upper-nav .nav-container .nav-bar .education-contains .items img {
+.container .upper-nav .nav-container .nav-bar .education-contains .experience_contains .items img {
   pointer-events: none;
   display: block;
   margin: auto;
@@ -114,14 +114,14 @@ html, body {
     display: block !important;
   }
   /* line 101, ../scss/main.scss */
-  .container .upper-nav .nav-container .nav-bar .education-contains {
+  .container .upper-nav .nav-container .nav-bar .education-contains .experience_contains {
     flex-flow: column;
     margin-right: 9vw;
     justify-content: space-between;
     align-items: center;
   }
   /* line 106, ../scss/main.scss */
-  .container .upper-nav .nav-container .nav-bar .education-contains img {
+  .container .upper-nav .nav-container .nav-bar .education-contains .experience_contains img {
     width: 50px !important;
   }
 }

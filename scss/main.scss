@@ -67,7 +67,7 @@ html, body {
             }
           }
         }
-        .education-contains {
+        .education-contains .experience_contains {
           margin-right: 21%;
           width: 20%;
           display: flex;
@@ -98,7 +98,7 @@ html, body {
             .toggle{
               display: block !important;
             }
-          .education-contains{
+          .education-contains .experience_contains{
             flex-flow: column;
             margin-right: 9vw;
             justify-content: space-between;
