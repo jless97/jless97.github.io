@@ -336,30 +336,6 @@ html, body {
           }
         }
       }
-    .foryou {
-      padding-top: 30px;
-      padding-bottom: 30px;
-      width: 80%;
-      display: flex;
-      flex-flow: column;
-      .foryou-text {
-        align-self: flex-start;
-        padding-bottom: 20px;
-      }
-      .vidWrapper{
-        position: relative;
-        padding-bottom: 56.25%; /*16:9*/
-        padding-top: 25px;
-        height: 0;
-        iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        }
-      }
-    }
   }
   .footer-wrapper{
     margin-top: auto;

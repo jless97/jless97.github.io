@@ -381,36 +381,7 @@ html, body {
     width: 100%;
   }
 }
-/* line 339, ../scss/main.scss */
-.container .main-content .foryou {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 80%;
-  display: flex;
-  flex-flow: column;
-}
-/* line 345, ../scss/main.scss */
-.container .main-content .foryou .foryou-text {
-  align-self: flex-start;
-  padding-bottom: 20px;
-}
-/* line 349, ../scss/main.scss */
-.container .main-content .foryou .vidWrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  /*16:9*/
-  padding-top: 25px;
-  height: 0;
-}
-/* line 354, ../scss/main.scss */
-.container .main-content .foryou .vidWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/* line 364, ../scss/main.scss */
+/* line 340, ../scss/main.scss */
 .container .footer-wrapper {
   margin-top: auto;
   position: relative;
@@ -418,7 +389,7 @@ html, body {
   height: 80px;
   bottom: 0;
 }
-/* line 370, ../scss/main.scss */
+/* line 346, ../scss/main.scss */
 .container .footer-wrapper .footer {
   position: absolute;
   height: 80px;
@@ -428,7 +399,7 @@ html, body {
   background: white;
   justify-content: center;
 }
-/* line 378, ../scss/main.scss */
+/* line 354, ../scss/main.scss */
 .container .footer-wrapper .footer .social-container {
   display: flex;
   height: 80px;
@@ -436,19 +407,19 @@ html, body {
   flex-flow: row;
   border-top: 1px solid #e6e9eb;
 }
-/* line 384, ../scss/main.scss */
+/* line 360, ../scss/main.scss */
 .container .footer-wrapper .footer .social-container .icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-/* line 388, ../scss/main.scss */
+/* line 364, ../scss/main.scss */
 .container .footer-wrapper .footer .social-container .icons img {
   display: block;
   margin: auto;
   width: 40%;
 }
-/* line 395, ../scss/main.scss */
+/* line 371, ../scss/main.scss */
 .container .footer-wrapper .footer .made-with {
   text-align: center;
 }
