@@ -91,25 +91,52 @@ html, body {
             }
           }
         }
+        .education-contains {
+          margin-right: 21%;
+          width: 20%;
+          display: flex;
+          justify-content: center;
+          flex-flow: row;
+          .items {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            img {
+              pointer-events: none;
+              display: block;
+              margin: auto;
+              width: 45%;
+            }
+          }
         }
-        @media all and (max-width:500px){
-          .nav-bar{
-            flex-direction: row;
+      }
+      @media all and (max-width:500px){
+        .nav-bar{
+          flex-direction: row;
           .contains{
             flex-direction:column;
-            img{
+            img {
               width: 50px !important;
             }
           }
-            .toggle{
-              display: block !important;
-            }
-          .work-contains{
+          .toggle {
+            display: block !important;
+          }
+          .work-contains {
             flex-flow: column;
             margin-right: 9vw;
             justify-content: space-between;
             align-items: center;
-            img{
+            img {
+              width: 50px !important;
+            }
+          }
+          .education-contains {
+            flex-flow: column;
+            margin-right: 9vw;
+            justify-content: space-between;
+            align-items: center;
+            img {
               width: 50px !important;
             }
           }
@@ -304,7 +331,7 @@ html, body {
 
       }
       .coursework {
-        
+
       }
     }
     .contact{
