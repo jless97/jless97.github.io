@@ -69,8 +69,10 @@ function changeContent(event){
       $('.code').show();
       $('.design').hide();
     } else {
-      $('.project-info').hide();
-      $('.projects').show();
+      $('.work-info').hide();
+      $('.works').show();
+      // $('.project-info').hide();
+      // $('.projects').show();
       $('.work-contains').hide();
     }
   }
@@ -106,12 +108,30 @@ function switchWorkContent(event) {
   }
 };
 
-function cancel(event) {
+function cancelWork(event) {
+  $('.work-info').hide();
+  $('.works').fadeIn();
+};
+function cancelProject(event) {
   $('.project-info').hide();
   $('.projects').fadeIn();
-};
+}
 
-function showDetail(event){
+function showWorkDetail(event){
+  var detailsList = $('.work-info').children().slice(1);
+  var target = event.target;
+  $('.works').hide();
+  $('.work-info').fadeIn();
+  for(var i = 0; i < detailsList.length; i++){
+    var title_text = $(detailsList[i]).children().find('h3').text();
+    if(target.alt === title_text) {
+      $(detailsList[i]).children().show();
+    } else {
+      $(detailsList[i]).children().hide();
+    }
+  }
+};
+function showProjectDetail(event){
   var detailsList = $('.project-info').children().slice(1);
   var target = event.target;
   $('.projects').hide();
@@ -124,8 +144,8 @@ function showDetail(event){
       $(detailsList[i]).children().hide();
     }
   }
-
 };
+
 function showAll(event){
   var showNav = $('.items').children().slice(0, -2);
   if($('#nav')[0].alt === "Hamburger"){
@@ -153,6 +173,7 @@ $(document).ready(function () {
     }
   }
   $('.on').hide();
+  $('.work-info').hide();
   $('.project-info').hide();
   hideAllContent();
   $('.about').show();
