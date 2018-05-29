@@ -67,19 +67,33 @@
             </div>
           </div>
           <div class="education-contains">
-            <div onclick="switchEducationContent(event)" id="school-nav" class="items sub-items">
+            <div onclick="switchContent(event, 'education')" id="school-nav" class="items sub-items">
               <a href="#school" onclick="return false">
                 <img class="off" src="img/school_off.png">
                 <img class="on" src="img/school_on.png">
               </a>
             </div>
-            <div onclick="switchEducationContent(event)" id="coursework-nav" class="items sub-items">
+            <div onclick="switchContent(event, 'education')" id="coursework-nav" class="items sub-items">
               <a href="#coursework" onclick="return false">
                 <img class="off" src="img/coursework_off.png">
                 <img class="on" src="img/coursework_on.png">
               </a>
             </div>
           </div>  
+          <div class="experience-contains">
+            <div onclick="switchContent(event, 'experience')" id="work-nav" class="items sub-items">
+              <a href="#work" onclick="return false">
+                <img class="off" src="img/work_off.png">
+                <img class="on" src="img/work_on.png">
+              </a>
+            </div>
+            <div onclick="switchContent(event, 'experience')" id="projects-nav" class="items sub-items">
+              <a href="#projects" onclick="return false">
+                <img class="off" src="img/projects_off.png">
+                <img class="on" src="img/projects_on.png">
+              </a>
+            </div>
+          </div> 
           <div class="toggle" onclick="showAll(event)" style="display:none">
             <img id="nav" src="img/hamburger.png" alt="Hamburger" style="width:20px">
           </div>

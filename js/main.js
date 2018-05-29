@@ -34,6 +34,7 @@ function hideNav(){
 function goHome(event){
   hideNav();
   $('.education-contains').hide();
+  $('.experience-contains').hide();
   hideAllContent();
   select($('.items').children().first(), true);
   $('.about').fadeIn();
@@ -66,12 +67,20 @@ function changeContent(event){
     if(target.hash === "#education"){
       select($(nav_elem_list[1]), true);
       $('.education-contains').fadeIn();
+      $('.experience-contains').hide();
       $('.school').show();
       $('.coursework').hide();
+    } else if (target.hash === "#experience"){
+      select($(nav_elem_list[2]), true);
+      $('.experience-contains').fadeIn();
+      $('.education-contains').hide();
+      $('.work').show();
+      $('.projects').hide();
     } else {
       // $('.project-info').hide();
       // $('.projects').show();
       $('.education-contains').hide();
+      $('.experience-contains').hide();
     }
   }
 
@@ -89,21 +98,53 @@ function changeContent(event){
   }
 };
 
-function switchEducationContent(event) {
+// function switchEducationContent(event) {
+//   sub_items = $('.sub-items').children();
+//   var target = event.target;
+//   select(target, true);
+//   console.log(target.hash);
+//   if(target.hash === sub_items[0].hash){
+//     $('.coursework').hide();
+//     $('.school').fadeIn();
+//     select(sub_items[0], true);
+//     select(sub_items[1], false);  
+//   } else {
+//     $('.school').hide();
+//     $('.coursework').fadeIn();
+//     select(sub_items[1], true);
+//     select(sub_items[0], false);  
+//   }
+// };
+
+function switchEducationContent(event, contentType) {
   sub_items = $('.sub-items').children();
   var target = event.target;
   select(target, true);
   console.log(target.hash);
-  if(target.hash === sub_items[0].hash){
-    $('.coursework').hide();
-    $('.school').fadeIn();
-    select(sub_items[0], true);
-    select(sub_items[1], false);  
+  if (contentType == 'education') {
+    if (target.hash === sub_items[0].hash) {
+      $('.coursework').hide();
+      $('.school').fadeIn();
+      select(sub_items[0], true);
+      select(sub_items[1], false);  
+    } else {
+      $('.school').hide();
+      $('.coursework').fadeIn();
+      select(sub_items[1], true);
+      select(sub_items[0], false);  
+    }
   } else {
-    $('.school').hide();
-    $('.coursework').fadeIn();
-    select(sub_items[1], true);
-    select(sub_items[0], false);  
+    if (target.hash === sub_items[2].hash) {
+      $('.projects').hide();
+      $('.work').fadeIn();
+      select(sub_items[2], true);
+      select(sub_items[3], false);  
+    } else {
+      $('.work').hide();
+      $('.projects').fadeIn();
+      select(sub_items[3], true);
+      select(sub_items[2], false);  
+    }
   }
 };
 
@@ -160,6 +201,7 @@ $(document).ready(function () {
   $('.coursework').hide();
   select($('.sub-items').children().first(), true);
   $('.education-contains').hide();
+  $('.experience-contains').hide();
   var active = $('.items').children().first();
   select(active, true);
 });
