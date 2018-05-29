@@ -103,6 +103,24 @@ html, body {
             }
           }
         }
+        .other-contains {
+          margin-right: 21%;
+          width: 20%;
+          display: flex;
+          justify-content: center;
+          flex-flow: row;
+          .items {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            img {
+              pointer-events: none;
+              display: block;
+              margin: auto;
+              width: 45%;
+            }
+          }
+        }
       }
         @media all and (max-width:500px){
           .nav-bar{
@@ -126,6 +144,15 @@ html, body {
             }
           }
           .experience-contains{
+            flex-flow: column;
+            margin-right: 9vw;
+            justify-content: space-between;
+            align-items: center;
+            img{
+              width: 50px !important;
+            }
+          }
+          .other-contains{
             flex-flow: column;
             margin-right: 9vw;
             justify-content: space-between;

@@ -117,61 +117,93 @@ html, body {
   margin: auto;
   width: 45%;
 }
+/* line 106, ../scss/main.scss */
+.container .upper-nav .nav-container .nav-bar .other-contains {
+  margin-right: 21%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+}
+/* line 112, ../scss/main.scss */
+.container .upper-nav .nav-container .nav-bar .other-contains .items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* line 116, ../scss/main.scss */
+.container .upper-nav .nav-container .nav-bar .other-contains .items img {
+  pointer-events: none;
+  display: block;
+  margin: auto;
+  width: 45%;
+}
 @media all and (max-width: 500px) {
-  /* line 108, ../scss/main.scss */
+  /* line 126, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar {
     flex-direction: row;
   }
-  /* line 110, ../scss/main.scss */
+  /* line 128, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .contains {
     flex-direction: column;
   }
-  /* line 112, ../scss/main.scss */
+  /* line 130, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .contains img {
     width: 50px !important;
   }
-  /* line 116, ../scss/main.scss */
+  /* line 134, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .toggle {
     display: block !important;
   }
-  /* line 119, ../scss/main.scss */
+  /* line 137, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .education-contains {
     flex-flow: column;
     margin-right: 9vw;
     justify-content: space-between;
     align-items: center;
   }
-  /* line 124, ../scss/main.scss */
+  /* line 142, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .education-contains img {
     width: 50px !important;
   }
-  /* line 128, ../scss/main.scss */
+  /* line 146, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .experience-contains {
     flex-flow: column;
     margin-right: 9vw;
     justify-content: space-between;
     align-items: center;
   }
-  /* line 133, ../scss/main.scss */
+  /* line 151, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .experience-contains img {
     width: 50px !important;
   }
+  /* line 155, ../scss/main.scss */
+  .container .upper-nav .nav-container .nav-bar .other-contains {
+    flex-flow: column;
+    margin-right: 9vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* line 160, ../scss/main.scss */
+  .container .upper-nav .nav-container .nav-bar .other-contains img {
+    width: 50px !important;
+  }
 }
-/* line 141, ../scss/main.scss */
+/* line 168, ../scss/main.scss */
 .container .main-content {
   display: flex;
   position: relative;
   justify-content: center;
   line-height: 2.1em;
 }
-/* line 146, ../scss/main.scss */
+/* line 173, ../scss/main.scss */
 .container .main-content .about {
   height: 100%;
   width: 80%;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 152, ../scss/main.scss */
+/* line 179, ../scss/main.scss */
 .container .main-content .education {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -183,19 +215,19 @@ html, body {
   align-items: center;
   text-align: center;
 }
-/* line 163, ../scss/main.scss */
+/* line 190, ../scss/main.scss */
 .container .main-content .education .school .school-text {
   text-align: start;
 }
-/* line 173, ../scss/main.scss */
+/* line 200, ../scss/main.scss */
 .container .main-content .education .coursework {
   width: 100%;
 }
-/* line 175, ../scss/main.scss */
+/* line 202, ../scss/main.scss */
 .container .main-content .education .coursework .coursework-text {
   text-align: start;
 }
-/* line 183, ../scss/main.scss */
+/* line 210, ../scss/main.scss */
 .container .main-content .experienece {
   height: 100%;
   width: 80%;
@@ -206,11 +238,11 @@ html, body {
   align-items: center;
   text-align: center;
 }
-/* line 191, ../scss/main.scss */
+/* line 218, ../scss/main.scss */
 .container .main-content .experienece .notes-text {
   text-align: start;
 }
-/* line 196, ../scss/main.scss */
+/* line 223, ../scss/main.scss */
 .container .main-content .other {
   padding-top: 30px;
   padding-bottom: 30px;
