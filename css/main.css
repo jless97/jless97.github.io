@@ -328,7 +328,7 @@ html, body {
   text-align: start;
 }
 /* line 294, ../scss/main.scss */
-.container .main-content .notes {
+.container .main-content .education {
   height: 100%;
   width: 80%;
   padding-top: 30px;
@@ -339,21 +339,21 @@ html, body {
   text-align: center;
 }
 /* line 302, ../scss/main.scss */
-.container .main-content .notes .notes-text {
+.container .main-content .education .education-text {
   text-align: start;
 }
 /* line 306, ../scss/main.scss */
-.container .main-content .notes .projectCell {
+.container .main-content .education .projectCell {
   font-weight: bold;
   font-size: large;
 }
 /* line 311, ../scss/main.scss */
-.container .main-content .notes .projectContent img {
+.container .main-content .education .projectContent img {
   width: 200px;
   height: 200px;
 }
 /* line 316, ../scss/main.scss */
-.container .main-content .notes .description {
+.container .main-content .education .description {
   font-weight: lighter;
   font-size: 14px;
   line-height: 1.7em;
