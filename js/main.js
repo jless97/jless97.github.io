@@ -67,13 +67,13 @@ function changeContent(event){
     if(target.hash === "#education"){
       select($(nav_elem_list[1]), true);
       $('.education-contains').fadeIn();
-      $('.experience-contains').hide();
+      //$('.experience-contains').hide();
       $('.school').show();
       $('.coursework').hide();
     } else if (target.hash === "#experience"){
       select($(nav_elem_list[2]), true);
       $('.experience-contains').fadeIn();
-      $('.education-contains').hide();
+      //$('.education-contains').hide();
       $('.work').show();
       $('.projects').hide();
     } else {
@@ -184,6 +184,7 @@ $(document).ready(function () {
   hideAllContent();
   $('.about').show();
   $('.coursework').hide();
+  $('.projects').hide();
   select($('.sub-items').children().first(), true);
   $('.education-contains').hide();
   $('.experience-contains').hide();
