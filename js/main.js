@@ -79,7 +79,7 @@ function changeContent(event){
       $('.code').hide();
       $('.design').hide();
       $('.coursework').hide();
-      
+
       $('.education-contains').fadeIn();
       $('.school').show();
     }
@@ -131,6 +131,7 @@ function switchWorkContent(event) {
     $('.school').hide();
     $('.coursework').hide();
     $('.design').hide();
+
     $('.code').fadeIn();
     select(sub_items[0], true);
     select(sub_items[1], false);  
@@ -138,6 +139,7 @@ function switchWorkContent(event) {
     $('.school').hide();
     $('.coursework').hide();
     $('.code').hide();
+
     $('.design').fadeIn();
     select(sub_items[1], true);
     select(sub_items[0], false);  
@@ -152,6 +154,7 @@ function switchEducationContent(event) {
     $('.coursework').hide();
     $('.code').hide();
     $('.design').hide();
+
     $('.school').fadeIn();
     select(sub_items[2], true);
     select(sub_items[3], false);  
@@ -159,6 +162,7 @@ function switchEducationContent(event) {
     $('.school').hide();
     $('.code').hide();
     $('.design').hide();
+    
     $('.coursework').fadeIn();
     select(sub_items[3], true);
     select(sub_items[2], false);  
