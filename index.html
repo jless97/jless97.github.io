@@ -29,14 +29,6 @@
 <!---------------------------------------------------------------------->
 <body>
   <div class="container">
-    <!-- Header -->
-<!--     <header id="top">
-      <h1>Jason Less</h1>
-      <h2>Software Engineer</h2>
-      <h3>UCLA, Computer Science</h3>
-    </header> -->
-
-    <!-- Navbar -->
     <div class="upper-nav">
       <div class="nav-container">
         <div class="nav-bar"> 
@@ -49,39 +41,31 @@
             </div>
             <div onclick="changeContent(event)" class="items">
               <a href="#work" onclick="return false">
-                <img class="off" src="img/experience_off.png">
-                <img class="on" src="img/experience_on.png">
+                <img class="off" src="img/work_off.png">
+                <img class="on" src="img/work_on.png">
               </a>
             </div>
             <div onclick="changeContent(event)" class="items">
-              <a href="#education" onclick="return false">
+              <a href="#notes" onclick="return false">
                 <img class="off" src="img/education_off.png">
                 <img class="on" src="img/education_on.png">
               </a>
             </div>
             <div onclick="changeContent(event)" class="items">
-              <a href="#other" onclick="return false">
+              <a href="#contact" onclick="return false">
                 <img class="off" src="img/other_off.png">
                 <img class="on" src="img/other_on.png">
               </a>
             </div>
+            <div onclick="changeContent(event)" class="items">
+              <a href="#foryou" onclick="return false">
+                <img class="off" src="img/piano_off.png">
+                <img class="on" src="img/piano_on.png">
+              </a>
+            </div>
           </div>
-<!--           <div class="education-contains">
-            <div onclick="switchEducationContent(event)" id="school-nav" class="items sub-items">
-              <a href="#school" onclick="return false">
-                <img class="off" src="img/school_off.png">
-                <img class="on" src="img/school_on.png">
-              </a>
-            </div>
-            <div onclick="switchEducationContent(event)" id="coursework-nav" class="items sub-items">
-              <a href="#coursework" onclick="return false">
-                <img class="off" src="img/coursework_off.png">
-                <img class="on" src="img/coursework_on.png">
-              </a>
-            </div>
-          </div>  --> 
           <div class="work-contains">
-            <div onclick="switchExperienceContent(event)" id="code-nav" class="items sub-items">
+            <div onclick="switchWorkContent(event)" id="code-nav" class="items sub-items">
               <a href="#code" onclick="return false">
                 <img class="off" src="img/work_off.png">
                 <img class="on" src="img/work_on.png">
@@ -93,168 +77,48 @@
                 <img class="on" src="img/project_on.png">
               </a>
             </div>
-          </div> 
-<!--           <div class="other-contains">
-            <div onclick="switchOtherContent(event)" id="books-nav" class="items sub-items">
-              <a href="#books" onclick="return false">
-                <img class="off" src="img/books_off.png">
-                <img class="on" src="img/books_on.png">
-              </a>
+          </div>  
+            <div class="toggle" onclick="showAll(event)" style="display:none">
+              <img id="nav" src="img/hamburger.png" alt="Hamburger" style="width:20px">
             </div>
-            <div onclick="switchOtherContent(event)" id="piano-nav" class="items sub-items">
-              <a href="#piano" onclick="return false">
-                <img class="off" src="img/piano_off.png">
-                <img class="on" src="img/piano_on.png">
-              </a>
-            </div>
-          </div>  -->
-          <div class="toggle" onclick="showAll(event)" style="display:none">
-            <img id="nav" src="img/hamburger.png" alt="Hamburger" style="width:20px">
-          </div>
         </div>
       </div>
     </div>
 <!---------------------------------------------------------------------->
     <div class="main-content">
       <div id="about" class="about">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="img/about_me.jpg" class="img-responsive img-rounded center-block">
-          </div>
-          <div class="col-md-6">
-            <h2>About Me</h2>
-            <p>
-            My name is Jason Less, and I am currently a third-year Computer Science student at UCLA. I was born and raised in the Bay Area, and attended Armijo High School, where I graduated as Valedictorian of my class. I like to maintain balance in my life between academics, athletics, and through various hobbies. I have played sports my entire life such as competitive division 1 soccer, baseball, basketball, tennis, and karate. I still enjoy playing soccer here at UCLA, where I have played on competitive intramural futsal and outdoor soccer teams. In terms of hobbies, I enjoy playing video games, the piano, solving various sized Rubix cubes (3x3 to 7x7), and maintaining and expanding my Nintendo video games collection. 
-            </p>
-            <p>
-            I wasn't sure what I wanted to major in throughout high school, but knew that I wanted to pursue a career in the math or science-related fields. I decided to choose computer science, and couldn't be happier with my decision. Technology and computers are such powerful mediums for creating incredible ideas and products that can shape society for the better, and provide exciting means of entertainment and enjoyment to the masses. I am glad to be a part of this field, and hope to make my mark on technology in the future.
-            </p>
-            <p>
-            There are so many facets of the computer science industry that I would like to explore. I have always had an interest and passion for video games, and would like to someday work on an exciting game for a respected company. I have played around with FPGAs, embedded systems, and virtual machines and have started to recreate some of the classic arcade games such as Space Invaders. Another interest of mine is in the aerospace industry, where I was fortunate to get to work with embedded system programming to write flight software for a satellite through the UCLA ELFIN project. I am interested in so much more, and hope to solidify what path I want to follow through my UCLA coursework, outside project, and future internships.
-            </p>
-          </div>
-        </div>
-      </div>
-<!---------------------------------------------------------------------->
-      <div id="education" class="education">
-        <!-- School Section -->
-        <!-- <div id="school" class="school">
-          <h2>Schools</h2>
-          <div class="row">
-            <div class="col-md-4">
-              <h3>UCLA</h3>
-              <p><span class="glyphicon glyphicon-map-marker"></span>Los Angeles, CA</p>
-              <p><span class="glyphicon glyphicon-time"></span>Sept 2015 - June 2019</p>
-            </div>
-            <div class="col-md-8">
-              <h3>Bachelor's Degree in Computer Science</h3>
-              <p>Cumulative GPA: 3.6</p>
-              <p>I will be a fourth year student in the Fall of 2018. I am an a member of the Upsilon Pi Epsilon International Computer Science Honor Society (UPE) and have made Dean's List in Fall 2015, Winter 2016, and Spring 2017.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <h3>Armijo High</h3>
-              <p><span class="glyphicon glyphicon-map-marker"></span> Fairfield, CA</p>
-              <p><span class="glyphicon glyphicon-time"></span>Aug 2011 - June 2015</p>
-            </div>
-            <div class="col-md-8">
-              <h3>High School</h3>
-              <p>Cumulative GPA: 4.5</p>
-              <p>I graduated as Valedictorian of my class of more than 500 students and received highest honors. </p>
-            </div>
-          </div>
-        </div> -->
-        <!-- Coursework Section -->
-        <!-- <div id="coursework" class="coursework">
-          <div class="coursework-text">
-            <h2>College Coursework</h2> -->
-            <!-- CS111 -->
-            <!-- <div class="row">
-              <div class="col-md-4">
-                <h3>CS111</h3>
-                <p><span class="glyphicon glyphicon-floppy-disk"></span>Languages: C, Python</p>
-              </div>
-              <div class="col-md-8">
-                <h3>Operating Systems</h3>
-                <p>Introduction to operating systems design and evaluation. Computer software systems performance, robustness, and functionality. Kernel structure, bootstrapping, input/output (I/O) devices and interrupts. Processes and threads; address spaces, memory management, and virtual memory. Scheduling, synchronization. File systems: layout, performance, robustness. Distributed systems: networking, remote procedure call (RPC), asynchronous RPC, distributed file systems, transactions. Protection and security. Exercises involving applications using, and internals of, real-world operating systems.</p>
-              </div>
-            </div> -->
-            <!-- CS118 -->
-            <!-- <div class="row">
-              <div class="col-md-4">
-                <h3>CS118</h3>
-                <p><span class="glyphicon glyphicon-floppy-disk"></span>Languages: C</p>
-              </div>
-              <div class="col-md-8">
-                <h3>Computer Network Fundamentals</h3>
-                <p>Introduction to design and performance evaluation of computer networks, including such topics as what protocols are, layered network architecture, Internet protocol architecture, network applications, transport protocols, routing algorithms and protocols, internetworking, congestion control, and link layer protocols including Ethernet and wireless channels.</p>
-              </div>
-            </div> -->
-            <!-- CS144 -->
-            <!-- <div class="row">
-              <div class="col-md-4">
-                <h3>CS144</h3>
-                <p><span class="glyphicon glyphicon-floppy-disk"></span>Languages: MEAN Stack</p>
-              </div>
-              <div class="col-md-8">
-                <h3>Web Applications</h3>
-                <p>Important concepts and theory for building effective and safe Web applications and first-hand experience with basic tools. Topics include basic Web architecture and protocol, XML and XML query language, mapping between XML and relational models, information retrieval model and theory, security and user model, Web services and distributed transactions.</p>
-              </div>
-            </div> -->
-            <!-- CSM151B -->
-            <!-- <div class="row">
-              <div class="col-md-4">
-                <h3>CSM151B</h3>
-                <p><span class="glyphicon glyphicon-floppy-disk"></span>ISA: MIPS</p>
-              </div>
-              <div class="col-md-8">
-                <h3>Computer Systems Architecture</h3>
-                <p>Computer system organization and design, implementation of CPU datapath and control, instruction set design, memory hierarchy (caches, main memory, virtual memory) organization and management, input/output subsystems (bus structures, interrupts, DMA), performance evaluation, pipelined processors.</p>
-              </div>
-            </div> -->
-            <!-- CSM152A -->
-            <!-- <div class="row">
-              <div class="col-md-4">
-                <h3>CSM152A</h3>
-                <p><span class="glyphicon glyphicon-floppy-disk"></span>Languages: Verilog</p>
-              </div>
-              <div class="col-md-8">
-                <h3>Digital Design Laboratory</h3>
-                <p>Hands-on design, implementation, and debugging of digital logic circuits, use of computer-aided design tools for schematic capture and simulation, implementation of complex circuits using programmed array logic, design projects.</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
+        <p>about me
+        </p>
       </div>
 <!---------------------------------------------------------------------->
       <div id="work" class="work">
         <div id="code" class="code">
           <div class="work-text">
-            <p>Through my time at UCLA, I have been incredibly fortunate to have received some amazing opportunites to get hands-on experience applying the knowledge and skills I learned in the classroom to real-world applications. This last year at UCLA, I was able to work closely on a real-time space mission through a NASA-funded CubeSat satellite mission known as the Electron Losses and Fields Investigation (ELFIN) Satellite. Working full-time in a lab, I got to work directly with the satellite, communicate with upper-management and industry professionals, and participate in the various stages of satellite development and testing. This summer, I will be interning as a software engineer at Northrop Grumman Corporation's Aerospace HQ in Redondo Beach, CA, which I am very much looking forward to.</p>
+            <p>work text
+            </p>
           </div>
           <div class="projects row">
             <div class="project-container">
               <div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-                <h5 class="projectCell"> NGC </h5>
+                <h5 class="projectCell"> no. 1 </h5>
                 <div class="projectContent">
-                  <img onclick="showDetail(event)" src="img/todo.png" alt="NGC">
+                  <img onclick="showDetail(event)" src="img/todo.png" alt="todo">
                 </div>
-                <p class="description"> NGC </p>
+                <p class="description"> desc 1 </p>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-                <h5 class="projectCell"> ELFIN </h5>
+                <h5 class="projectCell"> no. 2 </h5>
                 <div class="projectContent">
-                  <img onclick="showDetail(event)" src="img/todo.png" alt="ELFIN">
+                  <img onclick="showDetail(event)" src="img/todo.png" alt="todo">
                 </div>
-                <p class="description"> Lead </p>
+                <p class="description"> desc 2 </p>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-                <h5 class="projectCell"> ELFIN </h5>
+                <h5 class="projectCell"> no. 3 </h5>
                 <div class="projectContent">
-                  <img onclick="showDetail(event)" src="img/todo.png" alt="ELFIN">
+                  <img onclick="showDetail(event)" src="img/todo.png" alt="todo">
                 </div>
-                <p class="description"> CNDH </p>
+                <p class="description"> desc 3 </p>
               </div>
             </div>
           </div>
@@ -264,55 +128,37 @@
             </div>
             <div class="project-info-container">
               <div class="project-title">
-                <h3>NGC</h3>
+                <h3>no 1</h3>
               </div>
               <div class="project-media">
-                <img src="img/todo.jpg" alt="NGC">
+                <img src="img/todo.jpg" alt="todo">
               </div>
               <div class="project-details">
-                <p> <b>Platform:</b> ___ <br>
-                <b>Languages:</b> ___ <br>
-                <b>Period:</b> June 2018 - Sept 2018 <br>
-                <b>Details:</b><br>
-                Intern responsibilities to be determined.
+                <p>project dets 1
                 </p>
               </div>  
             </div>
             <div class="project-info-container">
               <div class="project-title">
-                <h3>ELFIN</h3>
+                <h3>no 2</h3>
               </div>
               <div class="project-media">
-                <img src="img/todo.png" alt="ELFIN">
+                <img src="img/todo.png" alt="todo">
               </div>
               <div class="project-details">
-                <p> <b>Position:</b> Lead Software Engineer <br>
-                <b>Platform:</b> Embedded Systems <br>
-                <b>PIC Microcontrollers:</b> PIC18, PIC24 <br>
-                <b>Languages:</b> Embedded C, Python <br>
-                <b>IDE:</b> MPLAB <br>
-                <b>Period:</b> Aug 2018 - Oct 2018 <br>
-                <b>Details:</b><br>
-                Lead SWE - TODO
+                <p> project dets 2
                 </p>
               </div>  
             </div>
             <div class="project-info-container">
               <div class="project-title">
-                <h3>ELFIN</h3>
+                <h3>no 3</h3>
               </div>
               <div class="project-media">
-                <img src="img/todo.png" alt="ELFIN">
+                <img src="img/todo.png" alt="todo">
               </div>
               <div class="project-details">
-                <p> <b>Position:</b> Command & Data Handling (CNDH) - Software Engineer <br>
-                <b>Platform:</b> Embedded Systems <br>
-                <b>PIC Microcontrollers:</b> PIC18, PIC24 <br>
-                <b>Languages:</b> Embedded C, Python <br>
-                <b>IDE:</b> MPLAB <br>
-                <b>Period:</b> Feb 2018 - July 2018 <br>
-                <b>Details:</b><br>
-                CNDH SWE - TODO
+                <p>project dets 3
                 </p>
               </div>  
             </div>
@@ -320,7 +166,7 @@
         </div>
         <div id="design" class="design">
           <div class="design-text">
-            <p>Projects</p>
+            <p> design text </p>
           </div>
           <div class="projects row">
             <div class="project-container">
@@ -329,14 +175,39 @@
           </div>
         </div>
       </div>
-<!---------------------------------------------------------------------->
-      <div id="other" class="other">
-        <div class="other-text">
-          <p>TODO</p>
+      <div id="notes" class="notes">
+        <div class="notes-text">
+          <p>notes text
+          </p>
+        </div>
+        <div class="projects row">
+          <div class="project-container">
+            <div class="row" style="margin-top: 10px; margin-bottom: 20px;">
+
+            </div>
+            <div class="row" style="margin-top: 10px; margin-bottom: 20px;">
+
+            </div>
+            <div class="row" style="margin-top: 10px; margin-bottom: 20px;">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="col-xs-12 col-sm-12 col-md-12 contact">
+        <div class="col-xs-12 col-sm-12 col-md-6 contact-info">
+          <p> contact info </p>
+        </div>
+      </div>
+      <div id="foryou" class="foryou">
+        <div class="foryou-text">
+          <p> more text
+          </p>
         </div>
       </div>
     </div>
-<!---------------------------------------------------------------------->
-  </div>
+    <div class="footer-wrapper">
+
+    </div>
 </body>
 </html>

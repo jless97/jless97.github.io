@@ -74,7 +74,6 @@ function changeContent(event){
       $('.work-contains').hide();
     }
   }
-
   if($(window).width() <= 500){
     $('.active').removeClass("active");
     $(target).addClass("active");
@@ -125,8 +124,8 @@ function showDetail(event){
       $(detailsList[i]).children().hide();
     }
   }
-};
 
+};
 function showAll(event){
   var showNav = $('.items').children().slice(0, -2);
   if($('#nav')[0].alt === "Hamburger"){
