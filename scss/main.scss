@@ -103,7 +103,7 @@ html, body {
             }
           }
         }
-        .other-contains {
+/*        .other-contains {
           margin-right: 21%;
           width: 20%;
           display: flex;
@@ -120,7 +120,7 @@ html, body {
               width: 45%;
             }
           }
-        }
+        }*/
       }
         @media all and (max-width:500px){
           .nav-bar{
@@ -152,7 +152,7 @@ html, body {
               width: 50px !important;
             }
           }
-          .other-contains{
+/*          .other-contains{
             flex-flow: column;
             margin-right: 9vw;
             justify-content: space-between;
@@ -160,7 +160,7 @@ html, body {
             img{
               width: 50px !important;
             }
-          }
+          }*/
         }
       }
     }

@@ -55,6 +55,24 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  /*        .other-contains {
+            margin-right: 21%;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            flex-flow: row;
+            .items {
+              display: flex;
+              justify-content: flex-start;
+              align-items: flex-start;
+              img {
+                pointer-events: none;
+                display: block;
+                margin: auto;
+                width: 45%;
+              }
+            }
+          }*/
 }
 /* line 54, ../scss/main.scss */
 .container .upper-nav .nav-container .nav-bar .contains {
@@ -117,31 +135,19 @@ html, body {
   margin: auto;
   width: 45%;
 }
-/* line 106, ../scss/main.scss */
-.container .upper-nav .nav-container .nav-bar .other-contains {
-  margin-right: 21%;
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  flex-flow: row;
-}
-/* line 112, ../scss/main.scss */
-.container .upper-nav .nav-container .nav-bar .other-contains .items {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-/* line 116, ../scss/main.scss */
-.container .upper-nav .nav-container .nav-bar .other-contains .items img {
-  pointer-events: none;
-  display: block;
-  margin: auto;
-  width: 45%;
-}
 @media all and (max-width: 500px) {
   /* line 126, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar {
     flex-direction: row;
+    /*          .other-contains{
+                flex-flow: column;
+                margin-right: 9vw;
+                justify-content: space-between;
+                align-items: center;
+                img{
+                  width: 50px !important;
+                }
+              }*/
   }
   /* line 128, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .contains {
@@ -175,17 +181,6 @@ html, body {
   }
   /* line 151, ../scss/main.scss */
   .container .upper-nav .nav-container .nav-bar .experience-contains img {
-    width: 50px !important;
-  }
-  /* line 155, ../scss/main.scss */
-  .container .upper-nav .nav-container .nav-bar .other-contains {
-    flex-flow: column;
-    margin-right: 9vw;
-    justify-content: space-between;
-    align-items: center;
-  }
-  /* line 160, ../scss/main.scss */
-  .container .upper-nav .nav-container .nav-bar .other-contains img {
     width: 50px !important;
   }
 }
