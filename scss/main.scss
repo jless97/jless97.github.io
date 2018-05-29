@@ -215,8 +215,7 @@ html, body {
         }
       }
       .design {
-        width: 100%;
-        .design-text{
+        .design-text {
           text-align: start;
         }
         .projects{
@@ -226,18 +225,18 @@ html, body {
             display: table;
             content: " ";
             .projectCell{
+              cursor: pointer;
               font-weight: bold;
               font-size: large;
               padding: 10px;
-              .projectContent{
-                img{
-                  max-width: 400px;
-                  max-height: 500px;
-                }
+              transition: .2s ease-in-out;
+              .projectContent:hover{
+                transform: scale(1.1);
               }
             }
             .description {
-              text-align: start;
+              width: 80%;
+              text-align: center;
               margin: auto;
               padding-bottom: 10px;
               color: #444;
@@ -245,6 +244,48 @@ html, body {
               font-weight: lighter;
               font-size: 14px;
               line-height: 1.8;
+            }
+          }
+        }
+        .project-info {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          .cancel {
+            cursor: pointer;
+            align-self: flex-end;
+            img {
+              width: 30px;
+            }
+          }
+          .project-info-container {
+            .project-media{
+              img {
+                width: 70%;
+                height: 90%;
+              }
+            }
+            .videoWrapper {
+              position: relative;
+              padding-bottom: 56.25%; /* 16:9 */
+              padding-top: 25px;
+              height: 0;
+              iframe{
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .project-title {
+              text-align: center;
+              font-weight: bold;
+              font-size: 20px;
+            }
+            .project-details {
+              align-self: flex-start;
+              text-align: start;
             }
           }
         }
