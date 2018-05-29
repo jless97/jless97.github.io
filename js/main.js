@@ -34,7 +34,7 @@ function hideNav(){
 function goHome(event){
   hideNav();
   $('.education-contains').hide();
-  //$('.experience-contains').hide();
+  $('.experience-contains').hide();
   hideAllContent();
   select($('.items').children().first(), true);
   $('.about').fadeIn();
@@ -67,7 +67,6 @@ function changeContent(event){
     if(target.hash === "#education"){
       select($(nav_elem_list[1]), true);
       $('.education-contains').fadeIn();
-      $('.experience-contains').hide();
       $('.school').show();
       $('.coursework').hide();
       $('.work').hide();
@@ -75,7 +74,6 @@ function changeContent(event){
     } else if (target.hash === "#experience"){
       select($(nav_elem_list[2]), true);
       $('.experience-contains').fadeIn();
-      $('.education-contains').hide();
       $('.work').show();
       $('.school').hide();
       $('.coursework').hide();
