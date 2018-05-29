@@ -34,7 +34,7 @@ function hideNav(){
 function goHome(event){
   hideNav();
   $('.education-contains').hide();
-  //$('.experience-contains').hide();
+  $('.experience-contains').hide();
   hideAllContent();
   select($('.items').children().first(), true);
   $('.about').fadeIn();
@@ -81,8 +81,8 @@ function changeContent(event){
       $('.coursework').hide();
       $('.projects').hide();
     } else {
-      // $('.project-info').hide();
-      // $('.projects').show();
+      $('.project-info').hide();
+      $('.projects').show();
       $('.education-contains').hide();
       $('.experience-contains').hide();
     }
@@ -152,25 +152,25 @@ function switchExperienceContent(event) {
   }
 };
 
-// function cancel(event) {
-//   $('.project-info').hide();
-//   $('.projects').fadeIn();
-// };
+function cancel(event) {
+  $('.project-info').hide();
+  $('.projects').fadeIn();
+};
 
-// function showDetail(event){
-//   var detailsList = $('.project-info').children().slice(1);
-//   var target = event.target;
-//   $('.projects').hide();
-//   $('.project-info').fadeIn();
-//   for(var i = 0; i < detailsList.length; i++){
-//     var title_text = $(detailsList[i]).children().find('h3').text();
-//     if(target.alt === title_text) {
-//       $(detailsList[i]).children().show();
-//     } else {
-//       $(detailsList[i]).children().hide();
-//     }
-//   }
-// };
+function showDetail(event){
+  var detailsList = $('.project-info').children().slice(1);
+  var target = event.target;
+  $('.projects').hide();
+  $('.project-info').fadeIn();
+  for(var i = 0; i < detailsList.length; i++){
+    var title_text = $(detailsList[i]).children().find('h3').text();
+    if(target.alt === title_text) {
+      $(detailsList[i]).children().show();
+    } else {
+      $(detailsList[i]).children().hide();
+    }
+  }
+};
 
 function showAll(event){
   var showNav = $('.items').children().slice(0, -2);
@@ -199,7 +199,7 @@ $(document).ready(function () {
     }
   }
   $('.on').hide();
-  // $('.project-info').hide();
+  $('.project-info').hide();
   hideAllContent();
   $('.about').show();
   $('.coursework').hide();
