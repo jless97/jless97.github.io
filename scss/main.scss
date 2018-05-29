@@ -26,6 +26,16 @@ html, body {
   font-family: default-font;
   display: flex;
   flex-flow: column;
+  .header {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .upper-nav {
     width: 100%;
     background: white;
