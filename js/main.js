@@ -64,22 +64,23 @@ function changeContent(event){
       determineContent(content_list[i], false);
     }
 
-    if(target.hash === "#education"){
-      select($(nav_elem_list[1]), true);
-      $('.education-contains').fadeIn();
-      $('.experience-contains').hide();
-      $('.school').show();
-      $('.coursework').hide();
-    } else if (target.hash === "#experience"){
+    // if(target.hash === "#education"){
+    //   select($(nav_elem_list[1]), true);
+    //   $('.education-contains').fadeIn();
+    //   $('.experience-contains').hide();
+    //   $('.school').show();
+    //   $('.coursework').hide();
+    // } 
+    if (target.hash === "#experience"){
       select($(nav_elem_list[2]), true);
       $('.experience-contains').fadeIn();
-      $('.education-contains').hide();
+      // $('.education-contains').hide();
       $('.work').show();
       $('.projects').hide();
     } else {
       // $('.project-info').hide();
       // $('.projects').show();
-      $('.education-contains').hide();
+      // $('.education-contains').hide();
       $('.experience-contains').hide();
     }
   }
@@ -94,57 +95,58 @@ function changeContent(event){
     }
     $('#nav')[0].src = "img/hamburger.png";
     $('#nav')[0].alt = "Hamburger";
-    if(target.hash === "#education"){ 
-      $('.education-contains').show();
-      $('.experience-contains').hide();
-    } else if (target.hash === "#experience") {
+    // if(target.hash === "#education"){ 
+    //   $('.education-contains').show();
+    //   $('.experience-contains').hide();
+    // } 
+    if (target.hash === "#experience") {
       $('.experience-contains').show();
-      $('.education-contains').hide();
+      // $('.education-contains').hide();
     }
   }
 };
 
-function switchEducationContent(event) {
-  sub_items = $('.sub-items').children();
-  var target = event.target;
-  select(target, true);
-  console.log(target.hash);
-  if(target.hash === sub_items[0].hash){
-    $('.coursework').hide();
-    $('.work').hide();
-    $('.projects').hide();
-    $('.school').fadeIn();
-    select(sub_items[0], true);
-    select(sub_items[1], false);  
-  } else {
-    $('.school').hide();
-    $('.work').hide();
-    $('.projects').hide();
-    $('.coursework').fadeIn();
-    select(sub_items[1], true);
-    select(sub_items[0], false);  
-  }
-};
+// function switchEducationContent(event) {
+//   sub_items = $('.sub-items').children();
+//   var target = event.target;
+//   select(target, true);
+//   console.log(target.hash);
+//   if(target.hash === sub_items[0].hash){
+//     $('.coursework').hide();
+//     $('.work').hide();
+//     $('.projects').hide();
+//     $('.school').fadeIn();
+//     select(sub_items[0], true);
+//     select(sub_items[1], false);  
+//   } else {
+//     $('.school').hide();
+//     $('.work').hide();
+//     $('.projects').hide();
+//     $('.coursework').fadeIn();
+//     select(sub_items[1], true);
+//     select(sub_items[0], false);  
+//   }
+// };
 
 function switchExperienceContent(event) {
   sub_items = $('.sub-items').children();
   var target = event.target;
   select(target, true);
   console.log(target.hash);
-  if(target.hash === sub_items[2].hash){
-    $('.school').hide();
-    $('.coursework').hide();
+  if(target.hash === sub_items[0].hash){
+    // $('.school').hide();
+    // $('.coursework').hide();
     $('.projects').hide();
     $('.work').fadeIn();
-    select(sub_items[2], true);
-    select(sub_items[3], false);  
+    select(sub_items[0], true);
+    select(sub_items[1], false);  
   } else {
-    $('.school').hide();
-    $('.coursework').hide();
+    // $('.school').hide();
+    // $('.coursework').hide();
     $('.work').hide();
     $('.projects').fadeIn();
-    select(sub_items[3], true);
-    select(sub_items[2], false);  
+    select(sub_items[1], true);
+    select(sub_items[0], false);  
   }
 };
 
@@ -198,10 +200,10 @@ $(document).ready(function () {
   // $('.project-info').hide();
   hideAllContent();
   $('.about').show();
-  $('.coursework').hide();
+  // $('.coursework').hide();
   $('.projects').hide();
   select($('.sub-items').children().first(), true);
-  $('.education-contains').hide();
+  // $('.education-contains').hide();
   $('.experience-contains').hide();
   var active = $('.items').children().first();
   select(active, true);
