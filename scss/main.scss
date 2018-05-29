@@ -320,56 +320,20 @@ html, body {
         width: 30%;
       }
     }
-      @media all and (max-width: 500px) {
-        .contact{
-          flex-direction: column;
-          #contact-form{
-            input{
-              width: 60vw !important;
-            }
-            textarea{
-              width: 70vw !important;
-            }
+    @media all and (max-width: 500px) {
+      .contact{
+        flex-direction: column;
+        #contact-form{
+          input{
+            width: 60vw !important;
           }
-          .contact-info{
-            width: 100%;
+          textarea{
+            width: 70vw !important;
           }
         }
-      }
-  }
-  .footer-wrapper{
-    margin-top: auto;
-    position: relative;
-    display: block;
-    height: 80px;
-    bottom: 0;
-    .footer {
-      position: absolute;
-      height: 80px;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background: white;
-      justify-content: center;
-      .social-container {
-        display: flex;
-        height: 80px;
-        justify-content: center;
-        flex-flow: row;
-        border-top: 1px solid #e6e9eb;
-        .icons {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          img {
-            display: block;
-            margin: auto;
-            width: 40%;
-          }
+        .contact-info{
+          width: 100%;
         }
-      }
-      .made-with{
-        text-align: center;
       }
     }
   }
