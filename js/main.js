@@ -203,7 +203,6 @@ $(document).ready(function () {
   hideAllContent();
   $('.about').show();
   $('.coursework').hide();
-  $('.work').hide();
   $('.projects').hide();
   select($('.sub-items').children().first(), true);
   $('.education-contains').hide();
