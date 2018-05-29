@@ -177,8 +177,7 @@ html, body {
       padding-bottom: 30px;
     }
     .education {
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding: 30px 30px;
       height: 100%;
       width: 80%;
       display: flex;
@@ -187,38 +186,153 @@ html, body {
       align-items: center;
       text-align: center;
       .school {
-        .school-text {
-          text-align: start;
-        }
-        .projects{
 
-        }
-        .project-info {
-
-        }
       }
       .coursework {
-        width: 100%;
-        .coursework-text{
-          text-align: start;
-        }
-        .projects{
 
-        }
       }
     }
     .experienece {
+      padding: 30px 30px;
       height: 100%;
       width: 80%;
-      padding-top: 30px;
-      padding-bottom: 30px;
       display: flex;
       flex-flow: column;
+      justify-content: center;
       align-items: center;
-      .notes-text {
-        text-align: start;
-      }
       text-align: center;
+      .work {
+        .work-text {
+          text-align: start;
+        }
+        .projects {
+          display: block;
+          align-self: flex-start;
+          .project-container {
+            display: table;
+            content: " ";
+            .projectCell {
+              cursor: pointer;
+              font-weight: bold;
+              font-size: large;
+              padding: 10px;
+              transition: .2s ease-in-out;
+              .projectContent:hover {
+                transform: scale(1.1);
+              }
+            }
+            .description {
+              width: 80%;
+              text-align: center;
+              margin: auto;
+              padding-bottom: 10px;
+              color: #444;
+              margin-top: 10px;
+              font-weight: lighter;
+              font-size: 14px;
+              line-height: 1.8;
+            }
+          }
+        }
+        .project-info {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          .cancel {
+            cursor: pointer;
+            align-self: flex-end;
+            img {
+              width: 30px;
+            }
+          }
+          .project-info-container {
+            .project-media {
+              img {
+                width: 70%;
+                height: 90%;
+              }
+            }
+            .videoWrapper {
+
+            }
+            .project-title {
+              text-align: center;
+              font-weight: bold;
+              font-size: 20px;
+            }
+            .project-details {
+              align-self: flex-start;
+              text-align: start;
+            }
+          }
+        }
+      }
+      .project {
+        .project-text {
+          text-align: start;
+        }
+        .projects {
+          display: block;
+          align-self: flex-start;
+          .project-container {
+            display: table;
+            content: " ";
+            .projectCell {
+              cursor: pointer;
+              font-weight: bold;
+              font-size: large;
+              padding: 10px;
+              transition: .2s ease-in-out;
+              .projectContent:hover {
+                transform: scale(1.1);
+              }
+            }
+            .description {
+              width: 80%;
+              text-align: center;
+              margin: auto;
+              padding-bottom: 10px;
+              color: #444;
+              margin-top: 10px;
+              font-weight: lighter;
+              font-size: 14px;
+              line-height: 1.8;
+            }
+          }
+        }
+        .project-info {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          .cancel {
+            cursor: pointer;
+            align-self: flex-end;
+            img {
+              width: 30px;
+            }
+          }
+          .project-info-container {
+            .project-media {
+              img {
+                width: 70%;
+                height: 90%;
+              }
+            }
+            .videoWrapper {
+
+            }
+            .project-title {
+              text-align: center;
+              font-weight: bold;
+              font-size: 20px;
+            }
+            .project-details {
+              align-self: flex-start;
+              text-align: start;
+            }
+          }
+        }
+      }
     }
     .other{
       padding-top: 30px;
