@@ -192,8 +192,9 @@ html, body {
 
       }
     }
-    .experienece {
-      padding: 30px 30px;
+    .experience {
+      padding-top: 30px;
+      padding-bottom: 30px;
       height: 100%;
       width: 80%;
       display: flex;
@@ -205,19 +206,19 @@ html, body {
         .work-text {
           text-align: start;
         }
-        .projects {
+        .projects{
           display: block;
           align-self: flex-start;
-          .project-container {
+          .project-container{
             display: table;
             content: " ";
-            .projectCell {
+            .projectCell{
               cursor: pointer;
               font-weight: bold;
               font-size: large;
               padding: 10px;
               transition: .2s ease-in-out;
-              .projectContent:hover {
+              .projectContent:hover{
                 transform: scale(1.1);
               }
             }
@@ -246,14 +247,24 @@ html, body {
             }
           }
           .project-info-container {
-            .project-media {
+            .project-media{
               img {
                 width: 70%;
                 height: 90%;
               }
             }
             .videoWrapper {
-
+              position: relative;
+              padding-bottom: 56.25%; /* 16:9 */
+              padding-top: 25px;
+              height: 0;
+              iframe{
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              }
             }
             .project-title {
               text-align: center;
@@ -268,8 +279,38 @@ html, body {
         }
       }
       .project {
-        .project-text {
+        width: 100%;
+        .project-text{
           text-align: start;
+        }
+        .projects{
+          display: block;
+          align-self: flex-start;
+          .project-container{
+            display: table;
+            content: " ";
+            .projectCell{
+              font-weight: bold;
+              font-size: large;
+              padding: 10px;
+              .projectContent{
+                img{
+                  max-width: 400px;
+                  max-height: 500px;
+                }
+              }
+            }
+            .description {
+              text-align: start;
+              margin: auto;
+              padding-bottom: 10px;
+              color: #444;
+              margin-top: 10px;
+              font-weight: lighter;
+              font-size: 14px;
+              line-height: 1.8;
+            }
+          }
         }
       }
     }
