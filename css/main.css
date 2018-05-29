@@ -307,36 +307,36 @@ html, body {
   text-align: start;
 }
 /* line 281, ../scss/main.scss */
-.container .main-content .experience .project {
+.container .main-content .experience .code {
   width: 100%;
 }
 /* line 283, ../scss/main.scss */
-.container .main-content .experience .project .project-text {
+.container .main-content .experience .code .code-text {
   text-align: start;
 }
 /* line 286, ../scss/main.scss */
-.container .main-content .experience .project .projects {
+.container .main-content .experience .code .projects {
   display: block;
   align-self: flex-start;
 }
 /* line 289, ../scss/main.scss */
-.container .main-content .experience .project .projects .project-container {
+.container .main-content .experience .code .projects .project-container {
   display: table;
   content: " ";
 }
 /* line 292, ../scss/main.scss */
-.container .main-content .experience .project .projects .project-container .projectCell {
+.container .main-content .experience .code .projects .project-container .projectCell {
   font-weight: bold;
   font-size: large;
   padding: 10px;
 }
 /* line 297, ../scss/main.scss */
-.container .main-content .experience .project .projects .project-container .projectCell .projectContent img {
+.container .main-content .experience .code .projects .project-container .projectCell .projectContent img {
   max-width: 400px;
   max-height: 500px;
 }
 /* line 303, ../scss/main.scss */
-.container .main-content .experience .project .projects .project-container .description {
+.container .main-content .experience .code .projects .project-container .description {
   text-align: start;
   margin: auto;
   padding-bottom: 10px;
