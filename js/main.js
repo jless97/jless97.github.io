@@ -67,16 +67,14 @@ function changeContent(event){
     if(target.hash === "#education"){
       select($(nav_elem_list[1]), true);
       $('.education-contains').fadeIn();
+      $('.experience-contains').hide();
       $('.school').show();
       $('.coursework').hide();
-      $('.work').hide();
-      $('.projects').hide();
     } else if (target.hash === "#experience"){
       select($(nav_elem_list[2]), true);
       $('.experience-contains').fadeIn();
+      $('.education-contains').hide();
       $('.work').show();
-      $('.school').hide();
-      $('.coursework').hide();
       $('.projects').hide();
     } else {
       // $('.project-info').hide();
