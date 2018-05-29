@@ -68,6 +68,15 @@ function changeContent(event){
       $('.education-contains').fadeIn();
       $('.school').show();
       $('.coursework').hide();
+      $('.work').hide();
+      $('.projects').hide();      
+    } else if (target.hash === "#experience"){
+      select($(nav_elem_list[2]), true);
+      $('.education-contains').fadeIn();
+      $('.work').show();
+      $('.school').hide();
+      $('.coursework').hide();
+      $('.projects').hide(); 
     } else {
       // $('.project-info').hide();
       // $('.projects').show();
@@ -96,14 +105,40 @@ function switchEducationContent(event) {
   console.log(target.hash);
   if(target.hash === sub_items[0].hash){
     $('.coursework').hide();
+    $('.work').hide();
+    $('.projects').hide();
     $('.school').fadeIn();
     select(sub_items[0], true);
-    select(sub_items[1], false);  
-  } else {
+    select(sub_items[1], false);
+    select(sub_items[2], false);  
+    select(sub_items[3], false);    
+  } else if (target.hash === sub_items[1].hash) {
     $('.school').hide();
+    $('.work').hide();
+    $('.projects').hide();
     $('.coursework').fadeIn();
     select(sub_items[1], true);
-    select(sub_items[0], false);  
+    select(sub_items[0], false);
+    select(sub_items[2], false);  
+    select(sub_items[3], false);    
+  } else if (target.hash === sub_items[2].hash) {
+    $('.school').hide();
+    $('.coursework').hide();
+    $('.projects').hide();
+    $('.work').fadeIn();
+    select(sub_items[2], true);
+    select(sub_items[0], false);
+    select(sub_items[1], false);  
+    select(sub_items[3], false);    
+  } else {
+    $('.school').hide();
+    $('.coursework').hide();
+    $('.work').hide();
+    $('.projects').fadeIn();
+    select(sub_items[3], true);
+    select(sub_items[0], false);
+    select(sub_items[1], false);  
+    select(sub_items[2], false);    
   }
 };
 
@@ -158,6 +193,8 @@ $(document).ready(function () {
   hideAllContent();
   $('.about').show();
   $('.coursework').hide();
+  $('.work').hide();
+  $('.projects').hide();
   select($('.sub-items').children().first(), true);
   $('.education-contains').hide();
   var active = $('.items').children().first();
