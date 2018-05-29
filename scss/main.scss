@@ -299,24 +299,12 @@ html, body {
       display: flex;
       flex-flow: column;
       align-items: center;
-      .education-text {
-        text-align: start;
-      }
       text-align: center;
-      .projectCell{
-        font-weight: bold;
-        font-size: large;
+      .school {
+
       }
-      .projectContent{
-        img{
-          width: 200px;
-          height: 200px;
-        }
-      }
-      .description {
-        font-weight: lighter;
-        font-size: 14px;
-        line-height: 1.7em;
+      .coursework {
+        
       }
     }
     .contact{

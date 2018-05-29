@@ -338,27 +338,7 @@ html, body {
   align-items: center;
   text-align: center;
 }
-/* line 302, ../scss/main.scss */
-.container .main-content .education .education-text {
-  text-align: start;
-}
-/* line 306, ../scss/main.scss */
-.container .main-content .education .projectCell {
-  font-weight: bold;
-  font-size: large;
-}
-/* line 311, ../scss/main.scss */
-.container .main-content .education .projectContent img {
-  width: 200px;
-  height: 200px;
-}
-/* line 316, ../scss/main.scss */
-.container .main-content .education .description {
-  font-weight: lighter;
-  font-size: 14px;
-  line-height: 1.7em;
-}
-/* line 322, ../scss/main.scss */
+/* line 310, ../scss/main.scss */
 .container .main-content .contact {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -366,18 +346,18 @@ html, body {
   display: flex;
   flex-flow: row;
 }
-/* line 328, ../scss/main.scss */
+/* line 316, ../scss/main.scss */
 .container .main-content .contact .contact-box {
   width: 70%;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
 }
-/* line 333, ../scss/main.scss */
+/* line 321, ../scss/main.scss */
 .container .main-content .contact .contact-box #contact-form {
   width: 100%;
 }
-/* line 335, ../scss/main.scss */
+/* line 323, ../scss/main.scss */
 .container .main-content .contact .contact-box #contact-form input {
   margin-bottom: 50px;
   width: 40%;
@@ -386,7 +366,7 @@ html, body {
   display: block;
   padding-bottom: 10px;
 }
-/* line 343, ../scss/main.scss */
+/* line 331, ../scss/main.scss */
 .container .main-content .contact .contact-box #contact-form textarea {
   margin-bottom: 20px;
   border: none;
@@ -394,34 +374,34 @@ html, body {
   width: 90%;
   height: 100px;
 }
-/* line 350, ../scss/main.scss */
+/* line 338, ../scss/main.scss */
 .container .main-content .contact .contact-box #contact-form #btn {
   width: 150px;
   align-self: center;
 }
-/* line 354, ../scss/main.scss */
+/* line 342, ../scss/main.scss */
 .container .main-content .contact .contact-box #contact-form input:focus,
 .container .main-content .contact .contact-box #contact-form textarea:focus {
   outline: none;
 }
-/* line 360, ../scss/main.scss */
+/* line 348, ../scss/main.scss */
 .container .main-content .contact .contact-info {
   width: 30%;
 }
 @media all and (max-width: 500px) {
-  /* line 365, ../scss/main.scss */
+  /* line 353, ../scss/main.scss */
   .container .main-content .contact {
     flex-direction: column;
   }
-  /* line 368, ../scss/main.scss */
+  /* line 356, ../scss/main.scss */
   .container .main-content .contact #contact-form input {
     width: 60vw !important;
   }
-  /* line 371, ../scss/main.scss */
+  /* line 359, ../scss/main.scss */
   .container .main-content .contact #contact-form textarea {
     width: 70vw !important;
   }
-  /* line 375, ../scss/main.scss */
+  /* line 363, ../scss/main.scss */
   .container .main-content .contact .contact-info {
     width: 100%;
   }

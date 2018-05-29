@@ -34,6 +34,7 @@ function hideNav(){
 function goHome(event){
   hideNav();
   $('.work-contains').hide();
+  $('.education-contains').hide();
   hideAllContent();
   select($('.items').children().first(), true);
   $('.about').fadeIn();
@@ -68,12 +69,17 @@ function changeContent(event){
       $('.work-contains').fadeIn();
       $('.code').show();
       $('.design').hide();
-    } else {
+    } else if (target.hash === "#education"){
+      select($(nav_elem_list[2]), true);
+      $('.education-contains').fadeIn();
+      $('.school').show();
+      $('.coursework').hide();
+    }
+    else {
       $('.work-info').hide();
       $('.works').show();
-      // $('.project-info').hide();
-      // $('.projects').show();
       $('.work-contains').hide();
+      $('.education-contains').hide();
     }
   }
   if($(window).width() <= 500){
@@ -90,21 +96,63 @@ function changeContent(event){
   }
 };
 
+// function switchWorkContent(event) {
+//   sub_items = $('.sub-items').children();
+//   var target = event.target;
+//   select(target, true);
+//   console.log(target.hash);
+//   if(target.hash === sub_items[0].hash){
+//     $('.design').hide();
+//     $('.code').fadeIn();
+//     select(sub_items[0], true);
+//     select(sub_items[1], false);  
+//   } else {
+//     $('.code').hide();
+//     $('.design').fadeIn();
+//     select(sub_items[1], true);
+//     select(sub_items[0], false);  
+//   }
+// };
 function switchWorkContent(event) {
   sub_items = $('.sub-items').children();
   var target = event.target;
   select(target, true);
   console.log(target.hash);
   if(target.hash === sub_items[0].hash){
+    $('.school').hide();
+    $('.coursework').hide();
     $('.design').hide();
     $('.code').fadeIn();
     select(sub_items[0], true);
     select(sub_items[1], false);  
   } else {
+    $('.school').hide();
+    $('.coursework').hide();
     $('.code').hide();
     $('.design').fadeIn();
     select(sub_items[1], true);
     select(sub_items[0], false);  
+  }
+};
+function switchEducationContent(event) {
+  sub_items = $('.sub-items').children();
+  var target = event.target;
+  select(target, true);
+  console.log(target.hash);
+  if(target.hash === sub_items[2].hash){
+    $('.coursework').hide();
+    $('.code').hide();
+    $('.design').hide();
+    $('.school').fadeIn();
+    select(sub_items[2], true);
+    select(sub_items[3], false);  
+  } else {
+    $('.school').hide();
+    $('.code').hide();
+    $('.design').hide();
+    $('.coursework').fadeIn();
+    select(sub_items[3], true);
+    select(sub_items[2], false);  
   }
 };
 
@@ -178,8 +226,10 @@ $(document).ready(function () {
   hideAllContent();
   $('.about').show();
   $('.design').hide();
+  $('.coursework').hide();
   select($('.sub-items').children().first(), true);
   $('.work-contains').hide();
+  $('.education-contains').hide();
   var active = $('.items').children().first();
   select(active, true);
 });
