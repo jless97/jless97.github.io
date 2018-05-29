@@ -68,18 +68,20 @@ function changeContent(event){
       select($(nav_elem_list[1]), true);
       $('.education-contains').fadeIn();
       $('.experience-contains').hide();
+
       $('.school').show();
       $('.coursework').hide();
       $('.work').hide();
-      $('.projects').hide();
+      $('.project').hide();
     } else if (target.hash === "#experience"){
       select($(nav_elem_list[2]), true);
       $('.experience-contains').fadeIn();
       $('.education-contains').hide();
+
       $('.work').show();
       $('.school').hide();
       $('.coursework').hide();
-      $('.projects').hide();
+      $('.project').hide();
     } else {
       $('.project-info').hide();
       $('.projects').show();
@@ -116,14 +118,14 @@ function switchEducationContent(event) {
   if(target.hash === sub_items[0].hash){
     $('.coursework').hide();
     $('.work').hide();
-    $('.projects').hide();
+    $('.project').hide();
     $('.school').fadeIn();
     select(sub_items[0], true);
     select(sub_items[1], false);  
   } else {
     $('.school').hide();
     $('.work').hide();
-    $('.projects').hide();
+    $('.project').hide();
     $('.coursework').fadeIn();
     select(sub_items[1], true);
     select(sub_items[0], false);  
@@ -138,7 +140,7 @@ function switchExperienceContent(event) {
   if(target.hash === sub_items[2].hash){
     $('.school').hide();
     $('.coursework').hide();
-    $('.projects').hide();
+    $('.project').hide();
     $('.work').fadeIn();
     select(sub_items[2], true);
     select(sub_items[3], false);  
@@ -146,7 +148,7 @@ function switchExperienceContent(event) {
     $('.school').hide();
     $('.coursework').hide();
     $('.work').hide();
-    $('.projects').fadeIn();
+    $('.project').fadeIn();
     select(sub_items[3], true);
     select(sub_items[2], false);  
   }
@@ -204,7 +206,7 @@ $(document).ready(function () {
   $('.about').show();
   $('.coursework').hide();
   $('.work').hide();
-  $('.projects').hide();
+  $('.project').hide();
   select($('.sub-items').children().first(), true);
   $('.education-contains').hide();
   $('.experience-contains').hide();
