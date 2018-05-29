@@ -98,53 +98,38 @@ function changeContent(event){
   }
 };
 
-// function switchEducationContent(event) {
-//   sub_items = $('.sub-items').children();
-//   var target = event.target;
-//   select(target, true);
-//   console.log(target.hash);
-//   if(target.hash === sub_items[0].hash){
-//     $('.coursework').hide();
-//     $('.school').fadeIn();
-//     select(sub_items[0], true);
-//     select(sub_items[1], false);  
-//   } else {
-//     $('.school').hide();
-//     $('.coursework').fadeIn();
-//     select(sub_items[1], true);
-//     select(sub_items[0], false);  
-//   }
-// };
-
-function switchEducationContent(event, contentType) {
+function switchEducationContent(event) {
   sub_items = $('.sub-items').children();
   var target = event.target;
   select(target, true);
   console.log(target.hash);
-  if (contentType == 'education') {
-    if (target.hash === sub_items[0].hash) {
-      $('.coursework').hide();
-      $('.school').fadeIn();
-      select(sub_items[0], true);
-      select(sub_items[1], false);  
-    } else {
-      $('.school').hide();
-      $('.coursework').fadeIn();
-      select(sub_items[1], true);
-      select(sub_items[0], false);  
-    }
+  if(target.hash === sub_items[0].hash){
+    $('.coursework').hide();
+    $('.school').fadeIn();
+    select(sub_items[0], true);
+    select(sub_items[1], false);  
   } else {
-    if (target.hash === sub_items[2].hash) {
-      $('.projects').hide();
-      $('.work').fadeIn();
-      select(sub_items[2], true);
-      select(sub_items[3], false);  
-    } else {
-      $('.work').hide();
-      $('.projects').fadeIn();
-      select(sub_items[3], true);
-      select(sub_items[2], false);  
-    }
+    $('.school').hide();
+    $('.coursework').fadeIn();
+    select(sub_items[1], true);
+    select(sub_items[0], false);  
+  }
+};
+function switchExperienceContent(event) {
+  sub_items = $('.sub-items').children();
+  var target = event.target;
+  select(target, true);
+  console.log(target.hash);
+  if(target.hash === sub_items[2].hash){
+    $('.projects').hide();
+    $('.work').fadeIn();
+    select(sub_items[2], true);
+    select(sub_items[3], false);  
+  } else {
+    $('.work').hide();
+    $('.projects').fadeIn();
+    select(sub_items[3], true);
+    select(sub_items[2], false);  
   }
 };
 
