@@ -123,7 +123,9 @@ function changeContent(event){
     }
     $('#nav')[0].src = "img/hamburger.png";
     $('#nav')[0].alt = "Hamburger";
-    if(target.hash === "#work"){ $('.work-contains').show();}
+    if(target.hash === "#work"){ $('.work-contains').show(); }
+    else if(target.hash === "#study"){ $('education-contains').show(); }
+    else if(target.hash === "#other"){ $('other-contains').show(); }
   }
 };
 

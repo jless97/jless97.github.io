@@ -212,7 +212,7 @@ a {
         .work-text {
           text-align: start;
         }
-        .works{
+        .works {
           display: block;
           align-self: flex-start;
           .work-container{
@@ -257,19 +257,6 @@ a {
               img {
                 width: 70%;
                 height: 90%;
-              }
-            }
-            .videoWrapper {
-              position: relative;
-              padding-bottom: 56.25%; /* 16:9 */
-              padding-top: 25px;
-              height: 0;
-              iframe{
-                position: absolute;
-                top:0;
-                left: 0;
-                width: 100%;
-                height: 100%;
               }
             }
             .work-title {
@@ -333,19 +320,6 @@ a {
               img {
                 width: 70%;
                 height: 90%;
-              }
-            }
-            .videoWrapper {
-              position: relative;
-              padding-bottom: 56.25%; /* 16:9 */
-              padding-top: 25px;
-              height: 0;
-              iframe{
-                position: absolute;
-                top:0;
-                left: 0;
-                width: 100%;
-                height: 100%;
               }
             }
             .project-title {
@@ -429,7 +403,38 @@ a {
       align-items: center;
       text-align: center;
       .books {
-
+        .books-text {
+          text-align: start;
+        }
+        .books-row {
+          display: block;
+          align-self: flex-start;
+          .books-container {
+            display: table;
+            content: " ";
+            .bookCell {
+              cursor: pointer;
+              font-weight: bold;
+              font-size: large;
+              padding: 10px;
+              transition: .2s ease-in-out;
+              .bookContent:hover{
+                transform: scale(1.1);
+              }
+            }
+            .description {
+              width: 80%;
+              text-align: center;
+              margin: auto;
+              padding-bottom: 10px;
+              color: #444;
+              margin-top: 10px;
+              font-weight: lighter;
+              font-size: 14px;
+              line-height: 1.8;
+            }
+          }
+        }
       }
       .piano {
 
