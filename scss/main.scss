@@ -60,6 +60,7 @@ a {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #e6e9eb;
+    padding-bottom: 5px;
     .nav-container {
       width: 100%;
       display: flex;
@@ -194,7 +195,7 @@ a {
       padding-top: 50px;
       padding-bottom: 60px;
       .about-text {
-        padding-top: -60px;
+        padding-top: -80px;
       }
     }
     .work {
