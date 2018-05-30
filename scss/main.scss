@@ -408,4 +408,40 @@ a {
       }
     }
   }
+  .footer-wrapper{
+    margin-top: auto;
+    position: relative;
+    display: block;
+    height: 80px;
+    bottom: 0;
+    .footer {
+      position: absolute;
+      height: 80px;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: white;
+      justify-content: center;
+      .social-container {
+        display: flex;
+        height: 80px;
+        justify-content: center;
+        flex-flow: row;
+        border-top: 1px solid #e6e9eb;
+        .icons {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          img {
+            display: block;
+            margin: auto;
+            width: 40%;
+          }
+        }
+      }
+      .made-with{
+        text-align: center;
+      }
+    }
+  }
 }
