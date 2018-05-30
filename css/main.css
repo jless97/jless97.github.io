@@ -196,9 +196,9 @@ a {
   padding-top: 50px;
   padding-bottom: 60px;
 }
-/* line 167, ../scss/main.scss */
+/* line 169, ../scss/main.scss */
 .container .main-content .about .about-text {
-  padding-top: 10px;
+  padding-top: -60px;
 }
 /* line 173, ../scss/main.scss */
 .container .main-content .work {

@@ -164,11 +164,11 @@ a {
     .about {
       height: 100%;
       width: 80%;
-      .about-text {
-        padding-top: 10px;
-      }
       padding-top: 50px;
       padding-bottom: 60px;
+      .about-text {
+        padding-top: -60px;
+      }
     }
     .work {
       padding-top: 30px;
