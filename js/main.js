@@ -70,7 +70,7 @@ function changeContent(event){
       $('.education-contains').hide();
       $('.other-contains').hide();
 
-      $('.design').hide();
+      $('.prj').hide();
       $('.school').hide();
       $('.coursework').hide();
       $('.books').hide();
@@ -84,7 +84,7 @@ function changeContent(event){
       $('.other-contains').hide();
 
       $('.code').hide();
-      $('.design').hide();
+      $('.prj').hide();
       $('.coursework').hide();
       $('.books').hide();
       $('.piano').hide();
@@ -97,7 +97,7 @@ function changeContent(event){
       $('.education-contains').hide();
 
       $('.code').hide();
-      $('.design').hide();
+      $('.prj').hide();
       $('.school').hide();
       $('.coursework').hide();
       $('.piano').hide();
@@ -135,7 +135,7 @@ function switchWorkContent(event) {
   if(target.hash === sub_items[0].hash){
     $('.school').hide();
     $('.coursework').hide();
-    $('.design').hide();
+    $('.prj').hide();
     $('.books').hide();
     $('.piano').hide();
 
@@ -149,7 +149,7 @@ function switchWorkContent(event) {
     $('.books').hide();
     $('.piano').hide();
 
-    $('.design').fadeIn();
+    $('.prj').fadeIn();
     select(sub_items[1], true);
     select(sub_items[0], false);  
   }
@@ -162,7 +162,7 @@ function switchEducationContent(event) {
   if(target.hash === sub_items[2].hash){
     $('.coursework').hide();
     $('.code').hide();
-    $('.design').hide();
+    $('.prj').hide();
     $('.books').hide();
     $('.piano').hide();
 
@@ -172,7 +172,7 @@ function switchEducationContent(event) {
   } else {
     $('.school').hide();
     $('.code').hide();
-    $('.design').hide();
+    $('.prj').hide();
     $('.books').hide();
     $('.piano').hide();
 
@@ -190,7 +190,7 @@ function switchOtherContent(event) {
     $('.school').hide();
     $('.coursework').hide();
     $('.code').hide();
-    $('.design').hide();
+    $('.prj').hide();
     $('.piano').hide();
 
     $('.books').fadeIn();
@@ -200,7 +200,7 @@ function switchOtherContent(event) {
     $('.school').hide();
     $('.coursework').hide();
     $('.code').hide();
-    $('.design').hide();
+    $('.prj').hide();
     $('.books').hide();
 
     $('.piano').fadeIn();
@@ -278,7 +278,7 @@ $(document).ready(function () {
   $('.project-info').hide();
   hideAllContent();
   $('.about').show();
-  $('.design').hide();
+  $('.prj').hide();
   $('.coursework').hide();
   $('.piano').hide();
   select($('.sub-items').children().first(), true);

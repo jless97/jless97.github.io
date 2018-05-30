@@ -331,21 +331,21 @@ a {
   text-align: start;
 }
 /* line 288, ../scss/main.scss */
-.container .main-content .work .design .design-text {
+.container .main-content .work .prj .prj-text {
   text-align: start;
 }
 /* line 291, ../scss/main.scss */
-.container .main-content .work .design .projects {
+.container .main-content .work .prj .projects {
   display: block;
   align-self: flex-start;
 }
 /* line 294, ../scss/main.scss */
-.container .main-content .work .design .projects .project-container {
+.container .main-content .work .prj .projects .project-container {
   display: table;
   content: " ";
 }
 /* line 297, ../scss/main.scss */
-.container .main-content .work .design .projects .project-container .projectCell {
+.container .main-content .work .prj .projects .project-container .projectCell {
   cursor: pointer;
   font-weight: bold;
   font-size: large;
@@ -353,11 +353,11 @@ a {
   transition: .2s ease-in-out;
 }
 /* line 303, ../scss/main.scss */
-.container .main-content .work .design .projects .project-container .projectCell .projectContent:hover {
+.container .main-content .work .prj .projects .project-container .projectCell .projectContent:hover {
   transform: scale(1.1);
 }
 /* line 307, ../scss/main.scss */
-.container .main-content .work .design .projects .project-container .description {
+.container .main-content .work .prj .projects .project-container .description {
   width: 80%;
   text-align: center;
   margin: auto;
@@ -369,27 +369,27 @@ a {
   line-height: 1.8;
 }
 /* line 320, ../scss/main.scss */
-.container .main-content .work .design .project-info {
+.container .main-content .work .prj .project-info {
   display: flex;
   flex-flow: column;
   align-items: center;
 }
 /* line 324, ../scss/main.scss */
-.container .main-content .work .design .project-info .cancel {
+.container .main-content .work .prj .project-info .cancel {
   cursor: pointer;
   align-self: flex-end;
 }
 /* line 327, ../scss/main.scss */
-.container .main-content .work .design .project-info .cancel img {
+.container .main-content .work .prj .project-info .cancel img {
   width: 30px;
 }
 /* line 333, ../scss/main.scss */
-.container .main-content .work .design .project-info .project-info-container .project-media img {
+.container .main-content .work .prj .project-info .project-info-container .project-media img {
   width: 70%;
   height: 90%;
 }
 /* line 338, ../scss/main.scss */
-.container .main-content .work .design .project-info .project-info-container .videoWrapper {
+.container .main-content .work .prj .project-info .project-info-container .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
   /* 16:9 */
@@ -397,7 +397,7 @@ a {
   height: 0;
 }
 /* line 343, ../scss/main.scss */
-.container .main-content .work .design .project-info .project-info-container .videoWrapper iframe {
+.container .main-content .work .prj .project-info .project-info-container .videoWrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -405,13 +405,13 @@ a {
   height: 100%;
 }
 /* line 351, ../scss/main.scss */
-.container .main-content .work .design .project-info .project-info-container .project-title {
+.container .main-content .work .prj .project-info .project-info-container .project-title {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
 }
 /* line 356, ../scss/main.scss */
-.container .main-content .work .design .project-info .project-info-container .project-details {
+.container .main-content .work .prj .project-info .project-info-container .project-details {
   align-self: flex-start;
   text-align: start;
 }
