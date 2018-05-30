@@ -35,6 +35,7 @@ function goHome(event){
   hideNav();
   $('.work-contains').hide();
   $('.education-contains').hide();
+  $('.other-contains').hide();
   hideAllContent();
   select($('.items').children().first(), true);
   $('.about').fadeIn();
@@ -67,28 +68,49 @@ function changeContent(event){
     if(target.hash === "#work"){
       select($(nav_elem_list[1]), true);
       $('.education-contains').hide();
+      $('.other-contains').hide();
+
       $('.design').hide();
       $('.school').hide();
       $('.coursework').hide();
+      $('.books').hide();
+      $('.piano').hide();
 
       $('.work-contains').fadeIn();
       $('.code').show();
     } else if (target.hash === "#education"){
       select($(nav_elem_list[2]), true);
       $('.work-contains').hide();
+      $('.other-contains').hide();
+
       $('.code').hide();
       $('.design').hide();
       $('.coursework').hide();
+      $('.books').hide();
+      $('.piano').hide();
 
       $('.education-contains').fadeIn();
       $('.school').show();
-    }
-    else {
+    } else if (target.hash === "#other"){
+      select($(nav_elem_list[4]), true);
+      $('.work-contains').hide();
+      $('.education-contains').hide();
+
+      $('.code').hide();
+      $('.design').hide();
+      $('.school').hide();
+      $('.coursework').hide();
+      $('.piano').hide();
+
+      $('.other-contains').fadeIn();
+      $('.books').show();
+    } else {
       $('.work-info').hide();
       $('.works').show();
 
       $('.work-contains').hide();
       $('.education-contains').hide();
+      $('.other-contains').hide();
     }
   }
   if($(window).width() <= 500){
@@ -105,23 +127,6 @@ function changeContent(event){
   }
 };
 
-// function switchWorkContent(event) {
-//   sub_items = $('.sub-items').children();
-//   var target = event.target;
-//   select(target, true);
-//   console.log(target.hash);
-//   if(target.hash === sub_items[0].hash){
-//     $('.design').hide();
-//     $('.code').fadeIn();
-//     select(sub_items[0], true);
-//     select(sub_items[1], false);  
-//   } else {
-//     $('.code').hide();
-//     $('.design').fadeIn();
-//     select(sub_items[1], true);
-//     select(sub_items[0], false);  
-//   }
-// };
 function switchWorkContent(event) {
   sub_items = $('.sub-items').children();
   var target = event.target;
@@ -131,6 +136,8 @@ function switchWorkContent(event) {
     $('.school').hide();
     $('.coursework').hide();
     $('.design').hide();
+    $('.books').hide();
+    $('.piano').hide();
 
     $('.code').fadeIn();
     select(sub_items[0], true);
@@ -139,6 +146,8 @@ function switchWorkContent(event) {
     $('.school').hide();
     $('.coursework').hide();
     $('.code').hide();
+    $('.books').hide();
+    $('.piano').hide();
 
     $('.design').fadeIn();
     select(sub_items[1], true);
@@ -154,6 +163,8 @@ function switchEducationContent(event) {
     $('.coursework').hide();
     $('.code').hide();
     $('.design').hide();
+    $('.books').hide();
+    $('.piano').hide();
 
     $('.school').fadeIn();
     select(sub_items[2], true);
@@ -162,10 +173,39 @@ function switchEducationContent(event) {
     $('.school').hide();
     $('.code').hide();
     $('.design').hide();
-    
+    $('.books').hide();
+    $('.piano').hide();
+
     $('.coursework').fadeIn();
     select(sub_items[3], true);
     select(sub_items[2], false);  
+  }
+};
+function switchOtherContent(event) {
+  sub_items = $('.sub-items').children();
+  var target = event.target;
+  select(target, true);
+  console.log(target.hash);
+  if(target.hash === sub_items[4].hash){
+    $('.school').hide();
+    $('.coursework').hide();
+    $('.code').hide();
+    $('.design').hide();
+    $('.piano').hide();
+
+    $('.books').fadeIn();
+    select(sub_items[4], true);
+    select(sub_items[5], false);  
+  } else {
+    $('.school').hide();
+    $('.coursework').hide();
+    $('.code').hide();
+    $('.design').hide();
+    $('.books').hide();
+
+    $('.piano').fadeIn();
+    select(sub_items[5], true);
+    select(sub_items[4], false);  
   }
 };
 
@@ -240,9 +280,11 @@ $(document).ready(function () {
   $('.about').show();
   $('.design').hide();
   $('.coursework').hide();
+  $('.piano').hide();
   select($('.sub-items').children().first(), true);
   $('.work-contains').hide();
   $('.education-contains').hide();
+  $('.other-contains').hide();
   var active = $('.items').children().first();
   select(active, true);
 });
