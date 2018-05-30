@@ -192,15 +192,15 @@ a {
     .about {
       height: 100%;
       width: 80%;
-      padding-top: 50px;
-      padding-bottom: 60px;
+      padding-top: 15px;
+      padding-bottom: 20px;
       .about-text {
-        padding-top: -80px;
+        padding-top: -50px;
       }
     }
     .work {
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 15px;
+      padding-bottom: 20px;
       height: 100%;
       width: 80%;
       display: flex;
@@ -364,8 +364,8 @@ a {
     .education {
       height: 100%;
       width: 80%;
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 15px;
+      padding-bottom: 20px;
       display: flex;
       flex-flow: column;
       align-items: center;
@@ -378,8 +378,8 @@ a {
       }
     }
     .contact {
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 15px;
+      padding-bottom: 20px;
       width: 80%;
       display: flex;
       flex-flow: row;
@@ -420,6 +420,14 @@ a {
       }
     }
     .other {
+      height: 100%;
+      width: 80%;
+      padding-top: 15px;
+      padding-bottom: 20px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      text-align: center;
       .books {
 
       }
@@ -476,6 +484,7 @@ a {
         }
       }
       .made-with{
+        font-family: 'Raleway', sans-serif;
         text-align: center;
       }
     }
