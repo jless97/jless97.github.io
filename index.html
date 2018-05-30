@@ -420,7 +420,7 @@
               <p> <b> Platform: </b> Intel Edison using the Grove Sensor Kit <br> 
               <b> Languages: </b> C <br>
               <b> Period: </b> May 2017 <br>
-              <b> Program Output: </b> <a href="https://www.youtube.com/watch?v=ErEtNlNEZDc&t=7s" target="blank">Link</a> <br>
+              <b> Terminal Program: </b> <a href="https://www.youtube.com/watch?v=ErEtNlNEZDc&t=7s" target="blank">Link</a> <br>
               <b> Description: </b> <br>
               The goal of this project was to implement a simple IoT system using the Intel Edison (and various Grove Kit sensors) to unlock a door by sending a username/password string to a server, and receiving back authentication. Initially, the program was achieved using a single light sensor, which was used to encode a binary value to generate a 4-digit password. Moreover, the username was hardcoded into the program. This password was sent as plaintext to the server, and a plaintext response from the server (i.e. a YES or NO) was received by the Edison. Obviously, this simple implementation had serious security flaws such as the short password, and the unencrypted transmission of data to and from the server. This would make the client/server connection susceptible to a number of enemy attacks such as brute-force, dictionary, and rainbow attacks (for the weak password), and man-in-the-middle and replay attacks (due to the lack of encrypted data).
               <br> <br>
