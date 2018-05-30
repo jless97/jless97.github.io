@@ -471,17 +471,16 @@ a {
 }
 /* line 415, ../scss/main.scss */
 .container .main-content .other .books .books-row .books-container .bookCell {
-  cursor: pointer;
   font-weight: bold;
   font-size: large;
   padding: 10px;
   transition: .2s ease-in-out;
 }
-/* line 421, ../scss/main.scss */
+/* line 420, ../scss/main.scss */
 .container .main-content .other .books .books-row .books-container .bookCell .bookContent:hover {
   transform: scale(1.1);
 }
-/* line 425, ../scss/main.scss */
+/* line 424, ../scss/main.scss */
 .container .main-content .other .books .books-row .books-container .description {
   width: 80%;
   text-align: center;
@@ -494,24 +493,24 @@ a {
   line-height: 1.8;
 }
 @media all and (max-width: 500px) {
-  /* line 444, ../scss/main.scss */
+  /* line 443, ../scss/main.scss */
   .container .main-content .contact {
     flex-direction: column;
   }
-  /* line 447, ../scss/main.scss */
+  /* line 446, ../scss/main.scss */
   .container .main-content .contact #contact-form input {
     width: 60vw !important;
   }
-  /* line 450, ../scss/main.scss */
+  /* line 449, ../scss/main.scss */
   .container .main-content .contact #contact-form textarea {
     width: 70vw !important;
   }
-  /* line 454, ../scss/main.scss */
+  /* line 453, ../scss/main.scss */
   .container .main-content .contact .contact-info {
     width: 100%;
   }
 }
-/* line 460, ../scss/main.scss */
+/* line 459, ../scss/main.scss */
 .container .footer-wrapper {
   margin-top: auto;
   position: relative;
@@ -519,7 +518,7 @@ a {
   height: 80px;
   bottom: 0;
 }
-/* line 466, ../scss/main.scss */
+/* line 465, ../scss/main.scss */
 .container .footer-wrapper .footer {
   position: absolute;
   height: 80px;
@@ -529,7 +528,7 @@ a {
   background: white;
   justify-content: center;
 }
-/* line 474, ../scss/main.scss */
+/* line 473, ../scss/main.scss */
 .container .footer-wrapper .footer .social-container {
   display: flex;
   height: 80px;
@@ -537,19 +536,19 @@ a {
   flex-flow: row;
   border-top: 1px solid #e6e9eb;
 }
-/* line 480, ../scss/main.scss */
+/* line 479, ../scss/main.scss */
 .container .footer-wrapper .footer .social-container .icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-/* line 484, ../scss/main.scss */
+/* line 483, ../scss/main.scss */
 .container .footer-wrapper .footer .social-container .icons img {
   display: block;
   margin: auto;
   width: 40%;
 }
-/* line 491, ../scss/main.scss */
+/* line 490, ../scss/main.scss */
 .container .footer-wrapper .footer .made-with {
   font-family: 'Raleway', sans-serif;
   text-align: center;
