@@ -44,7 +44,6 @@ html, body {
         .contains {
           display: flex;
           width: 50%;
-          height: 5%;
           justify-content: center;
           flex-flow: row;
           .items {
@@ -55,14 +54,12 @@ html, body {
               display: block;
               margin: auto;
               width: 45%;
-              height: 30%;
             }
           }
         }
         .work-contains {
           margin-right: 21%;
           width: 25%;
-          height: 5%;
           display: flex;
           justify-content: center;
           flex-flow: row;
@@ -75,14 +72,12 @@ html, body {
               display: block;
               margin: auto;
               width: 45%;
-              height: 30%;
             }
           }
         }
         .education-contains {
           margin-right: 21%;
           width: 25%;
-          height: 5%;
           display: flex;
           justify-content: center;
           flex-flow: row;
@@ -95,7 +90,6 @@ html, body {
               display: block;
               margin: auto;
               width: 45%;
-              height: 30%;
             }
           }
         }
@@ -107,7 +101,6 @@ html, body {
             flex-direction:column;
             img {
               width: 50px !important;
-              height: 35px !important;
             }
           }
           .toggle {
@@ -120,7 +113,6 @@ html, body {
             align-items: center;
             img {
               width: 50px !important;
-              height: 35px !important;
             }
           }
           .education-contains {
@@ -130,7 +122,6 @@ html, body {
             align-items: center;
             img {
               width: 50px !important;
-              height: 35px !important;
             }
           }
         }
