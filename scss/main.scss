@@ -2,21 +2,17 @@
 @import "partials/variables";
 @import "partials/mixins";
 
-@font-face{
-  font-family: default-font;
-  src: url(../AvenirLTStd-Light.otf);
-}
-@font-face{
-  font-family: default-font;
-  src: url(../AvenirLTStd-Roman.otf);
-  font-weight: bold;
-}
 // For the HTML and Body
 html, body {
+  font-family: 'Lato', sans-serif;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', sans-serif;
 }
 
 h1 {
