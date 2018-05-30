@@ -41,14 +41,14 @@
           </div>
           <div onclick="changeContent(event)" class="items">
             <a href="#work" onclick="return false">
-              <img class="off" src="img/experience_off.png">
-              <img class="on" src="img/experience_on.png">
+              <img class="off" src="img/work_off.png">
+              <img class="on" src="img/work_on.png">
             </a>
           </div>
           <div onclick="changeContent(event)" class="items">
             <a href="#education" onclick="return false">
-              <img class="off" src="img/education_off.png">
-              <img class="on" src="img/education_on.png">
+              <img class="off" src="img/study_off.png">
+              <img class="on" src="img/study_on.png">
             </a>
           </div>
           <div onclick="changeContent(event)" class="items">
@@ -67,8 +67,8 @@
         <div class="work-contains">
           <div onclick="switchWorkContent(event)" id="code-nav" class="items sub-items">
             <a href="#code" onclick="return false">
-              <img class="off" src="img/work_off.png">
-              <img class="on" src="img/work_on.png">
+              <img class="off" src="img/industry_off.png">
+              <img class="on" src="img/industry_on.png">
             </a>
           </div>
           <div onclick="switchWorkContent(event)" id="design-nav" class="items sub-items">
@@ -87,8 +87,22 @@
           </div>
           <div onclick="switchEducationContent(event)" id="coursework-nav" class="items sub-items">
             <a href="#coursework" onclick="return false">
-              <img class="off" src="img/coursework_off.png">
-              <img class="on" src="img/coursework_on.png">
+              <img class="off" src="img/courses_off.png">
+              <img class="on" src="img/courses_on.png">
+            </a>
+          </div>
+        </div>
+        <div class="other-contains">
+          <div onclick="switchOtherContent(event)" id="books-nav" class="items sub-items">
+            <a href="#books" onclick="return false">
+              <img class="off" src="img/books_off.png">
+              <img class="on" src="img/books_on.png">
+            </a>
+          </div>
+          <div onclick="switchOtherContent(event)" id="piano-nav" class="items sub-items">
+            <a href="#piano" onclick="return false">
+              <img class="off" src="img/piano_off.png">
+              <img class="on" src="img/piano_on.png">
             </a>
           </div>
         </div>
@@ -488,6 +502,36 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+<!---------------------------------------------------------------------->
+    <div id="contact" class="col-xs-12 col-sm-12 col-md-12 contact">
+      <div class="col-xs-12 col-sm-12 col-md-6 contact-box">
+        <form id="contact-form" action="https://formspree.io/jaless1997@gmail.com" method="POST">
+          <fieldset>
+            <input type="text" name="name" placeholder="Name"/>
+            <input type="text" name="email" placeholder="Email"/>
+            <input type="text" name="_gotcha" style="display: none"/>
+            <textarea name="Message" placeholder="Enter your message here..."></textarea>
+          </fieldset>
+          <fieldset>
+            <input class="btn" type="submit" value="Get in Touch"/>
+          </fieldset>
+        </form>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 contact-info">
+        <p> If you would like to get in touch with me, or have any questions regarding my coursework at UCLA, work experience, or other projects please feel free to send me a message using the form below. In addition, at the bottom of every page you can find other places to find me. </p>
+      </div>
+    </div>
+<!---------------------------------------------------------------------->
+    <div id="other" class="other">
+      <!-- Books Section -->
+      <div id="books" class="books">
+
+      </div>
+      <!-- Piano Section -->
+      <div id="piano" class="other">
+
       </div>
     </div>
   </div>
