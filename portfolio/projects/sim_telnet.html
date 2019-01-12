@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jason Less - Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn more about Jason Less" />
+  <meta name="keywords" content="Jason Less, computer science, software, engineer, developer, UCLA" />
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+  
+  <!-- Website Favicon -->
+  <link rel="shortcut icon" href="../../images/website_icon.png" type="image/png"/>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="../../css/animate.css">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="../../css/icomoon.css">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+
+  <!-- Theme style  -->
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- Modernizr JS -->
+  <script src="../../js/modernizr-2.6.2.min.js"></script>
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+
+  </head>
+  <body>
+    
+  <div class="loader"></div>
+  
+  <div id="page">
+  <nav class="nav" role="navigation">
+    <div class="container">
+      <div class="top-logo">
+        <div id="logo"><a href="../../index.html">Jason Less</a></div>
+      </div>
+      <div class="top-menu menu-1 text-center">
+        <ul>
+          <li><a href="../../blog/blog.html">Blog</a></li>
+          <li class="has-dropdown">
+            <a href="#" class="active">Portfolio</a>
+            <ul class="dropdown">
+              <li><a href="../work.html">Work</a></li>
+              <li><a href="../projects.html">Projects</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Study</a>
+            <ul class="dropdown">
+              <li><a href="../../study/school.html">School</a></li>
+              <li><a href="../../study/coursework.html">Coursework</a></li>
+            </ul>
+          </li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="top-social menu-1 text-right">
+        <ul class="social">
+          <li><a href="https://www.facebook.com/jasonaless" target="_blank"><i class="icon-facebook"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/jasonless/" target="_blank"><i class="icon-linkedin"></i></a></li>
+          <li><a href="mailto:jaless1997@gmail.com?Subject=Getting%20in%20touch" target="_top"><i class="icon-email"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="author">
+    <div class="container">
+      <!-- SimTelnet Banner -->
+      <div class="row">
+          <img class="work-banner img-responsive" src="../../images/projects/sim_telnet_banner.png" alt="SimTelnet banner">
+      </div>
+      <!-- SimTelnet Description -->
+      <div class="row">
+        <div class="col-md-12 text-left">
+          <div class="col-md-2"></div>
+          <div class="col-md-8 role">
+            <h2 class="text-center">Overview</h2>
+            <p> <b> Platform: </b> Xcode <br> 
+              <b> Languages: </b> C <br>
+              <b> Period: </b> April 2017 - May 2017 <br>
+              <b> Description: </b> <br>
+              Created a multi-process program (consisting of a client, server, and shell) that operates similar to the Telnet protocol by allowing the client to communicate with the server process. This is achieved via the TCP protocol, in which the client is able to send a byte stream of data to the server, which execs and transfers the data to the shell process, in which the shell process outputs the data back to the client process via pipe redirection.
+              <br> <br>
+              In addition, the program builds on the client/server connection by adding a layer of encryption to encrypt the communication between the two processes. This was achieved by utilizing the libmcrypt data encryption library. On the command-line, the encryption option can be invoked by adding the --encrypt option, and setting it equal to the my.key file (which was the encryption key that I created). Moreover, the program allows for a transcript of the client/server connection to be saved to a log file by adding the --log option. This log records the commands input by the client process, as well as the output provided by the shell process.
+              </p> <hr>
+            <p class="text-center"><a href="https://github.com/jless97/CS111/tree/master/Project_1b" target="_blank" class="btn btn-primary">GitHub Source Code</a></p>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+      <!-- SimTelnet Photos -->
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <p class="animate-box"><img class="projects-photos" src="../../images/projects/sim_telnet_photo.png" class="img-responsive" alt="SimTelnet Gameplay"></p>  
+
+          <div class="row row-pt-md portfolio-navigation">
+            <div class="col-xs-4 text-left">
+              <a href="space_invaders_fpga.html" class="btn btn-primary btn-outline"><i class="icon-chevron-left"></i> Prev </a>
+            </div>
+            <div class="col-xs-4 text-center">
+              <a href="../projects.html" class="btn btn-primary btn-outline"><i class="icon-grid2"></i> View All</a>
+            </div>
+            <div class="col-xs-4 text-right">
+              <a href="iot_security.html" class="btn btn-primary btn-outline">Next <i class="icon-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="row copyright">
+        <div class="col-md-12 text-center">
+          <p>
+            <small class="block">&copy; 2019 Jason Less</small> 
+          </p>
+          
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/jasonaless" target="_blank"><i class="icon-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jasonless/" target="_blank"><i class="icon-linkedin"></i></a></li>
+            <li><a href="https://github.com/jless97" target="_blank"><i class="icon-github"></i></a></li>
+            <li><a href="mailto:jaless1997@gmail.com?Subject=Getting%20in%20touch" target="_top"><i class="icon-email"></i></a></li>
+            <li><a href="../../resume_jasonless.pdf" target="_blank"><i class="icon-paper"></i></a></li>
+          </ul>
+          
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  </div>
+
+  <div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+  </div>
+  
+  <!-- jQuery -->
+  <script src="../../js/jquery.min.js"></script>
+  <!-- jQuery Easing -->
+  <script src="../../js/jquery.easing.1.3.js"></script>
+  <!-- Bootstrap -->
+  <script src="../../js/bootstrap.min.js"></script>
+  <!-- Waypoints -->
+  <script src="../../js/jquery.waypoints.min.js"></script>
+  <!-- Main -->
+  <script src="../../js/main.js"></script>
+
+  </body>
+</html>
+

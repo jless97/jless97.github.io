@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jason Less - Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn more about Jason Less" />
+  <meta name="keywords" content="Jason Less, computer science, software, engineer, developer, UCLA" />
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+  
+  <!-- Website Favicon -->
+  <link rel="shortcut icon" href="../../images/website_icon.png" type="image/png"/>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="../../css/animate.css">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="../../css/icomoon.css">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+
+  <!-- Theme style  -->
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- Modernizr JS -->
+  <script src="../../js/modernizr-2.6.2.min.js"></script>
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+
+  </head>
+  <body>
+    
+  <div class="loader"></div>
+  
+  <div id="page">
+  <nav class="nav" role="navigation">
+    <div class="container">
+      <div class="top-logo">
+        <div id="logo"><a href="../../index.html">Jason Less</a></div>
+      </div>
+      <div class="top-menu menu-1 text-center">
+        <ul>
+          <li><a href="../../blog/blog.html">Blog</a></li>
+          <li class="has-dropdown">
+            <a href="#" class="active">Portfolio</a>
+            <ul class="dropdown">
+              <li><a href="../work.html">Work</a></li>
+              <li><a href="../projects.html">Projects</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Study</a>
+            <ul class="dropdown">
+              <li><a href="../../study/school.html">School</a></li>
+              <li><a href="../../study/coursework.html">Coursework</a></li>
+            </ul>
+          </li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="top-social menu-1 text-right">
+        <ul class="social">
+          <li><a href="https://www.facebook.com/jasonaless" target="_blank"><i class="icon-facebook"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/jasonless/" target="_blank"><i class="icon-linkedin"></i></a></li>
+          <li><a href="mailto:jaless1997@gmail.com?Subject=Getting%20in%20touch" target="_top"><i class="icon-email"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="author">
+    <div class="container">
+      <!-- IoT Security Banner -->
+      <div class="row">
+          <img class="work-banner img-responsive" src="../../images/projects/iot_security_banner.png" alt="IoT Security banner">
+      </div>
+      <!-- IoT Security Description -->
+      <div class="row">
+        <div class="col-md-12 text-left">
+          <div class="col-md-2"></div>
+          <div class="col-md-8 role">
+            <h2 class="text-center">Overview</h2>
+              <p> <b> Platform: </b> Intel Edison using the Grove Sensor Kit <br> 
+              <b> Languages: </b> C <br>
+              <b> Period: </b> May 2017 <br>
+              <b> Program Execution: </b> <a href="https://www.youtube.com/watch?v=ErEtNlNEZDc&t=7s" target="blank">Link</a> <br>
+              <b> Description: </b> <br>
+              The goal of this project was to implement a simple IoT system using the Intel Edison (and various Grove Kit sensors) to unlock a door by sending a username/password string to a server, and receiving back authentication. Initially, the program was achieved using a single light sensor, which was used to encode a binary value to generate a 4-digit password. Moreover, the username was hardcoded into the program. This password was sent as plaintext to the server, and a plaintext response from the server (i.e. a YES or NO) was received by the Edison. Obviously, this simple implementation had serious security flaws such as the short password, and the unencrypted transmission of data to and from the server. This would make the client/server connection susceptible to a number of enemy attacks such as brute-force, dictionary, and rainbow attacks (for the weak password), and man-in-the-middle and replay attacks (due to the lack of encrypted data).
+              <br> <br>
+              A more secure implementation was developed to combat these security flaws. First of all, the password was increased to 8-digits, and instead of just having a binary value for each of the digits, each digit could have 8 possible values (ranging from 0-7). While still not as strong as it could be, this password length and characteristics served its purpose for this assignment. In addition, instead of a hard-coded username, a user of this IoT system could provide their own ID string. The strengthened password helped to protect against several of the attacks mentioned above, but other security measures were taken in the form of a timeout after a certain number of incorrect password attempts took place. After three failed attempts, the server would stop accepting messages from the Edison for a five minute period. This timeout would help to deter brute-force and dictionary attacks as an attacker couldn't just enter in an unlimited amount of attempts to crack the password. While the timeout helps in this regard, it is of importance to note that the actual method to input the password (i.e. the use of light sensors and a push button) would already serve to prevent the use of bots to perform the dictionary attacks for an attacker. Lastly, to prevent against man-in-the-middle and replay attacks, the program encrypted the data on the client (and server side) using the Open SSL APIs. In this way, the data would be encrypted going to the server and upon receiving the reply from the server, further strengthening the IoT system.
+              </p> <hr>
+            <p class="text-center"><a href="https://github.com/jless97/ENGR96A/tree/master/secure_implementation_final" target="_blank" class="btn btn-primary">GitHub Source Code</a></p>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+      <!-- IoT Security Photos -->
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <p class="animate-box"><img class="projects-photos" src="../../images/projects/iot_security_photo.png" class="img-responsive" alt="IoT Security Gameplay"></p>
+          
+          <div class="row row-pt-md portfolio-navigation">
+            <div class="col-xs-4 text-left">
+              <a href="sim_telnet.html" class="btn btn-primary btn-outline"><i class="icon-chevron-left"></i> Prev </a>
+            </div>
+            <div class="col-xs-4 text-center">
+              <a href="../projects.html" class="btn btn-primary btn-outline"><i class="icon-grid2"></i> View All</a>
+            </div>
+            <div class="col-xs-4 text-right">
+              <a href="#" class="btn btn-primary btn-outline disabled">Next <i class="icon-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="row copyright">
+        <div class="col-md-12 text-center">
+          <p>
+            <small class="block">&copy; 2019 Jason Less</small> 
+          </p>
+          
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/jasonaless" target="_blank"><i class="icon-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jasonless/" target="_blank"><i class="icon-linkedin"></i></a></li>
+            <li><a href="https://github.com/jless97" target="_blank"><i class="icon-github"></i></a></li>
+            <li><a href="mailto:jaless1997@gmail.com?Subject=Getting%20in%20touch" target="_top"><i class="icon-email"></i></a></li>
+            <li><a href="../../resume_jasonless.pdf" target="_blank"><i class="icon-paper"></i></a></li>
+          </ul>
+          
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  </div>
+
+  <div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+  </div>
+  
+  <!-- jQuery -->
+  <script src="../../js/jquery.min.js"></script>
+  <!-- jQuery Easing -->
+  <script src="../../js/jquery.easing.1.3.js"></script>
+  <!-- Bootstrap -->
+  <script src="../../js/bootstrap.min.js"></script>
+  <!-- Waypoints -->
+  <script src="../../js/jquery.waypoints.min.js"></script>
+  <!-- Main -->
+  <script src="../../js/main.js"></script>
+
+  </body>
+</html>
+

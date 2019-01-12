@@ -1,292 +1,198 @@
-function determineContent(elem, should_hide){
-  if(should_hide){
-    $(elem).hide();
-  } else {
-    $(elem).fadeIn(500);
-  }
-};
+;(function () {
+	
+	'use strict';
 
-function hideAllContent(){
-  var content_list = $('.main-content').children();
-  for(var i = 0; i < content_list.length; i++){
-    determineContent(content_list[i], true);
-  }
-};
+	var mobileMenuOutsideClick = function() {
 
-function select(elem, sel){
-  if(sel){
-    $(elem).children('.off').hide();
-    $(elem).children('.on').show();
-  } else {
-    $(elem).children('.on').hide();
-    $(elem).children('.off').show();
-  }
-};
+		$(document).click(function (e) {
+	    var container = $("#offcanvas, .js-nav-toggle");
+	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 
-function hideNav(){
-  var nav_elem_list = $('.items').children();
-  for(var i = 0; i < nav_elem_list.length; i++){
-    var temp_elem = nav_elem_list[i];
-    select(temp_elem, false);
-  }
-};
+	    	if ( $('body').hasClass('offcanvas') ) {
 
-function goHome(event){
-  hideNav();
-  $('.work-contains').hide();
-  $('.education-contains').hide();
-  $('.other-contains').hide();
-  hideAllContent();
-  select($('.items').children().first(), true);
-  $('.about').fadeIn();
-  if($(window).width() <= 500){
-    $('.active').removeClass("active");
-    var nav = $('.items').children().slice(0,-2);
-    $(nav[0]).first().addClass("active");
-    $('#nav')[0].src = "img/hamburger.png";
-    $('#nav')[0].alt = "Hamburger";
-    $(nav[0]).show();
-    for(var i = 1; i < nav.length; i++){
-      $(nav[i]).hide();
-    }
-  }
-};
+    			$('body').removeClass('offcanvas');
+    			$('.js-nav-toggle').removeClass('active');
+				
+	    	}
+	    
+	    	
+	    }
+		});
 
-function changeContent(event){
-  hideNav();
-  var nav_elem_list = $('.items').children();
-  select($('.sub-items').children().first(), true);
-  var target = event.target;
-  hideAllContent();
-  select(target, true);
-  var content_list = $('.main-content').children();
-  for(var i = 0; i < content_list.length; i++){
-    if(target.hash === ("#"+content_list[i].id)){
-      determineContent(content_list[i], false);
-    }
+	};
 
-    if(target.hash === "#work"){
-      select($(nav_elem_list[1]), true);
-      $('.education-contains').hide();
-      $('.other-contains').hide();
 
-      $('.prj').hide();
-      $('.school').hide();
-      $('.coursework').hide();
-      $('.books').hide();
-      $('.piano').hide();
+	var offcanvasMenu = function() {
 
-      $('.work-contains').fadeIn();
-      $('.code').show();
-    } else if (target.hash === "#education"){
-      select($(nav_elem_list[2]), true);
-      $('.work-contains').hide();
-      $('.other-contains').hide();
+		$('#page').prepend('<div id="offcanvas" />');
+		$('#page').prepend('<a href="#" class="js-nav-toggle nav-toggle nav-white"><i></i></a>');
+		var clone1 = $('.menu-1 > ul').clone();
+		$('#offcanvas').append(clone1);
+		var clone2 = $('.menu-2 > ul').clone();
+		$('#offcanvas').append(clone2);
 
-      $('.code').hide();
-      $('.prj').hide();
-      $('.coursework').hide();
-      $('.books').hide();
-      $('.piano').hide();
+		$('#offcanvas .has-dropdown').addClass('offcanvas-has-dropdown');
+		$('#offcanvas')
+			.find('li')
+			.removeClass('has-dropdown');
 
-      $('.education-contains').fadeIn();
-      $('.school').show();
-    } else if (target.hash === "#other"){
-      select($(nav_elem_list[4]), true);
-      $('.work-contains').hide();
-      $('.education-contains').hide();
+		// Hover dropdown menu on mobile
+		$('.offcanvas-has-dropdown').mouseenter(function(){
+			var $this = $(this);
 
-      $('.code').hide();
-      $('.prj').hide();
-      $('.school').hide();
-      $('.coursework').hide();
-      $('.piano').hide();
+			$this
+				.addClass('active')
+				.find('ul')
+				.slideDown(500, 'easeOutExpo');				
+		}).mouseleave(function(){
 
-      $('.other-contains').fadeIn();
-      $('.books').show();
-    } else {
-      $('.work-info').hide();
-      $('.works').show();
+			var $this = $(this);
+			$this
+				.removeClass('active')
+				.find('ul')
+				.slideUp(500, 'easeOutExpo');				
+		});
 
-      $('.work-contains').hide();
-      $('.education-contains').hide();
-      $('.other-contains').hide();
-    }
-  }
-  if($(window).width() <= 500){
-    $('.active').removeClass("active");
-    $(target).addClass("active");
-    for(var i = 0; i < nav_elem_list.length-2; i++){
-      if( nav_elem_list[i] != target){
-        $(nav_elem_list[i]).hide();
-      }
-    }
-    $('#nav')[0].src = "img/hamburger.png";
-    $('#nav')[0].alt = "Hamburger";
-    if(target.hash === "#work"){ $('.work-contains').show(); }
-    else if(target.hash === "#study"){ $('education-contains').show(); }
-    else if(target.hash === "#other"){ $('other-contains').show(); }
-  }
-};
 
-function switchWorkContent(event) {
-  sub_items = $('.sub-items').children();
-  var target = event.target;
-  select(target, true);
-  console.log(target.hash);
-  if(target.hash === sub_items[0].hash){
-    $('.school').hide();
-    $('.coursework').hide();
-    $('.prj').hide();
-    $('.books').hide();
-    $('.piano').hide();
+		$(window).resize(function(){
 
-    $('.code').fadeIn();
-    select(sub_items[0], true);
-    select(sub_items[1], false);  
-  } else {
-    $('.school').hide();
-    $('.coursework').hide();
-    $('.code').hide();
-    $('.books').hide();
-    $('.piano').hide();
+			if ( $('body').hasClass('offcanvas') ) {
 
-    $('.prj').fadeIn();
-    select(sub_items[1], true);
-    select(sub_items[0], false);  
-  }
-};
-function switchEducationContent(event) {
-  sub_items = $('.sub-items').children();
-  var target = event.target;
-  select(target, true);
-  console.log(target.hash);
-  if(target.hash === sub_items[2].hash){
-    $('.coursework').hide();
-    $('.code').hide();
-    $('.prj').hide();
-    $('.books').hide();
-    $('.piano').hide();
+    			$('body').removeClass('offcanvas');
+    			$('.js-nav-toggle').removeClass('active');
+				
+	    	}
+		});
+	};
 
-    $('.school').fadeIn();
-    select(sub_items[2], true);
-    select(sub_items[3], false);  
-  } else {
-    $('.school').hide();
-    $('.code').hide();
-    $('.prj').hide();
-    $('.books').hide();
-    $('.piano').hide();
 
-    $('.coursework').fadeIn();
-    select(sub_items[3], true);
-    select(sub_items[2], false);  
-  }
-};
-function switchOtherContent(event) {
-  sub_items = $('.sub-items').children();
-  var target = event.target;
-  select(target, true);
-  console.log(target.hash);
-  if(target.hash === sub_items[4].hash){
-    $('.school').hide();
-    $('.coursework').hide();
-    $('.code').hide();
-    $('.prj').hide();
-    $('.piano').hide();
+	var burgerMenu = function() {
 
-    $('.books').fadeIn();
-    select(sub_items[4], true);
-    select(sub_items[5], false);  
-  } else {
-    $('.school').hide();
-    $('.coursework').hide();
-    $('.code').hide();
-    $('.prj').hide();
-    $('.books').hide();
+		$('body').on('click', '.js-nav-toggle', function(event){
+			var $this = $(this);
 
-    $('.piano').fadeIn();
-    select(sub_items[5], true);
-    select(sub_items[4], false);  
-  }
-};
 
-function cancelWork(event) {
-  $('.work-info').hide();
-  $('.works').fadeIn();
-};
-function cancelProject(event) {
-  $('.project-info').hide();
-  $('.projects').fadeIn();
-}
+			if ( $('body').hasClass('overflow offcanvas') ) {
+				$('body').removeClass('overflow offcanvas');
+			} else {
+				$('body').addClass('overflow offcanvas');
+			}
+			$this.toggleClass('active');
+			event.preventDefault();
 
-function showWorkDetail(event){
-  var detailsList = $('.work-info').children().slice(1);
-  var target = event.target;
-  $('.works').hide();
-  $('.work-info').fadeIn();
-  for(var i = 0; i < detailsList.length; i++){
-    var title_text = $(detailsList[i]).children().find('h3').text();
-    if(target.alt === title_text) {
-      $(detailsList[i]).children().show();
-    } else {
-      $(detailsList[i]).children().hide();
-    }
-  }
-};
-function showProjectDetail(event){
-  var detailsList = $('.project-info').children().slice(1);
-  var target = event.target;
-  $('.projects').hide();
-  $('.project-info').fadeIn();
-  for(var i = 0; i < detailsList.length; i++){
-    var title_text = $(detailsList[i]).children().find('h3').text();
-    if(target.alt === title_text) {
-      $(detailsList[i]).children().show();
-    } else {
-      $(detailsList[i]).children().hide();
-    }
-  }
-};
+		});
+	};
 
-function showAll(event){
-  var showNav = $('.items').children().slice(0, -2);
-  if($('#nav')[0].alt === "Hamburger"){
-    for(var i = 0; i < showNav.length; i++){
-      $(showNav).show();
-    }
-    $('#nav')[0].src = "img/x.png";
-    $('#nav')[0].alt = "Cross";
-  } else {
-    for(var i = 0; i < showNav.length; i++){
-      $(showNav[i]).hide();
-    }
-    $(".active").show();
-    $('#nav')[0].src = "img/hamburger.png";
-    $('#nav')[0].alt = "Hamburger";
-  }
-};
 
-$(document).ready(function () {
-  if($(window).width() <=500){
-    var nav_elem_list = $('.items').children();
-    $(nav_elem_list[0]).first().addClass("active");
-    for(var i = 1; i < nav_elem_list.length - 2; i++){
-      $(nav_elem_list[i]).hide();
-    }
-  }
-  $('.on').hide();
-  $('.work-info').hide();
-  $('.project-info').hide();
-  hideAllContent();
-  $('.about').show();
-  $('.prj').hide();
-  $('.coursework').hide();
-  $('.piano').hide();
-  select($('.sub-items').children().first(), true);
-  $('.work-contains').hide();
-  $('.education-contains').hide();
-  $('.other-contains').hide();
-  var active = $('.items').children().first();
-  select(active, true);
-});
+
+	var contentWayPoint = function() {
+		var i = 0;
+		$('.animate-box').waypoint( function( direction ) {
+
+			if( direction === 'down' && !$(this.element).hasClass('animated-fast') ) {
+				
+				i++;
+
+				$(this.element).addClass('item-animate');
+				setTimeout(function(){
+
+					$('body .animate-box.item-animate').each(function(k){
+						var el = $(this);
+						setTimeout( function () {
+							var effect = el.data('animate-effect');
+							if ( effect === 'fadeIn') {
+								el.addClass('fadeIn animated-fast');
+							} else if ( effect === 'fadeInLeft') {
+								el.addClass('fadeInLeft animated-fast');
+							} else if ( effect === 'fadeInRight') {
+								el.addClass('fadeInRight animated-fast');
+							} else {
+								el.addClass('fadeInUp animated-fast');
+							}
+
+							el.removeClass('item-animate');
+						},  k * 200, 'easeInOutExpo' );
+					});
+					
+				}, 100);
+				
+			}
+
+		} , { offset: '85%' } );
+	};
+
+
+	var dropdown = function() {
+
+		$('.has-dropdown').mouseenter(function(){
+
+			var $this = $(this);
+			$this
+				.find('.dropdown')
+				.css('display', 'block')
+				.addClass('animated-fast fadeInUpMenu');
+
+		}).mouseleave(function(){
+			var $this = $(this);
+
+			$this
+				.find('.dropdown')
+				.css('display', 'none')
+				.removeClass('animated-fast fadeInUpMenu');
+		});
+
+	};
+
+	var goToTop = function() {
+
+		$('.js-gotop').on('click', function(event){
+			
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $('html').offset().top
+			}, 500, 'easeInOutExpo');
+			
+			return false;
+		});
+
+		$(window).scroll(function(){
+
+			var $win = $(window);
+			if ($win.scrollTop() > 200) {
+				$('.js-top').addClass('active');
+			} else {
+				$('.js-top').removeClass('active');
+			}
+
+		});
+	
+	};
+
+
+	// Loading page
+	var loaderPage = function() {
+		$(".loader").fadeOut("slow");
+	};
+
+	var counter = function() {
+		$('.js-counter').countTo({
+			 formatter: function (value, options) {
+	      return value.toFixed(options.decimals);
+	    },
+		});
+	};
+
+	
+	$(function(){
+		mobileMenuOutsideClick();
+		offcanvasMenu();
+		burgerMenu();
+		contentWayPoint();
+		dropdown();
+		goToTop();
+		loaderPage();
+	});
+
+
+}());
