@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jason Less - Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn more about Jason Less" />
+  <meta name="keywords" content="Jason Less, computer science, software, engineer, developer, UCLA" />
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+  
+  <!-- Website Favicon -->
+  <link rel="shortcut icon" href="../images/website_icon.png" type="image/png"/>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="../css/animate.css">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="../css/icomoon.css">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+
+  <!-- Theme style  -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Modernizr JS -->
+  <script src="../js/modernizr-2.6.2.min.js"></script>
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+
+  </head>
+  <body>
+    
+  <div class="loader"></div>
+  
+  <div id="page">
+  <nav class="nav" role="navigation">
+    <div class="container">
+      <div class="top-logo">
+        <div id="logo"><a href="../index.html">Jason Less</a></div>
+      </div>
+      <div class="top-menu menu-1 text-center">
+        <ul>
+          <li><a class="active" href="blog.html">Blog</a></li>
+          <li class="has-dropdown">
+            <a href="#">Portfolio</a>
+            <ul class="dropdown">
+              <li><a href="../portfolio/work.html">Work</a></li>
+              <li><a href="../portfolio/projects.html">Projects</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Study</a>
+            <ul class="dropdown">
+              <li><a href="../study/school.html">School</a></li>
+              <li><a href="../study/coursework.html">Coursework</a></li>
+            </ul>
+          </li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="top-social menu-1 text-right">
+        <ul class="social">
+          <li><a href="https://www.facebook.com/jasonaless" target="_blank"><i class="icon-facebook"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/jasonless/" target="_blank"><i class="icon-linkedin"></i></a></li>
+          <li><a href="mailto:jaless1997@gmail.com?Subject=Getting%20in%20touch" target="_top"><i class="icon-email"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="author">
+    <div class="container">
+      <!-- Yelp Banner -->
+      <div class="row">
+          <img class="work-banner img-responsive" src="../images/work/yelp_banner.jpg" alt="Yelp banner">
+      </div>
+      <!-- Yelp Blog -->
+      <div class="row">
+        <div class="col-md-12 text-left">
+          <div class="col-md-2"></div>
+          <div class="col-md-8 role">
+            <!-- Title -->
+            <h3 class="text-left">Software Engineering Internship @ Yelp</h3>
+            <p>January 10, 2019</p>
+            <!-- Table of Contents -->
+            <p><b>Table of Contents</b></p>
+            <ol>
+              <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#workedon">What I worked on</a></li>
+              <li><a href="#events">Internship Events</a></li>
+              <li><a href="#perks">Perks</a></li>
+              <li><a href="#office">Office Building</a></li>
+              <li><a href="#conclusion">Final Thoughts</a></li>
+            </ol><hr>
+            <!-- Introduction -->
+            <h4 id="introduction">Introduction</h4>
+            <p>Yelp is one of the largest online local business search, review and recommendation service, which enables consumers to access ratings, and read reviews and opinions about local businesses. Yelp is headquartered in San Francisco, CA and was founded in 2004 with the mission to connect people to great local businesses.</p>
+            <p>In Fall 2018, I interned as a Software Engineering Intern at Yelp in San Francisco, CA. The internship lasted sixteen weeks and there were around 40 interns during the Fall Quarter. Yelp puts on a fantastic internship program called the Yelp Internship Program (YIP) that featured 1-2 intern events every week. In terms of compensation and perks, Yelp pays interns competitively with other top tech companies (Google, Facebook, LinkedIn) and provided interns with a decent amount of swag.</p>
+            <!-- What I Worked On --><hr>
+            <h4 id="workedon">What I worked on</h4>
+            <p">During my internship, I worked as a Backend Software Engineering Intern for the Commerce Platform - Revenue Team. This was my first internship with a tech company; and as such, I learned a remarkable amount from my internship. In addition, the amount I learned was compounded due to the fact that I got to work on an end-to-end feature that worked through all phases of the design and development process.</p>
+            <p>Yelp develops new services as a part of the Service-Oriented Architecture (SOA) concept and has a fancy Platform-as-a-Service (PaaS) distributed system known as PaaSTA, which is used for building, deploying, and running new services. The feature that I worked on involved designing and implementing a service in Yelp's SOA, and then deploying it using PaaSTA and a Jenkins Continuous Integration (CI) pipeline.</p>
+
+            <p>To allow other services to interface with the newly created service, I created RESTful APIs to expose service endpoints, and documented these endpoints using Swagger UI, which generates a visually interactive documenation website to view API endpoints, details, and interact with the API's resources.</p>
+
+            <p>When developing new services, it is a good idea to provide proper documentation so that new developers can easily understand what the code means. In addition, developing these new services should emit certain information so that engineers know at all times the current health and performance of the service. Thus, if a service crashes or is performing slower than expected, can either be restarted or improved. This later concept is known as service observability, and I was able to add this to the service I created by logging events using Scribe, which is a server for aggregating log data streamed in real-time and emitting metrics, which were monitored using dashboards I created in third-party analytics monitoring platforms Splunk and SignalFX. Lastly, I added to the observability of the service by adding error-alerting capabilities using Sensu alerts and defining Service-Level Objectives (SLOs), which define certain performance or up-time service requirements.</p>
+
+            <p>The final aspect of developing this new service involved stress testing the performance of interfacing with the service APIs to ensure that the service could handle a large volume of requests in a given duration of time.To achieve the performance requirements, I wrote a Locust load testing script and observed service endpoint response times using Zipkin, which is a distributed tracing system used to gather timing data of each component in a given service request.</p>
+            <!-- Internship Events --><hr>
+            <h4 id="events">Internship Events</h4>
+            <p>YIP hosted many enjoyable internship events throughout the quarter that amounted to 1-2 events every week. These events were all optional and consisted of mainly interns only. A list of some of the events can be seen below:</p>
+            <ul>
+              <li>San Francisco Giants Baseball Game</li>
+              <li>Magic Show</li>
+              <li>Escape Room</li>
+              <li>Ice Skating</li>
+              <li>Trip to Fisherman's Wharf</li>
+              <li>Trip to Angel Island</li>
+              <li>Bowling</li>
+              <li>Mini Golf</li>
+              <li>Pumpkin Carving</li>
+              <li>Intern social with top executives</li>
+            </ul>
+            <p><iframe width="621" height="400" src="https://www.youtube.com/embed/WZMrokahIGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            <!-- Perks --><hr>
+            <h4 id="perks">Perks</h4>
+            <p>Before my internship started, Yelp mailed me a couple packages consisting of Yelp swag. After the internship, first-time interns got a custom Yelp Internship Program shirt, while returning interns got a custom Yelp Internship Program picnic mat.</p>
+            <p><img src="../../images/work/yelp_swag_photo.jpg" class="img-responsive" alt="Yelp Swag"></p>
+            <!-- Office Building --><hr>
+            <h4 id="office">Office Building</h4>
+            <p>Yelp HQ is located in the historic PacBell building located at 140 New Montgomery St in San Francisco, in which they occupy around fifteen floors within the building. Each Yelp-owned floor consists of open floor-plan workspaces, private conference rooms, pantry full of snacks, etc. The 8th floor is usually where people go to eat lunch or take a break as it features Yelp's own coffee shop, kitchen area stocked with some lunch options, billiards table, and foosball table.</p>
+            <p><iframe width="621" height="400" src="https://www.youtube.com/embed/bShTkczeXT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            <!-- Conclusion --><hr>
+            <h4 id="conclusion">Final Thoughts</h4>
+            <p>I really enjoyed my internship at Yelp and living in San Francisco. Yelp occupies a beautiful building with a very new and aesthetically pleasing interior. YIP puts on a great internship program and I got to work on a great project that improved my technical skills drastically. I highly recommend the internship program to others as the size of Yelp as a mid-size tech company allowed for the perfect type of internship experience, which made it possible for Yelp to put on events that all interns could attend and interns could work on meaningful and impactful projects. A larger company like Facebook may have several thousand interns for a given term, which makes it difficult to host intern events where all interns can attend.</p>
+            <p><img src="../../images/work/yelp_photo_2.jpg" class="img-responsive" alt="Me Outside Yelp"></p>
+          </div>
+          <div class="row row-pt-md portfolio-navigation">
+            <div class="col-xs-4 text-left">
+              <a href="#" class="btn btn-primary btn-outline disabled"><i class="icon-chevron-left"></i> Prev </a>
+            </div>
+            <div class="col-xs-4 text-center">
+              <a href="blog.html" class="btn btn-primary btn-outline"><i class="icon-grid2"></i> View All</a>
+            </div>
+            <div class="col-xs-4 text-right">
+              <a href="blog_northrop_grumman.html" class="btn btn-primary btn-outline">Next <i class="icon-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="row copyright">
+        <div class="col-md-12 text-center">
+          <p>
+            <small class="block">&copy; 2019 Jason Less</small> 
+          </p>
+          
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/jasonaless" target="_blank"><i class="icon-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jasonless/" target="_blank"><i class="icon-linkedin"></i></a></li>
+            <li><a href="https://github.com/jless97" target="_blank"><i class="icon-github"></i></a></li>
+            <li><a href="mailto:jaless1997@gmail.com?Subject=Getting%20in%20touch" target="_top"><i class="icon-email"></i></a></li>
+            <li><a href="../resume_jasonless.pdf" target="_blank"><i class="icon-paper"></i></a></li>
+          </ul>
+          
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  </div>
+
+  <div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+  </div>
+  
+  <!-- jQuery -->
+  <script src="../js/jquery.min.js"></script>
+  <!-- jQuery Easing -->
+  <script src="../js/jquery.easing.1.3.js"></script>
+  <!-- Bootstrap -->
+  <script src="../js/bootstrap.min.js"></script>
+  <!-- Waypoints -->
+  <script src="../js/jquery.waypoints.min.js"></script>
+  <!-- Main -->
+  <script src="../js/main.js"></script>
+
+  </body>
+</html>
+

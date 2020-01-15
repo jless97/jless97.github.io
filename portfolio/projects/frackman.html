@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jason Less - Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn more about Jason Less" />
+  <meta name="keywords" content="Jason Less, computer science, software, engineer, developer, UCLA" />
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+  
+  <!-- Website Favicon -->
+  <link rel="shortcut icon" href="../../images/website_icon.png" type="image/png"/>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="../../css/animate.css">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="../../css/icomoon.css">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+
+  <!-- Theme style  -->
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- Modernizr JS -->
+  <script src="../../js/modernizr-2.6.2.min.js"></script>
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+
+  </head>
+  <body>
+    
+  <div class="loader"></div>
+  
+  <div id="page">
+  <nav class="nav" role="navigation">
+    <div class="container">
+      <div class="top-logo">
+        <div id="logo"><a href="../../index.html">Jason Less</a></div>
+      </div>
+      <div class="top-menu menu-1 text-center">
+        <ul>
+          <li><a href="../../blog/blog.html">Blog</a></li>
+          <li class="has-dropdown">
+            <a href="#" class="active">Portfolio</a>
+            <ul class="dropdown">
+              <li><a href="../work.html">Work</a></li>
+              <li><a href="../projects.html">Projects</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Study</a>
+            <ul class="dropdown">
+              <li><a href="../../study/school.html">School</a></li>
+              <li><a href="../../study/coursework.html">Coursework</a></li>
+            </ul>
+          </li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="top-social menu-1 text-right">
+        <ul class="social">
+          <li><a href="https://www.facebook.com/jasonaless" target="_blank"><i class="icon-facebook"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/jasonless/" target="_blank"><i class="icon-linkedin"></i></a></li>
+          <li><a href="mailto:jaless1997@gmail.com?Subject=Getting%20in%20touch" target="_top"><i class="icon-email"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="author">
+    <div class="container">
+      <!-- FrackMan Banner -->
+      <div class="row">
+          <img class="work-banner img-responsive" src="../../images/projects/frackman_banner.png" alt="FrackMan banner">
+      </div>
+      <!-- FrackMan Description -->
+      <div class="row">
+        <div class="col-md-12 text-left">
+          <div class="col-md-2"></div>
+          <div class="col-md-8 role">
+            <h2 class="text-center">Overview</h2>
+            <p> <b> Platform: </b> Xcode <br> 
+              <b> Languages: </b> C++ <br>
+              <b> Period: </b> Feb. 2016 - March 2016 <br>
+              <b> Gameplay: </b> <a href="https://www.youtube.com/watch?v=FixnDC2_RhY&t=8s" target="blank">Link</a> <br>
+              <b> Description: </b> <br>
+              FrackMan is a 2D video game similar to the classic arcade game "Dig Dug." It was created as a project for my Data Structures (and OOP) course, CS32, at UCLA. The framework was provided by the professor, but all of the contents of the game, and all of the interactions of the objects with one another were all designed and implemented by myself. The objective of the game is for the player (i.e. FrackMan) to navigate through the dirt in the oil field to find all of the oil barrels for the given level. There are a certain number of enemies (i.e. protesters) each level, who attempt to make FrackMan stop mining for oil by continuously shouting at him (if they are within shouting range). There are two types of protesters: the regular protester and the hardcore protester. The FrackMan player can pick up gold nuggets, which can be placed down as bribes to distract the protesters. If a regular protester picks up a gold nugget, he will immediately leave the oil field and stop bothering the FrackMan. If a hardcore protester picks up a gold nugget, he will stand and admire the gold nugget for a given duration before continuing his pursuit of the FrackMan. The FrackMan player can also pick up pools of water, which serve as ammo to his squirt gun. If a protester takes a certain amount of damage from the squirt gun (note that the hardcore protester has more than double the life of the regular protester), he will leave the oil field in bitter defeat. In addition, the FrackMan player can pick up sonar kits, which can be used to illuminate all objects that can be picked up in a given radius (i.e. gold nuggets and oil barrels). Moreover, the FrackMan can use boulders within the oil field to his advantage by strategically timing his route tunneling through the dirt, so that it will fall on a protester. If the FrackMan player is hit by a boulder, he will be instantly killed. Similarly, if a protester is hit by a boulder, he will proceed to leave the oil field. Lastly, the hardcore protester has a special ability that the regular protester does not have. If the hardcore protester is within a certain radius of the FrackMan player (even if he does not have a direct line of sight of the FrackMan), he can use the FrackMan's GPS signal to hone in on his location and track him down. Finally, the player starts the game with three lives, and every time the player gains an additional score of 100,000 points, an extra live is rewarded. Enjoy! And happy mining!!
+              <br> <br>
+              This game involved the implementation of a large set of classes to represent each of the in-game objects (i.e. actors). The StudentWorld class serves as the world, in which all of the in-game objects belong to (i.e the oil field). The actors consist of the player (FrackMan), the enemies (regular and hardcore protesters), pickupable goodies (gold nuggets, oil barrels, pools of water, and sonar kits), obstacles (dirt and boulders), and the FrackMan's squirt gun ammunition (water squirts). Implementing all of these classes involved strategically creating a certain set of base classes, and the corresponding derived classes to exploit similarities in both functionality and private variables. Moreover, this project involved implementing an in-game timing mechanism (based off of a frequency determined by the game framework), in which objects interact and do specific actions on each tick of the game clock. Lastly, implementation of the protester classes involved implementing a Queue-Based Maze-Searching Algorithm in the form of a Depth-First Search in order for the protesters to find the exit point of the oil field upon being killed, and for the hardcore protesters, honing in on the FrackMan's location.
+              </p> <hr>
+            <p class="text-center"><a href="https://github.com/jless97/FRACKMAN" target="_blank" class="btn btn-primary">GitHub Source Code</a></p>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+      <!-- FrackMan Photos -->
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <p class="animate-box"><img class="projects-photos" src="../../images/projects/frackman_gameplay.png" class="img-responsive" alt="FrackMan Gameplay"></p>
+
+          <div class="row row-pt-md portfolio-navigation">
+            <div class="col-xs-4 text-left">
+              <a href="space_inflators.html" class="btn btn-primary btn-outline"><i class="icon-chevron-left"></i> Prev </a>
+            </div>
+            <div class="col-xs-4 text-center">
+              <a href="../projects.html" class="btn btn-primary btn-outline"><i class="icon-grid2"></i> View All</a>
+            </div>
+            <div class="col-xs-4 text-right">
+              <a href="space_invaders_fpga.html" class="btn btn-primary btn-outline">Next <i class="icon-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="row copyright">
+        <div class="col-md-12 text-center">
+          <p>
+            <small class="block">&copy; 2019 Jason Less</small> 
+          </p>
+          
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/jasonaless" target="_blank"><i class="icon-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jasonless/" target="_blank"><i class="icon-linkedin"></i></a></li>
+            <li><a href="https://github.com/jless97" target="_blank"><i class="icon-github"></i></a></li>
+            <li><a href="mailto:jaless1997@gmail.com?Subject=Getting%20in%20touch" target="_top"><i class="icon-email"></i></a></li>
+            <li><a href="../../resume_jasonless.pdf" target="_blank"><i class="icon-paper"></i></a></li>
+          </ul>
+          
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  </div>
+
+  <div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+  </div>
+  
+  <!-- jQuery -->
+  <script src="../../js/jquery.min.js"></script>
+  <!-- jQuery Easing -->
+  <script src="../../js/jquery.easing.1.3.js"></script>
+  <!-- Bootstrap -->
+  <script src="../../js/bootstrap.min.js"></script>
+  <!-- Waypoints -->
+  <script src="../../js/jquery.waypoints.min.js"></script>
+  <!-- Main -->
+  <script src="../../js/main.js"></script>
+
+  </body>
+</html>
+
