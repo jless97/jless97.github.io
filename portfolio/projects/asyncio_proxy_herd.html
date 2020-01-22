@@ -76,7 +76,7 @@
     <div class="container">
       <!-- Asyncio Proxy Herd Banner -->
       <div class="row">
-          <img class="work-banner img-responsive" src="../../images/projects/asyncio_proxy_herd_banner.png" alt="Asyncio Proxy Herd banner">
+          <img class="work-banner img-responsive" src="../../images/projects/asyncio_proxy_herd/asyncio_proxy_herd_banner.png" alt="Asyncio Proxy Herd banner">
       </div>
       <!-- Asyncio Proxy Herd Description -->
       <div class="row">
@@ -84,11 +84,20 @@
           <div class="col-md-2"></div>
           <div class="col-md-8 role">
             <h2 class="text-center">Overview</h2>
-            <p> <b> Platform: </b> Xcode <br> 
+            <p> 
               <b> Languages: </b> Python <br>
-              <b> Period: </b> February 2019 <br>
+              <b> Period: </b> March 2019 <br>
               <b> Description: </b> <br>
-              TODO
+              <u> Background: </u>
+              Wikipedia and its related sites are based on the Wikimedia Architecture, which uses a LAMP platform based on GNU/Linux, Apache, MySQL, and PHP, using multiple, redundant web servers behind a load-balancing virtual router for reliability and performance. LAMP works well for Wikipedia, but let's assume we are creating a new Wikipedia-style service that is designed for news, where (1) updates to articles happen far more often than on Wikipedia, (2) access is done via various protocols (not just HTTP), and (3) clients tend to be more mobile. In this new service, from a software point of view, the application would struggle to add new servers (e.g. for access via cell phones, where the cell phones frequently broadcast their GPS locations). Additionally, from a systems point of view, the response time looks like it will be too slow as the Wikimedia application server is a central bottleneck. 
+
+              <br> <br>
+              <u> Application Server Herd: </u>
+              Given this new service and its unique attributes, this project sought to look into the development of a new architecture called an "application server herd", where the multiple application servers communicate directly to each other as well as via the core database and caches. The interserver communications are designed for rapidly-evolving data (ranging from small stuff such as GPS-based locations to larger stuff such as ephemeral video data). For example, you might have three application servers A, B, and C such that A talks with B and C, but B and C don't talk to each other. The idea of this new architecture is that if a user's cell phone posts its GPS location to any one of the application servers then the other servers will learn of the location after an interserver transmission, without having to talk to the database (which would be a bottleneck). This architecture was written using Python, and utilizes asyncio: an asynchronous networking library, to allow for fast processing of a revolving door of added/dropped connections with other servers.
+
+              <br> <br>
+              <u> Framework: </u>
+              The prototype for this new architecture consists of five servers that communicate to each other (bidirectionally), and each server accepts TCP connections from clients that emulate mobile devices with IP addresses and DNS names. Clients can send their locations to the server by sending messages via a command called IAMAT. Servers respond to IAMAT messages with AT messages that tell clients the server's location. Additionally, clients can send WHATSAT messages to query for information about places near other clients' location (i.e. within a given radius from the client). Interserver communication takes place via AT messages and propagate from server to server via a simple flooding algorithm. Additionally, the server herd is fault-tolerant and continues operation when servers in the herd go down (by dropping TCP connections), and reconnect once servers are back online. Lastly, each server logs every new/dropped connection with other servers as well as with new clients. 
               </p> <hr>
             <p class="text-center"><a href="https://github.com/jless97/UCLA-W19-CS131-Programming-Languages/tree/master/Assignments/Project-Python-proxy-herd-with-asyncio" target="_blank" class="btn btn-primary">GitHub Source Code</a></p>
           </div>
@@ -99,7 +108,7 @@
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <p class="animate-box"><img class="projects-photos" src="../../images/projects/asyncio_proxy_herd_photo.png" class="img-responsive" alt="Asyncio Proxy Herd Photo"></p>
+          <p class="animate-box"><img class="projects-photos" src="../../images/projects/asyncio_proxy_herd/asyncio_proxy_herd_photo.png" class="img-responsive" alt="Asyncio Proxy Herd Photo"></p>
 
           <div class="row row-pt-md portfolio-navigation">
             <div class="col-xs-4 text-left">
