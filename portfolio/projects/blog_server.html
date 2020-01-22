@@ -76,7 +76,7 @@
     <div class="container">
       <!-- Blog Server Banner -->
       <div class="row">
-          <img class="work-banner img-responsive" src="../../images/projects/blog_server_banner.png" alt="Blog Server banner">
+          <img class="work-banner img-responsive" src="../../images/projects/blog_server/blog_server_banner.png" alt="Blog Server banner">
       </div>
       <!-- Blog Server Description -->
       <div class="row">
@@ -86,9 +86,16 @@
             <h2 class="text-center">Overview</h2>
             <p> 
               <b> Period: </b> February 2018 <br>
-              <b> Technologies: Java, MySQL, Apache Tomcat, MongoDB, Express, Angular, Node.js, HTML/CSS/JS, Docker </b>  <br>
+              <b> Technologies: Java, MySQL, Apache Tomcat, MongoDB, Express, Angular, Node.js, HTML/CSS/JS, Markdown, Docker </b>  <br>
               <b> Description: </b> <br>
-              TODO
+              Built an online website allowing users to post blog entries written in Markdown (using HTML/CSS/JS), and implemented the website twice: once using a more "traditional" stack based on Java and MySQL on Apache Tomcat, and once more using a more "modern" stack based on MongoDB, Express, Angular, and Node.js. Additionally, this project involved utilizing Docker containers to develop and test the website.
+              <br> <br>
+              <u>Tomcat-Based Markdown Editor: </u> <br>
+              The first iteration of the website involved developing an online "markdown" editor using Apache Tomcat. The website allows users to create a new post (written in markdown), preview the post (rendered in HTML), and manage existing posts. These three tasks are supported by three main pages of the website: (1) an edit page (allowing users to edit the title and body of a post), (2) a preview page (allowing users to view an HTML rendering of the post written in markdown), and (3) a list page (showing users the list of all blog posts they have written). Development of the application follows the REST API. Also, all blog posts saved by the user are stored in a MySQL DB.
+              <br> <br>
+              <u> Blogging Server using MEAN </u> <br>
+              The second iteration of the website involved using a more modern stack: the MEAN stack. Development this time involved first creating a markdown editor using Angular, in which all blog posts are created by the user locally with the browser (without any interaction with the server), and implemented as a Single Page Application (SPA). After frontend development was completed, the server-side of the blogging server was added and run on Node.js and Express, so that the user's posts could be published online through HTTP on a remote server and stored online via MongoDB. 
+              <br> <br>
               </p> <hr>
             <p class="text-center"><a href="https://github.com/jless97/UCLA-W18-CS144-Web-Applications/tree/master/Assignments" target="_blank" class="btn btn-primary">GitHub Source Code</a></p>
           </div>
@@ -99,7 +106,7 @@
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <p class="animate-box"><img class="projects-photos" src="../../images/projects/blog_server_photo.png" class="img-responsive" alt="Blog Server Photo"></p>
+          <p class="animate-box"><img class="projects-photos" src="../../images/projects/blog_server/blog_server_photo.png" class="img-responsive" alt="Blog Server Photo"></p>
 
           <div class="row row-pt-md portfolio-navigation">
             <div class="col-xs-4 text-left">
