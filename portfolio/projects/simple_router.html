@@ -74,11 +74,11 @@
   
   <div id="author">
     <div class="container">
-      <!-- Router Banner -->
+      <!-- Simple Router Banner -->
       <div class="row">
-          <img class="work-banner img-responsive" src="../../images/projects/router_banner.png" alt="Router banner">
+          <img class="work-banner img-responsive" src="../../images/projects/simple_router_banner.png" alt="Simple Router banner">
       </div>
-      <!-- Router Description -->
+      <!-- Simple Router Description -->
       <div class="row">
         <div class="col-md-12 text-left">
           <div class="col-md-2"></div>
@@ -88,18 +88,23 @@
               <b> Languages: </b> C++ <br>
               <b> Period: </b> November 2017 <br>
               <b> Description: </b> <br>
-              TODO
+              Wrote a simple router with a simple routing table that receives raw Ethernet frames and processes them just like a real router would: forward them to the correct outgoing interface, create new frames, verify checksums, etc. The router runs on top of Mininet (built at Stanford), which allows for the emulation of a network topology on a single machine. This provides the needed isolation between the emulated nodes so that the router node can process and forward real Ethernet frames between the hosts like a real router.
+              <br> <br>
+              There were three main components of this project:
+              (1) Handle Ethernet frames -- reading of the Ethernet header in order to find the source and destination MAC addresses and properly dispatching the frame based on the protocol (i.e. Address Resolution Protocol (ARP) or Internet Protocol version 4 (IPv4))
+              (2) Handling ARP  packets -- before the router can forward an IP packet to the next-hop specified in the routing table, it needs to first use ARP request/reply to discover a MAC address of the next-hop
+              (3) Handling IPv4 packets -- for each IPv4 packet, the router does some validation (i.e. verifying checksum, and checking packet length); uses longest prefix match algorithm to find the next-hop IP address in the routing table and attempts to forward the packet there; and does some updates (i.e. decrementing TTL of the packet, and recomputing the checksum)
               </p> <hr>
             <p class="text-center"><a href="https://github.com/jless97/UCLA-F17-CS118-Computer-Network-Fundamentals/tree/master/Assignments/Project-Build-your-own-router" target="_blank" class="btn btn-primary">GitHub Source Code</a></p>
           </div>
           <div class="col-md-2"></div>
         </div>
       </div>
-      <!-- Router Photos -->
+      <!-- Simple Router Photos -->
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <p class="animate-box"><img class="projects-photos" src="../../images/projects/router_photo.png" class="img-responsive" alt="Router Photo"></p>
+          <p class="animate-box"><img class="projects-photos" src="../../images/projects/simple_router_photo.png" class="img-responsive" alt="Simple Router Photo"></p>
 
           <div class="row row-pt-md portfolio-navigation">
             <div class="col-xs-4 text-left">
