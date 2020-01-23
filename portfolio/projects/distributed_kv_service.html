@@ -74,32 +74,37 @@
   
   <div id="author">
     <div class="container">
-      <!-- Distributed KV Store Banner -->
+      <!-- Distributed KV Service Banner -->
       <div class="row">
-          <img class="work-banner img-responsive" src="../../images/projects/distributed_kv_store_banner.png" alt="Distributed KV Store banner">
+          <img class="work-banner img-responsive" src="../../images/projects/distributed_kv_service/distributed_kv_service_banner.png" alt="Distributed KV Service banner">
       </div>
-      <!-- Distributed KV Store Description -->
+      <!-- Distributed KV Service Description -->
       <div class="row">
         <div class="col-md-12 text-left">
           <div class="col-md-2"></div>
           <div class="col-md-8 role">
             <h2 class="text-center">Overview</h2>
-            <p> <b> Platform: </b> Xcode <br> 
-              <b> Languages: </b> Go <br>
+            <p> 
               <b> Period: </b> April 2019 <br>
+              <b> Languages: </b> Go <br>
               <b> Description: </b> <br>
-              TODO
+              This project was the capstone project of the distributed systems course I took at UCLA that consisted of implemented a key/value service that supports three RPCs: Put(k, v), Append(k, arg), Get(k), and maintains a simple database of key/value pairs. The key/value service was implemented in three different ways with each handling different degrees of fault tolerance and performance:
+                <ol>
+                  <li>Primary/Backup replication, assisted by a view service that decides which machines are alive. The view service allows the P/B service to work correctly in the presence of network partitions. However, the view service itself is not replicated, and is a single point of failure.</li>
+                  <li>Paxos protocol to replicate the k/v DB with no single point of failure, and handles network partitions correctly. This k/v service is slower than a non-replicated k/v server would be, but is fault tolerant.</li>
+                  <li>Shared k/v DB, where each shard replicates its state using Paxos. This k/v service can perform Put/Get ops in parallel on different shards, allowing it to support applications such as MapReduce that can put a high load on a storage system. Additionally, this service has a replicated configuration service, which tells the shards the key range they are responsible for, which allows a change of the assignment of keys to shards, for example, in response to changing load. This final implementation has the core of a real-world design for thousands of servers.</li>
+                </ol> 
               </p> <hr>
             <p class="text-center"><a href="https://github.com/jless97/UCLA-S19-CS188-Distributed-Systems/tree/master/Assignments" target="_blank" class="btn btn-primary">GitHub Source Code</a></p>
           </div>
           <div class="col-md-2"></div>
         </div>
       </div>
-      <!-- Distributed KV Store Photos -->
+      <!-- Distributed KV Service Photos -->
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <p class="animate-box"><img class="projects-photos" src="../../images/projects/distributed_kv_store_photo.png" class="img-responsive" alt="Distributed KV Store Photo"></p>
+          <p class="animate-box"><img class="projects-photos" src="../../images/projects/distributed_kv_service/distributed_kv_service_photo.png" class="img-responsive" alt="Distributed KV Service Photo"></p>
 
           <div class="row row-pt-md portfolio-navigation">
             <div class="col-xs-4 text-left">
