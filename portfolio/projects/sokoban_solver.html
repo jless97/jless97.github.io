@@ -76,7 +76,7 @@
     <div class="container">
       <!-- Sokoban Solver Banner -->
       <div class="row">
-          <img class="work-banner img-responsive" src="../../images/projects/sokoban_solver_banner.png" alt="Sokoban Solver banner">
+          <img class="work-banner img-responsive" src="../../images/projects/sokoban_solver/sokoban_solver_banner.png" alt="Sokoban Solver banner">
       </div>
       <!-- Sokoban Solver Description -->
       <div class="row">
@@ -84,11 +84,15 @@
           <div class="col-md-2"></div>
           <div class="col-md-8 role">
             <h2 class="text-center">Overview</h2>
-            <p> <b> Platform: </b> Xcode <br> 
+            <p> 
+              <b> Period: </b> May 2019 <br>
               <b> Languages: </b> Lisp <br>
-              <b> Period: </b> April 2019 <br>
               <b> Description: </b> <br>
-              TODO
+              <u> Background </u> <br>
+              Sokoban is a well-known puzzle video game first introduced in Japan in 1980. In this game, the player controls the warehouse keeper (sokoban) who is placed in a closed warehouse with a number of boxes that need to be put in some predefined goal locations. The keeper can walk aroudn the warehouse and push boxes around in order to get them into goal positions. The goal of the game is to put all boxes into goal positions in the fewest number of moves. 
+              <br> <br>
+              <u> Implementation </u> <br>
+              This project involved writing various Lisp functions to implement the components to solve Sokoban for various game dimensions and start states. The game is turned into a search problem consisting of a state representation, a successor function, a goal test, and a cost function. Once definining each of the components of the search problem, the problem can be solved using a generic search engine that implements any search algorithm (e.g. DFS, BFS, A*, etc.). Implementing the solver for this problem gave me experience in defining a search space for a practical problem and coming up with a good heuristic to make the program more efficient. I wrote two heuristic functions: (1) h0 that is a trivial admissible heuristic that returns a constant 0, and (2) a heuristic function that returns the number of boxes which are not on goal positions in the given state. 
               </p> <hr>
             <p class="text-center"><a href="https://github.com/jless97/UCLA-S19-CS161-Fundamentals-Of-Artificial-Intelligence/tree/master/Assignments/H3" target="_blank" class="btn btn-primary">GitHub Source Code</a></p>
           </div>
@@ -99,7 +103,7 @@
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <p class="animate-box"><img class="projects-photos" src="../../images/projects/sokoban_solver_photo.png" class="img-responsive" alt="Sokoban Solver Photo"></p>
+          <p class="animate-box"><img class="projects-photos" src="../../images/projects/sokoban_solver/sokoban_solver_photo.png" class="img-responsive" alt="Sokoban Solver Photo"></p>
 
           <div class="row row-pt-md portfolio-navigation">
             <div class="col-xs-4 text-left">
