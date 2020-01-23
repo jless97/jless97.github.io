@@ -76,7 +76,7 @@
     <div class="container">
       <!-- IoT Security Banner -->
       <div class="row">
-          <img class="work-banner img-responsive" src="../../images/projects/iot_security_banner.png" alt="IoT Security banner">
+          <img class="work-banner img-responsive" src="../../images/projects/iot_security/iot_security_banner.png" alt="IoT Security banner">
       </div>
       <!-- IoT Security Description -->
       <div class="row">
@@ -84,9 +84,10 @@
           <div class="col-md-2"></div>
           <div class="col-md-8 role">
             <h2 class="text-center">Overview</h2>
-              <p> <b> Platform: </b> Intel Edison using the Grove Sensor Kit <br> 
-              <b> Languages: </b> C <br>
+            <p> 
               <b> Period: </b> May 2017 <br>
+              <b> Platform: </b> Intel Edison using the Grove Sensor Kit <br> 
+              <b> Languages: </b> C <br>
               <b> Program Execution: </b> <a href="https://www.youtube.com/watch?v=ErEtNlNEZDc&t=7s" target="blank">Link</a> <br>
               <b> Description: </b> <br>
               The goal of this project was to implement a simple IoT system using the Intel Edison (and various Grove Kit sensors) to unlock a door by sending a username/password string to a server, and receiving back authentication. Initially, the program was achieved using a single light sensor, which was used to encode a binary value to generate a 4-digit password. Moreover, the username was hardcoded into the program. This password was sent as plaintext to the server, and a plaintext response from the server (i.e. a YES or NO) was received by the Edison. Obviously, this simple implementation had serious security flaws such as the short password, and the unencrypted transmission of data to and from the server. This would make the client/server connection susceptible to a number of enemy attacks such as brute-force, dictionary, and rainbow attacks (for the weak password), and man-in-the-middle and replay attacks (due to the lack of encrypted data).
@@ -102,7 +103,7 @@
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <p class="animate-box"><img class="projects-photos" src="../../images/projects/iot_security_photo.png" class="img-responsive" alt="IoT Security Gameplay"></p>
+          <p class="animate-box"><img class="projects-photos" src="../../images/projects/iot_security/iot_security_photo.png" class="img-responsive" alt="IoT Security Gameplay"></p>
           
           <div class="row row-pt-md portfolio-navigation">
             <div class="col-xs-4 text-left">
