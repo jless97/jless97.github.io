@@ -76,7 +76,7 @@
     <div class="container">
       <!-- MapReduce Banner -->
       <div class="row">
-          <img class="work-banner img-responsive" src="../../images/projects/mapreduce_banner.png" alt="MapReduce banner">
+          <img class="work-banner img-responsive" src="../../images/projects/mapreduce/mapreduce_banner.png" alt="MapReduce banner">
       </div>
       <!-- MapReduce Description -->
       <div class="row">
@@ -84,11 +84,11 @@
           <div class="col-md-2"></div>
           <div class="col-md-8 role">
             <h2 class="text-center">Overview</h2>
-            <p> <b> Platform: </b> Xcode <br> 
-              <b> Languages: </b> Go <br>
+            <p> 
               <b> Period: </b> April 2019 <br>
+              <b> Languages: </b> Go <br>
               <b> Description: </b> <br>
-              TODO
+              This project consisted of two steps: (1) writing a simple MapReduce program that when handed as input a body of text, counts the number of occurrences of each word in alphabetical order, and (2) completing a version of MapReduce that splits the work up over a set of worker threads, in order to exploit multiple cores by having a master thread hand out work to the worker threads and waiting for them to finish. The master communicates with the workers via RPC, and the workers register with the master via a Register RPC. In addition, the master handles failed workers by re-assigning jobs given to failed workers to another worker. This project doesn't involve failures of the master (which is handled later in the next project).
               </p> <hr>
             <p class="text-center"><a href="https://github.com/jless97/UCLA-S19-CS188-Distributed-Systems/tree/master/Assignments/P1-MapReduce" target="_blank" class="btn btn-primary">GitHub Source Code</a></p>
           </div>
@@ -99,7 +99,7 @@
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <p class="animate-box"><img class="projects-photos" src="../../images/projects/mapreduce_photo.png" class="img-responsive" alt="MapReduce Photo"></p>
+          <p class="animate-box"><img class="projects-photos" src="../../images/projects/mapreduce/mapreduce_photo.png" class="img-responsive" alt="MapReduce Photo"></p>
 
           <div class="row row-pt-md portfolio-navigation">
             <div class="col-xs-4 text-left">
