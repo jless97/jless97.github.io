@@ -1,17 +1,6 @@
-jasless1997<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
   <head>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156874793-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-156874793-1');
-  </script>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Jason Less - Software Engineer</title>
@@ -76,8 +65,8 @@ jasless1997<!DOCTYPE HTML>
       <div class="top-social menu-1 text-right">
         <ul class="social">
           <li><a href="https://www.facebook.com/jasonaless" target="_blank"><i class="icon-facebook"></i></a></li>
-          <li><a href="https://www.youtube.com/c/jasonless" target="_blank"><i class="icon-youtube"></i></a></li>
           <li><a href="https://www.linkedin.com/in/jasonless/" target="_blank"><i class="icon-linkedin"></i></a></li>
+          <li><a href="mailto:jaless1997@gmail.com?Subject=Getting%20in%20touch" target="_top"><i class="icon-email"></i></a></li>
         </ul>
       </div>
     </div>
@@ -87,7 +76,7 @@ jasless1997<!DOCTYPE HTML>
     <div class="container">
       <!-- Yelp Banner -->
       <div class="row">
-          <img class="work-banner img-responsive" src="../images/work/yelp/yelp_banner.jpg" alt="Yelp banner">
+          <img class="work-banner img-responsive" src="../images/work/yelp_banner.jpg" alt="Yelp banner">
       </div>
       <!-- Yelp Blog -->
       <div class="row">
@@ -109,20 +98,20 @@ jasless1997<!DOCTYPE HTML>
             </ol><hr>
             <!-- Introduction -->
             <h4 id="introduction">Introduction</h4>
-            <p>Yelp is one of the largest online local business search, review and recommendation services, which enables consumers to access ratings, and read reviews and opinions about local businesses. Yelp is headquartered in San Francisco, CA and was founded in 2004 with the mission to connect people to great local businesses.</p>
+            <p>Yelp is one of the largest online local business search, review and recommendation service, which enables consumers to access ratings, and read reviews and opinions about local businesses. Yelp is headquartered in San Francisco, CA and was founded in 2004 with the mission to connect people to great local businesses.</p>
             <p>In Fall 2018, I interned as a Software Engineer at Yelp in San Francisco, CA. The internship lasted sixteen weeks and there were around 40 interns during the Fall Quarter. Yelp puts on a fantastic internship program called the Yelp Internship Program (YIP) that featured 1-2 intern events every week. In terms of compensation and perks, Yelp pays interns competitively with other top tech companies (Google, Facebook, LinkedIn) and provided interns with a decent amount of swag.</p>
             <p class="animate-box"><img src="../images/blog/yelp/yelp_intern_photo.jpg" class="img-responsive projects-photos" alt="Yelp Interns"></p>
             <p class="animate-box"><img src="../images/blog/yelp/yelp_sf_bridge_photo.jpg" class="img-responsive projects-photos" alt="Yelp SF Bridge"></p>
             <!-- What I Worked On --><hr>
             <h4 id="workedon">What I worked on</h4>
             <p>During my internship, I worked as a Backend Software Engineering Intern for the Commerce Platform - Revenue Team. This was my first internship with a tech company; and as such, I learned a remarkable amount from my internship. In addition, the amount I learned was compounded due to the fact that I got to work on an end-to-end feature that worked through all phases of the design and development process.</p>
-            <p>Yelp develops new services as a part of the Service-Oriented Architecture (SOA) concept and has a fancy Platform-as-a-Service (PaaS) distributed system known as <a href="https://github.com/Yelp/paasta" target="_blank">PaaSTA</a>, which is used for building, deploying, and running new services. The feature that I worked on involved designing and implementing a service in Yelp's SOA, and then deploying it using PaaSTA and a Jenkins Continuous Integration (CI) pipeline.</p>
+            <p>Yelp develops new services as a part of the Service-Oriented Architecture (SOA) concept and has a fancy Platform-as-a-Service (PaaS) distributed system known as PaaSTA, which is used for building, deploying, and running new services. The feature that I worked on involved designing and implementing a service in Yelp's SOA, and then deploying it using PaaSTA and a Jenkins Continuous Integration (CI) pipeline.</p>
 
             <p>To allow other services to interface with the newly created service, I created RESTful APIs to expose service endpoints, and documented these endpoints using Swagger UI, which generates a visually interactive documenation website to view API endpoints, details, and interact with the API's resources.</p>
 
-            <p>When developing new services, they should emit certain information so that engineers know at all times the current health and performance of the service. Thus, if a service crashes or is performing slower than expected, can either be restarted or improved. This later concept is known as service observability, and I was able to add this to the service I created by logging events using <a href="https://www.facebook.com/notes/facebook-engineering/facebooks-scribe-technology-now-open-source/32008268919/" target="_blank">Scribe</a>, which is a server for aggregating log data streamed in real-time and emitting metrics, which were monitored using dashboards I created in third-party analytics monitoring platforms <a href="https://techcrunch.com/2019/08/21/splunk-acquires-cloud-monitoring-service-signalfx-for-1-05b/" target="_blank">Splunk and SignalFX</a>. Lastly, I added to the observability of the service by adding error-alerting capabilities using <a href="https://sensu.io/" target="_blank">Sensu</a> alerts and defining Service-Level Objectives (SLOs), which define certain performance or up-time service requirements.</p>
+            <p>When developing new services, it is a good idea to provide proper documentation so that new developers can easily understand what the code means. In addition, developing these new services should emit certain information so that engineers know at all times the current health and performance of the service. Thus, if a service crashes or is performing slower than expected, can either be restarted or improved. This later concept is known as service observability, and I was able to add this to the service I created by logging events using Scribe, which is a server for aggregating log data streamed in real-time and emitting metrics, which were monitored using dashboards I created in third-party analytics monitoring platforms Splunk and SignalFX. Lastly, I added to the observability of the service by adding error-alerting capabilities using Sensu alerts and defining Service-Level Objectives (SLOs), which define certain performance or up-time service requirements.</p>
 
-            <p>The final aspect of developing this new service involved stress testing the performance of interfacing with the service APIs to ensure that the service could handle a large volume of requests in a given duration of time.To achieve the performance requirements, I wrote a Locust load testing script and observed service endpoint response times using <a href="https://zipkin.io/" target="_blank">Zipkin</a>, which is a distributed tracing system used to gather timing data of each component in a given service request.</p>
+            <p>The final aspect of developing this new service involved stress testing the performance of interfacing with the service APIs to ensure that the service could handle a large volume of requests in a given duration of time.To achieve the performance requirements, I wrote a Locust load testing script and observed service endpoint response times using Zipkin, which is a distributed tracing system used to gather timing data of each component in a given service request.</p>
             <!-- Internship Events --><hr>
             <h4 id="events">Internship Events</h4>
             <p>YIP hosted many enjoyable internship events throughout the quarter that amounted to 1-2 events every week. These events were all optional and consisted of mainly interns only. A list of some of the events can be seen below:</p>
@@ -155,18 +144,18 @@ jasless1997<!DOCTYPE HTML>
             <p class="animate-box"><img src="../images/blog/yelp/yelp_twin_peaks_photo_2.jpg" class="img-responsive projects-photos" alt="Yelp Twin Peaks"></p>
             <p class="animate-box"><img src="../images/blog/yelp/yelp_twin_peaks_photo.jpg" class="img-responsive projects-photos" alt="Yelp Twin Peaks"></p>
           </div>
+          <div class="row row-pt-md portfolio-navigation">
+            <div class="col-xs-4 text-left">
+              <a href="blog_linkedin.html" class="btn btn-primary btn-outline"><i class="icon-chevron-left"></i> Prev </a>
+            </div>
+            <div class="col-xs-4 text-center">
+              <a href="blog.html" class="btn btn-primary btn-outline"><i class="icon-grid2"></i> View All</a>
+            </div>
+            <div class="col-xs-4 text-right">
+              <a href="blog_northrop_grumman.html" class="btn btn-primary btn-outline">Next <i class="icon-chevron-right"></i></a>
+            </div>
+          </div>
           <div class="col-md-2"></div>
-        </div>
-      </div>
-      <div class="row row-pt-md portfolio-navigation">
-        <div class="col-xs-4 text-left">
-          <a href="blog_linkedin.html" class="btn btn-primary btn-outline"><i class="icon-chevron-left"></i> Prev </a>
-        </div>
-        <div class="col-xs-4 text-center">
-          <a href="blog.html" class="btn btn-primary btn-outline"><i class="icon-grid2"></i> View All</a>
-        </div>
-        <div class="col-xs-4 text-right">
-          <a href="blog_northrop_grumman.html" class="btn btn-primary btn-outline">Next <i class="icon-chevron-right"></i></a>
         </div>
       </div>
     </div>
@@ -177,15 +166,14 @@ jasless1997<!DOCTYPE HTML>
       <div class="row copyright">
         <div class="col-md-12 text-center">
           <p>
-            <small class="block">&copy; 2020 Jason Less</small> 
+            <small class="block">&copy; 2019 Jason Less</small> 
           </p>
           
           <ul class="social-icons">
             <li><a href="https://www.facebook.com/jasonaless" target="_blank"><i class="icon-facebook"></i></a></li>
-            <li><a href="https://www.youtube.com/c/jasonless" target="_blank"><i class="icon-youtube"></i></a></li>
             <li><a href="https://www.linkedin.com/in/jasonless/" target="_blank"><i class="icon-linkedin"></i></a></li>
             <li><a href="https://github.com/jless97" target="_blank"><i class="icon-github"></i></a></li>
-            <li><a href="mailto:jasless1997@gmail.com?Subject=Getting%20in%20touch" target="_top"><i class="icon-email"></i></a></li>
+            <li><a href="mailto:jaless1997@gmail.com?Subject=Getting%20in%20touch" target="_top"><i class="icon-email"></i></a></li>
             <li><a href="../resume_jasonless.pdf" target="_blank"><i class="icon-paper"></i></a></li>
           </ul>
           
@@ -213,4 +201,3 @@ jasless1997<!DOCTYPE HTML>
 
   </body>
 </html>
-
